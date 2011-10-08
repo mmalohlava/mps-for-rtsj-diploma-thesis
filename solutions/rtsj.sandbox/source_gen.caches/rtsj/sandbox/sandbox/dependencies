@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="rtsj.sandbox.sandbox.Constants" file="Constants.java">
+    <classNode dependClassName="java.lang.Double" />
+  </dependency>
+  <dependency className="rtsj.sandbox.sandbox.ControlRodsImpl" file="ControlRodsImpl.java">
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="javax.realtime.RealtimeThread" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.Constants" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.IReactor" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.MainDefinition" />
+    <classNode extendsClassName="rtsj.sandbox.sandbox.IControlRods" />
+  </dependency>
+  <dependency className="rtsj.sandbox.sandbox.CycleWrapperForPerThread" file="CycleWrapperForPerThread.java">
+    <classNode dependClassName="javax.realtime.RealtimeThread" />
+    <classNode extendsClassName="java.lang.Runnable" />
+  </dependency>
+  <dependency className="rtsj.sandbox.sandbox.IControlRods" file="IControlRods.java">
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.IReactor" />
+    <classNode extendsClassName="java.lang.Runnable" />
+  </dependency>
+  <dependency className="rtsj.sandbox.sandbox.IReactor" file="IReactor.java">
+    <classNode dependClassName="java.lang.Double" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.IControlRods" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.IWaterLoop" />
+    <classNode extendsClassName="java.lang.Runnable" />
+  </dependency>
+  <dependency className="rtsj.sandbox.sandbox.IWaterLoop" file="IWaterLoop.java">
+    <classNode dependClassName="java.lang.Double" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.IReactor" />
+    <classNode extendsClassName="java.lang.Runnable" />
+  </dependency>
+  <dependency className="rtsj.sandbox.sandbox.Main" file="Main.java">
+    <classNode dependClassName="rtsj.sandbox.sandbox.ControlRodsImpl" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.IControlRods" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.IReactor" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.IWaterLoop" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.PrimaryWaterLoopImpl" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.ReactionSimulatorImpl" />
+    <classNode extendsClassName="java.lang.Runnable" />
+  </dependency>
+  <dependency className="rtsj.sandbox.sandbox.MainDefinition" file="MainDefinition.java">
+    <classNode dependClassName="java.io.PrintWriter" />
+    <classNode dependClassName="java.io.StringWriter" />
+    <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.IllegalAccessException" />
+    <classNode dependClassName="java.lang.InstantiationException" />
+    <classNode dependClassName="java.lang.InterruptedException" />
+    <classNode dependClassName="java.lang.Long" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.util.HashMap" />
+    <classNode dependClassName="javax.realtime.AperiodicParameters" />
+    <classNode dependClassName="javax.realtime.ImmortalMemory" />
+    <classNode dependClassName="javax.realtime.LTMemory" />
+    <classNode dependClassName="javax.realtime.MemoryArea" />
+    <classNode dependClassName="javax.realtime.MemoryParameters" />
+    <classNode dependClassName="javax.realtime.NoHeapRealtimeThread" />
+    <classNode dependClassName="javax.realtime.PeriodicParameters" />
+    <classNode dependClassName="javax.realtime.PriorityParameters" />
+    <classNode dependClassName="javax.realtime.ProcessingGroupParameters" />
+    <classNode dependClassName="javax.realtime.RawMemoryAccess" />
+    <classNode dependClassName="javax.realtime.RealtimeThread" />
+    <classNode dependClassName="javax.realtime.RelativeTime" />
+    <classNode dependClassName="javax.realtime.ReleaseParameters" />
+    <classNode dependClassName="javax.realtime.SchedulingParameters" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.CycleWrapperForPerThread" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.Main" />
+  </dependency>
+  <dependency className="rtsj.sandbox.sandbox.PrimaryWaterLoopImpl" file="PrimaryWaterLoopImpl.java">
+    <classNode dependClassName="java.lang.Double" />
+    <classNode dependClassName="java.lang.Long" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="javax.realtime.RawMemoryAccess" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.IReactor" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.MainDefinition" />
+    <classNode extendsClassName="rtsj.sandbox.sandbox.IWaterLoop" />
+  </dependency>
+  <dependency className="rtsj.sandbox.sandbox.ReactionSimulatorImpl" file="ReactionSimulatorImpl.java">
+    <classNode dependClassName="java.lang.Double" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.IControlRods" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.IWaterLoop" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.MainDefinition" />
+    <classNode extendsClassName="rtsj.sandbox.sandbox.IReactor" />
+  </dependency>
+</dependenciesRoot>
+

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencies version="2" modelHash="9djzekosdczktz3aab5p3cq0l3k8zwu">
+  <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+  <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+  <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+  <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+  <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+  <dep model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" hash="-2xuaqibamfxwf0jcwtldnjzxh2vpdt2" />
+  <common hash="-ai5p4docf59mcaptr5heo7ovn6m7sz4">
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <dep model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" />
+    <file name="CycleWrapperForPerThread.java" />
+  </common>
+  <source id="3005132233865492713" name="immortalMemory" hash="-50ar6nwed5g0t0l6mrj6mxsy6i11cqh">
+    <dep model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" />
+  </source>
+  <source id="7904365484846574974" hash="7wqqgigbduhtamkmy5abqun68yl5zk7" dependsOnNodes="true">
+    <dep root="3005132233865492713" />
+    <dep root="7296282902787866533" />
+    <dep root="7296282902787885237" />
+    <dep root="7296282902787885242" />
+    <dep root="7296282902787935690" />
+    <dep root="7296282902787960706" />
+    <dep root="7296282902787960711" />
+    <dep root="7296282902787960716" />
+    <dep root="9175908796922228529" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <dep model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" />
+    <file name="MainDefinition.java" />
+  </source>
+  <source id="7296282902787866533" name="ReactionSimulator" hash="-4avuxxo25bnsfrnqxzvco83lfludq71">
+    <dep model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" />
+  </source>
+  <source id="7296282902787866538" name="ReactionSimulatorImpl" hash="-44cd9jqkhfexwn0cqfoa58rfdw6ugd9">
+    <dep root="3005132233865492713" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <dep model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" />
+    <file name="ReactionSimulatorImpl.java" />
+  </source>
+  <source id="7296282902787885237" name="ControlRods" hash="7lbam1e43j7v5epjn11p6jcd1qhhghf">
+    <dep model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" />
+  </source>
+  <source id="7296282902787885242" name="PrimaryWaterLoop" hash="cejsnnngcuapsp0v6tjnqfvfpih3ajl">
+    <dep model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" />
+  </source>
+  <source id="7296282902787885252" name="ControlRodsImpl" hash="-7vkiwk7vafqzzrr823vgwxrb6c504m3">
+    <dep root="3005132233865492713" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <dep model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" />
+    <file name="ControlRodsImpl.java" />
+  </source>
+  <source id="7296282902787885278" name="PrimaryWaterLoopImpl" hash="-e5olla03s1869cucy7ya6fxryop02j5">
+    <dep root="3005132233865492713" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <dep model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" />
+    <file name="PrimaryWaterLoopImpl.java" />
+  </source>
+  <source id="7296282902787935228" name="IReactor" hash="-7tuhhbz1573s3bjyfaumop7s2tnqlag">
+    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <file name="IReactor.java" />
+  </source>
+  <source id="7296282902787935274" name="IControlRods" hash="-4c1iuwr6tyfarqfbetgnvjfm2qjnsvg">
+    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <file name="IControlRods.java" />
+  </source>
+  <source id="7296282902787935394" name="Constants" hash="-bvk4qld9pqcfe7ptuuo146b93gr2n53">
+    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <file name="Constants.java" />
+  </source>
+  <source id="7296282902787935592" name="IWaterLoop" hash="-5r7k1tb6fuu3y1ad3pekehlhv5k2bis">
+    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <file name="IWaterLoop.java" />
+  </source>
+  <source id="7296282902787935690" name="Main" hash="1syrwx3x8fofmnjyhwvni3aa59dp6g4">
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <file name="Main.java" />
+  </source>
+  <source id="7296282902787960706" name="ControlRodsMemory" hash="-50zbk7bh1bdrppxsux88xcx2e6082of">
+    <dep model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" />
+  </source>
+  <source id="7296282902787960711" name="PrimaryWaterLoopMemory" hash="3c7glauuqfmcxa06gih0prmna8qe58w">
+    <dep model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" />
+  </source>
+  <source id="7296282902787960716" name="ReactionSimulatorMemory" hash="8q59m2kt4tbb2a6ybhwk9l9qe19x4we">
+    <dep model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" />
+  </source>
+  <source id="9175908796922228529" name="DefaultMode" hash="-57ndk6rmfkyx4yriq1gkimpoo5u7ozw">
+    <dep model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" />
+  </source>
+</dependencies>
+
