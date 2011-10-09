@@ -4,6 +4,7 @@ package rtsj.structure;
 
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.baseLanguage.structure.Expression;
+import jetbrains.mps.baseLanguage.structure.BooleanConstant;
 import jetbrains.mps.smodel.SModel;
 import jetbrains.mps.smodel.SModelUtil_new;
 import jetbrains.mps.project.GlobalScope;
@@ -13,6 +14,7 @@ public class ScopedMemory extends MemoryArea {
   public static final String TYPE = "type";
   public static final String INITIAL = "initial";
   public static final String MAXIMAL = "maximal";
+  public static final String WEDGE_THREAD = "wedgeThread";
 
   public ScopedMemory(SNode node) {
     super(node);
@@ -41,6 +43,14 @@ public class ScopedMemory extends MemoryArea {
 
   public void setMaximal(Expression node) {
     super.setChild(ScopedMemory.MAXIMAL, node);
+  }
+
+  public BooleanConstant getWedgeThread() {
+    return (BooleanConstant) this.getChild(BooleanConstant.class, ScopedMemory.WEDGE_THREAD);
+  }
+
+  public void setWedgeThread(BooleanConstant node) {
+    super.setChild(ScopedMemory.WEDGE_THREAD, node);
   }
 
   public static ScopedMemory newInstance(SModel sm, boolean init) {

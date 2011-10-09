@@ -7,7 +7,7 @@ import java.util.Arrays;
 import jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted;
 
 public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor {
-  private static String[] stringSwitchCases_846f5o_a0a0a = new String[]{"rtsj.structure.AllocateAtributte", "rtsj.structure.AllocateMemoryStatement", "rtsj.structure.AllocateVariableStatement", "rtsj.structure.AperiodicThread", "rtsj.structure.ChangeMode", "rtsj.structure.EnterMemoryStatement", "rtsj.structure.ImmortalMemory", "rtsj.structure.InterruptThread", "rtsj.structure.MainDefinition", "rtsj.structure.MemoryAreaReference", "rtsj.structure.Mode", "rtsj.structure.ModeChangePriority", "rtsj.structure.ModeChangeRP", "rtsj.structure.PeriodicThread", "rtsj.structure.RawMemoryAccessCreate", "rtsj.structure.RawMemoryGet", "rtsj.structure.RawMemorySet", "rtsj.structure.RealtimeThread", "rtsj.structure.RealtimeThreadReference", "rtsj.structure.ReleaseParametresAperiodic", "rtsj.structure.ReleaseParametresPeriodic", "rtsj.structure.ReleaseParametresSporadic", "rtsj.structure.RunThreadStatement", "rtsj.structure.ScopedMemory", "rtsj.structure.SizeEstimator", "rtsj.structure.SizeEstimatorEstimate", "rtsj.structure.SizeEstimatorReserve", "rtsj.structure.SporadicThread", "rtsj.structure.WaitForNextPeriod"};
+  private static String[] stringSwitchCases_846f5o_a0a0a = new String[]{"rtsj.structure.AllocateAtributte", "rtsj.structure.AllocateMemoryStatement", "rtsj.structure.AllocateVariableStatement", "rtsj.structure.AperiodicThread", "rtsj.structure.ChangeMode", "rtsj.structure.EnterMemoryStatement", "rtsj.structure.ImmortalMemory", "rtsj.structure.InterruptThread", "rtsj.structure.MainDefinition", "rtsj.structure.MemoryAreaReference", "rtsj.structure.Mode", "rtsj.structure.ModeChangePriority", "rtsj.structure.ModeChangeRP", "rtsj.structure.PeriodicThread", "rtsj.structure.RawMemoryAccessCreate", "rtsj.structure.RawMemoryGet", "rtsj.structure.RawMemorySet", "rtsj.structure.RealtimeThread", "rtsj.structure.RealtimeThreadReference", "rtsj.structure.ReleaseParametresAperiodic", "rtsj.structure.ReleaseParametresPeriodic", "rtsj.structure.ReleaseParametresSporadic", "rtsj.structure.RunThreadStatement", "rtsj.structure.ScopedMemory", "rtsj.structure.SizeEstimator", "rtsj.structure.SizeEstimatorEstimate", "rtsj.structure.SizeEstimatorReserve", "rtsj.structure.SporadicThread", "rtsj.structure.WaitForNextPeriod", "rtsj.structure.WedgeThreadStart", "rtsj.structure.WedgeThreadStop"};
 
   public BehaviorAspectDescriptor() {
   }
@@ -72,6 +72,10 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new ReleaseParametresSporadic_BehaviorDescriptor();
       case 12:
         return new ModeChangeRP_BehaviorDescriptor();
+      case 29:
+        return new WedgeThreadStart_BehaviorDescriptor();
+      case 30:
+        return new WedgeThreadStop_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }

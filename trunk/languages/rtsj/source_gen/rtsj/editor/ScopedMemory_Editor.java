@@ -64,6 +64,7 @@ public class ScopedMemory_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createCollection_d5lxwd_a1b0(editorContext, node));
     editorCell.addEditorCell(this.createCollection_d5lxwd_b1b0(editorContext, node));
     editorCell.addEditorCell(this.createCollection_d5lxwd_c1b0(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_d5lxwd_d1b0(editorContext, node));
     return editorCell;
   }
 
@@ -105,6 +106,19 @@ public class ScopedMemory_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createConstant_d5lxwd_b2b1a(editorContext, node));
     editorCell.addEditorCell(this.createRefNode_d5lxwd_c2b1a(editorContext, node));
     editorCell.addEditorCell(this.createConstant_d5lxwd_d2b1a(editorContext, node));
+    return editorCell;
+  }
+
+  private EditorCell createCollection_d5lxwd_d1b0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, node);
+    editorCell.setCellId("Collection_d5lxwd_d1b0");
+    {
+      Style style = editorCell.getStyle();
+      style.set(StyleAttributes.SELECTABLE, false);
+    }
+    editorCell.addEditorCell(this.createConstant_d5lxwd_a3b1a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_d5lxwd_b3b1a(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_d5lxwd_c3b1a(editorContext, node));
     return editorCell;
   }
 
@@ -171,6 +185,20 @@ public class ScopedMemory_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
+  private EditorCell createConstant_d5lxwd_a3b1a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "wedgeThread");
+    editorCell.setCellId("Constant_d5lxwd_a3b1a");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createConstant_d5lxwd_b3b1a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "=");
+    editorCell.setCellId("Constant_d5lxwd_b3b1a");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
   private EditorCell createIndentCell_d5lxwd_a1a(EditorContext editorContext, SNode node) {
     EditorCell_Indent result = new EditorCell_Indent(editorContext, node);
     return result;
@@ -197,6 +225,23 @@ public class ScopedMemory_Editor extends DefaultNodeEditor {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("maximal");
     provider.setNoTargetText("<no maximal>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(editorContext);
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    Class attributeKind = provider.getRoleAttributeClass();
+    if (attributeConcept != null) {
+      IOperationContext opContext = editorContext.getOperationContext();
+      EditorManager manager = EditorManager.getInstanceFromContext(opContext);
+      return manager.createRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+    } else
+    return editorCell;
+  }
+
+  private EditorCell createRefNode_d5lxwd_c3b1a(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
+    provider.setRole("wedgeThread");
+    provider.setNoTargetText("<no wedgeThread>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
