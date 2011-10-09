@@ -8,7 +8,7 @@ import jetbrains.mps.smodel.runtime.impl.CompiledConceptDescriptor;
 import jetbrains.mps.smodel.runtime.interpreted.StructureAspectInterpreted;
 
 public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.StructureAspectDescriptor {
-  private static String[] stringSwitchCases_1htk8d_a0a0a = new String[]{"rtsj.structure.AllocateAtributte", "rtsj.structure.AllocateMemoryStatement", "rtsj.structure.AllocateVariableStatement", "rtsj.structure.AperiodicThread", "rtsj.structure.ChangeMode", "rtsj.structure.EnterMemoryStatement", "rtsj.structure.ImmortalMemory", "rtsj.structure.InterruptThread", "rtsj.structure.MainDefinition", "rtsj.structure.MemoryArea", "rtsj.structure.MemoryAreaReference", "rtsj.structure.Mode", "rtsj.structure.ModeChangePriority", "rtsj.structure.ModeChangeRP", "rtsj.structure.PeriodicThread", "rtsj.structure.RawMemoryAccessCreate", "rtsj.structure.RawMemoryGet", "rtsj.structure.RawMemorySet", "rtsj.structure.RealtimeThread", "rtsj.structure.RealtimeThreadReference", "rtsj.structure.ReleaseParametres", "rtsj.structure.ReleaseParametresAperiodic", "rtsj.structure.ReleaseParametresPeriodic", "rtsj.structure.ReleaseParametresSporadic", "rtsj.structure.RunThreadStatement", "rtsj.structure.ScopedMemory", "rtsj.structure.SizeEstimator", "rtsj.structure.SizeEstimatorEstimate", "rtsj.structure.SizeEstimatorReserve", "rtsj.structure.SporadicThread", "rtsj.structure.WaitForNextPeriod"};
+  private static String[] stringSwitchCases_1htk8d_a0a0a = new String[]{"rtsj.structure.AllocateAtributte", "rtsj.structure.AllocateMemoryStatement", "rtsj.structure.AllocateVariableStatement", "rtsj.structure.AperiodicThread", "rtsj.structure.ChangeMode", "rtsj.structure.EnterMemoryStatement", "rtsj.structure.ImmortalMemory", "rtsj.structure.InterruptThread", "rtsj.structure.MainDefinition", "rtsj.structure.MemoryArea", "rtsj.structure.MemoryAreaReference", "rtsj.structure.Mode", "rtsj.structure.ModeChangePriority", "rtsj.structure.ModeChangeRP", "rtsj.structure.PeriodicThread", "rtsj.structure.RawMemoryAccessCreate", "rtsj.structure.RawMemoryGet", "rtsj.structure.RawMemorySet", "rtsj.structure.RealtimeThread", "rtsj.structure.RealtimeThreadReference", "rtsj.structure.ReleaseParametres", "rtsj.structure.ReleaseParametresAperiodic", "rtsj.structure.ReleaseParametresPeriodic", "rtsj.structure.ReleaseParametresSporadic", "rtsj.structure.RunThreadStatement", "rtsj.structure.ScopedMemory", "rtsj.structure.SizeEstimator", "rtsj.structure.SizeEstimatorEstimate", "rtsj.structure.SizeEstimatorReserve", "rtsj.structure.SporadicThread", "rtsj.structure.WaitForNextPeriod", "rtsj.structure.WedgeThreadStart", "rtsj.structure.WedgeThreadStop"};
 
   public StructureAspectDescriptor() {
   }
@@ -77,6 +77,10 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
         return new CompiledConceptDescriptor("rtsj.structure.SporadicThread", "rtsj.structure.RealtimeThread", false, new String[]{"rtsj.structure.RealtimeThread"}, new String[]{}, new String[]{});
       case 30:
         return new CompiledConceptDescriptor("rtsj.structure.WaitForNextPeriod", "jetbrains.mps.baseLanguage.structure.Expression", false, new String[]{"jetbrains.mps.baseLanguage.structure.Expression"}, new String[]{}, new String[]{});
+      case 31:
+        return new CompiledConceptDescriptor("rtsj.structure.WedgeThreadStart", "jetbrains.mps.baseLanguage.structure.Statement", false, new String[]{"jetbrains.mps.baseLanguage.structure.Statement"}, new String[]{}, new String[]{"memory"});
+      case 32:
+        return new CompiledConceptDescriptor("rtsj.structure.WedgeThreadStop", "jetbrains.mps.baseLanguage.structure.Statement", false, new String[]{"jetbrains.mps.baseLanguage.structure.Statement"}, new String[]{}, new String[]{"memory"});
       default:
         return StructureAspectInterpreted.getInstance().getDescriptor(conceptFqName);
     }
