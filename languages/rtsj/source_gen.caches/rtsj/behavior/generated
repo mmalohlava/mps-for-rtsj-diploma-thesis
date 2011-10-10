@@ -14,7 +14,7 @@
   <dep model="r:00000000-0000-4000-0000-011c8959033a(jetbrains.mps.baseLanguage.closures.generator.baseLanguage.template.main@generator)" />
   <dep model="r:229ce18d-2bb0-4d5b-a7cd-cec65841e459(jetbrains.mps.lang.behavior.generator.template.main@generator)" />
   <dep model="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
-  <dep model="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" hash="-bjj06h2x2g0hazoqwsagzyhgfz2p6kg" />
+  <dep model="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" hash="-ed4ynmd8q5px2ldpgtws2mlrfslhya" />
   <dep model="r:95397225-9080-48bc-b1aa-0ce7c4f3d2ce(jetbrains.mps.lang.traceable.behavior)" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
@@ -44,6 +44,9 @@
     <file name="ChangeMode_BehaviorDescriptor.java" />
     <file name="EnterMemoryStatement_BehaviorDescriptor.java" />
     <file name="ImmortalMemory_BehaviorDescriptor.java" />
+    <file name="InterThreadChannelPop_BehaviorDescriptor.java" />
+    <file name="InterThreadChannelPush_BehaviorDescriptor.java" />
+    <file name="InterThreadChannel_BehaviorDescriptor.java" />
     <file name="InterruptThread_BehaviorDescriptor.java" />
     <file name="MainDefinition_BehaviorDescriptor.java" />
     <file name="MemoryAreaReference_BehaviorDescriptor.java" />

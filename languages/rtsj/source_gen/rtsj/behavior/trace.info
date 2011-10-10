@@ -8,6 +8,8 @@
   <unitInfo fileName="PeriodicThread_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="rtsj.behavior.PeriodicThread_BehaviorDescriptor" />
   <unitInfo fileName="ImmortalMemory_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="rtsj.behavior.ImmortalMemory_BehaviorDescriptor" />
   <unitInfo fileName="ScopedMemory_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="rtsj.behavior.ScopedMemory_BehaviorDescriptor" />
+  <unitInfo fileName="InterThreadChannelPop_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="rtsj.behavior.InterThreadChannelPop_BehaviorDescriptor" />
+  <unitInfo fileName="InterThreadChannelPush_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="rtsj.behavior.InterThreadChannelPush_BehaviorDescriptor" />
   <unitInfo fileName="WedgeThreadStop_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="rtsj.behavior.WedgeThreadStop_BehaviorDescriptor" />
   <unitInfo fileName="WedgeThreadStart_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="rtsj.behavior.WedgeThreadStart_BehaviorDescriptor" />
   <unitInfo fileName="ModeChangeRP_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="rtsj.behavior.ModeChangeRP_BehaviorDescriptor" />
@@ -29,11 +31,12 @@
   <unitInfo fileName="MemoryAreaReference_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="rtsj.behavior.MemoryAreaReference_BehaviorDescriptor" />
   <unitInfo fileName="MainDefinition_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="rtsj.behavior.MainDefinition_BehaviorDescriptor" />
   <unitInfo fileName="AllocateVariableStatement_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="rtsj.behavior.AllocateVariableStatement_BehaviorDescriptor" />
+  <unitInfo fileName="InterThreadChannel_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="rtsj.behavior.InterThreadChannel_BehaviorDescriptor" />
   <unitInfo fileName="Mode_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="rtsj.behavior.Mode_BehaviorDescriptor" />
   <unitInfo fileName="SizeEstimator_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="rtsj.behavior.SizeEstimator_BehaviorDescriptor" />
   <unitInfo fileName="MemoryArea_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="rtsj.behavior.MemoryArea_BehaviorDescriptor" />
   <unitInfo fileName="RealtimeThread_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="rtsj.behavior.RealtimeThread_BehaviorDescriptor" />
-  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="84" endPosition="0" unitName="rtsj.behavior.BehaviorAspectDescriptor" />
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="90" endPosition="0" unitName="rtsj.behavior.BehaviorAspectDescriptor" />
   <root nodeId="2025469200171228836">
     <nodeInfo nodeId="2025469200171228836" fileName="AllocateVariableStatement_Behavior.java" startLine="12" startPosition="49" endLine="13" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="PARAMETERS_2025469200171228839" />
     <nodeInfo nodeId="2025469200171300761" fileName="AllocateVariableStatement_Behavior.java" startLine="18" startPosition="70" endLine="19" endPosition="101" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />

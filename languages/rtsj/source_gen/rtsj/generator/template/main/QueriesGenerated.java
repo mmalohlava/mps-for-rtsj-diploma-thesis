@@ -50,6 +50,10 @@ public class QueriesGenerated {
     return true;
   }
 
+  public static boolean dropRootRule_Condition_7960034524145883556(final IOperationContext operationContext, final DropRootRuleContext _context) {
+    return true;
+  }
+
   public static boolean baseMappingRule_Condition_6920542396594979954(final IOperationContext operationContext, final BaseMappingRuleContext _context) {
     return SPropertyOperations.hasValue(_context.getNode(), "type", "0", "0");
   }
@@ -95,6 +99,10 @@ public class QueriesGenerated {
   }
 
   public static Object propertyMacro_GetPropertyValue_5373531043074065617(final IOperationContext operationContext, final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), "name");
+  }
+
+  public static Object propertyMacro_GetPropertyValue_7960034524145883767(final IOperationContext operationContext, final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), "name");
   }
 
@@ -250,6 +258,14 @@ public class QueriesGenerated {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), "memory", false), "name");
   }
 
+  public static Object propertyMacro_GetPropertyValue_7960034524145883859(final IOperationContext operationContext, final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), "channel", false), "name");
+  }
+
+  public static Object propertyMacro_GetPropertyValue_7960034524145883906(final IOperationContext operationContext, final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), "channel", false), "name");
+  }
+
   public static Object referenceMacro_GetReferent_1248562751630065245(final IOperationContext operationContext, final ReferenceMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), "mainPreInit", false), "name");
   }
@@ -388,6 +404,14 @@ public class QueriesGenerated {
 
   public static SNode sourceNodeQuery_5373531043074065602(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
     return _context.getNode();
+  }
+
+  public static SNode sourceNodeQuery_7960034524145883831(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
+    return Type_Behavior.call_getClassExpression_1213877337357(SLinkOperations.getTarget(_context.getNode(), "messageType", true));
+  }
+
+  public static SNode sourceNodeQuery_7960034524145883778(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), "messageNumber", true);
   }
 
   public static SNode sourceNodeQuery_1248562751629987077(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
@@ -580,6 +604,10 @@ public class QueriesGenerated {
 
   public static Iterable sourceNodesQuery_5373531043074065594(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
     return SModelOperations.getNodes(_context.getOriginalInputModel(), "rtsj.structure.MemoryArea");
+  }
+
+  public static Iterable sourceNodesQuery_7960034524145883752(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
+    return SModelOperations.getNodes(_context.getOriginalInputModel(), "rtsj.structure.InterThreadChannel");
   }
 
   public static Iterable sourceNodesQuery_1470128220319403113(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {

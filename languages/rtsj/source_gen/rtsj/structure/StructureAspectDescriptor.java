@@ -8,7 +8,7 @@ import jetbrains.mps.smodel.runtime.impl.CompiledConceptDescriptor;
 import jetbrains.mps.smodel.runtime.interpreted.StructureAspectInterpreted;
 
 public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.StructureAspectDescriptor {
-  private static String[] stringSwitchCases_1htk8d_a0a0a = new String[]{"rtsj.structure.AllocateAtributte", "rtsj.structure.AllocateMemoryStatement", "rtsj.structure.AllocateVariableStatement", "rtsj.structure.AperiodicThread", "rtsj.structure.ChangeMode", "rtsj.structure.EnterMemoryStatement", "rtsj.structure.ImmortalMemory", "rtsj.structure.InterruptThread", "rtsj.structure.MainDefinition", "rtsj.structure.MemoryArea", "rtsj.structure.MemoryAreaReference", "rtsj.structure.Mode", "rtsj.structure.ModeChangePriority", "rtsj.structure.ModeChangeRP", "rtsj.structure.PeriodicThread", "rtsj.structure.RawMemoryAccessCreate", "rtsj.structure.RawMemoryGet", "rtsj.structure.RawMemorySet", "rtsj.structure.RealtimeThread", "rtsj.structure.RealtimeThreadReference", "rtsj.structure.ReleaseParametres", "rtsj.structure.ReleaseParametresAperiodic", "rtsj.structure.ReleaseParametresPeriodic", "rtsj.structure.ReleaseParametresSporadic", "rtsj.structure.RunThreadStatement", "rtsj.structure.ScopedMemory", "rtsj.structure.SizeEstimator", "rtsj.structure.SizeEstimatorEstimate", "rtsj.structure.SizeEstimatorReserve", "rtsj.structure.SporadicThread", "rtsj.structure.WaitForNextPeriod", "rtsj.structure.WedgeThreadStart", "rtsj.structure.WedgeThreadStop"};
+  private static String[] stringSwitchCases_1htk8d_a0a0a = new String[]{"rtsj.structure.AllocateAtributte", "rtsj.structure.AllocateMemoryStatement", "rtsj.structure.AllocateVariableStatement", "rtsj.structure.AperiodicThread", "rtsj.structure.ChangeMode", "rtsj.structure.EnterMemoryStatement", "rtsj.structure.ImmortalMemory", "rtsj.structure.InterThreadChannel", "rtsj.structure.InterThreadChannelPop", "rtsj.structure.InterThreadChannelPush", "rtsj.structure.InterruptThread", "rtsj.structure.MainDefinition", "rtsj.structure.MemoryArea", "rtsj.structure.MemoryAreaReference", "rtsj.structure.Mode", "rtsj.structure.ModeChangePriority", "rtsj.structure.ModeChangeRP", "rtsj.structure.PeriodicThread", "rtsj.structure.RawMemoryAccessCreate", "rtsj.structure.RawMemoryGet", "rtsj.structure.RawMemorySet", "rtsj.structure.RealtimeThread", "rtsj.structure.RealtimeThreadReference", "rtsj.structure.ReleaseParametres", "rtsj.structure.ReleaseParametresAperiodic", "rtsj.structure.ReleaseParametresPeriodic", "rtsj.structure.ReleaseParametresSporadic", "rtsj.structure.RunThreadStatement", "rtsj.structure.ScopedMemory", "rtsj.structure.SizeEstimator", "rtsj.structure.SizeEstimatorEstimate", "rtsj.structure.SizeEstimatorReserve", "rtsj.structure.SporadicThread", "rtsj.structure.WaitForNextPeriod", "rtsj.structure.WedgeThreadStart", "rtsj.structure.WedgeThreadStop"};
 
   public StructureAspectDescriptor() {
   }
@@ -30,56 +30,62 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 6:
         return new CompiledConceptDescriptor("rtsj.structure.ImmortalMemory", "rtsj.structure.MemoryArea", false, new String[]{"rtsj.structure.MemoryArea"}, new String[]{}, new String[]{});
       case 7:
-        return new CompiledConceptDescriptor("rtsj.structure.InterruptThread", "jetbrains.mps.baseLanguage.structure.Statement", false, new String[]{"jetbrains.mps.baseLanguage.structure.Statement"}, new String[]{}, new String[]{"thread"});
+        return new CompiledConceptDescriptor("rtsj.structure.InterThreadChannel", "jetbrains.mps.baseLanguage.structure.Statement", false, new String[]{"jetbrains.mps.baseLanguage.structure.Statement", "jetbrains.mps.lang.core.structure.INamedConcept"}, new String[]{}, new String[]{});
       case 8:
-        return new CompiledConceptDescriptor("rtsj.structure.MainDefinition", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{"mainPreInit", "mainPostInit", "startingMode"});
+        return new CompiledConceptDescriptor("rtsj.structure.InterThreadChannelPop", "jetbrains.mps.baseLanguage.structure.Expression", false, new String[]{"jetbrains.mps.baseLanguage.structure.Expression"}, new String[]{}, new String[]{"channel"});
       case 9:
-        return new CompiledConceptDescriptor("rtsj.structure.MemoryArea", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("rtsj.structure.InterThreadChannelPush", "jetbrains.mps.baseLanguage.structure.Statement", false, new String[]{"jetbrains.mps.baseLanguage.structure.Statement"}, new String[]{}, new String[]{"channel"});
       case 10:
-        return new CompiledConceptDescriptor("rtsj.structure.MemoryAreaReference", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{"memory"});
+        return new CompiledConceptDescriptor("rtsj.structure.InterruptThread", "jetbrains.mps.baseLanguage.structure.Statement", false, new String[]{"jetbrains.mps.baseLanguage.structure.Statement"}, new String[]{}, new String[]{"thread"});
       case 11:
-        return new CompiledConceptDescriptor("rtsj.structure.Mode", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("rtsj.structure.MainDefinition", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{"mainPreInit", "mainPostInit", "startingMode"});
       case 12:
-        return new CompiledConceptDescriptor("rtsj.structure.ModeChangePriority", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{"thread"});
+        return new CompiledConceptDescriptor("rtsj.structure.MemoryArea", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept"}, new String[]{}, new String[]{});
       case 13:
-        return new CompiledConceptDescriptor("rtsj.structure.ModeChangeRP", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{"thread"});
+        return new CompiledConceptDescriptor("rtsj.structure.MemoryAreaReference", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{"memory"});
       case 14:
-        return new CompiledConceptDescriptor("rtsj.structure.PeriodicThread", "rtsj.structure.RealtimeThread", false, new String[]{"rtsj.structure.RealtimeThread"}, new String[]{"generateWaitCycle"}, new String[]{});
+        return new CompiledConceptDescriptor("rtsj.structure.Mode", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept"}, new String[]{}, new String[]{});
       case 15:
-        return new CompiledConceptDescriptor("rtsj.structure.RawMemoryAccessCreate", "jetbrains.mps.baseLanguage.structure.Statement", false, new String[]{"jetbrains.mps.baseLanguage.structure.Statement"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("rtsj.structure.ModeChangePriority", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{"thread"});
       case 16:
-        return new CompiledConceptDescriptor("rtsj.structure.RawMemoryGet", "jetbrains.mps.baseLanguage.structure.Expression", false, new String[]{"jetbrains.mps.baseLanguage.structure.Expression"}, new String[]{"varType"}, new String[]{});
+        return new CompiledConceptDescriptor("rtsj.structure.ModeChangeRP", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{"thread"});
       case 17:
-        return new CompiledConceptDescriptor("rtsj.structure.RawMemorySet", "jetbrains.mps.baseLanguage.structure.Statement", false, new String[]{"jetbrains.mps.baseLanguage.structure.Statement"}, new String[]{"varType"}, new String[]{});
+        return new CompiledConceptDescriptor("rtsj.structure.PeriodicThread", "rtsj.structure.RealtimeThread", false, new String[]{"rtsj.structure.RealtimeThread"}, new String[]{"generateWaitCycle"}, new String[]{});
       case 18:
-        return new CompiledConceptDescriptor("rtsj.structure.RealtimeThread", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept"}, new String[]{}, new String[]{"memory"});
+        return new CompiledConceptDescriptor("rtsj.structure.RawMemoryAccessCreate", "jetbrains.mps.baseLanguage.structure.Statement", false, new String[]{"jetbrains.mps.baseLanguage.structure.Statement"}, new String[]{}, new String[]{});
       case 19:
-        return new CompiledConceptDescriptor("rtsj.structure.RealtimeThreadReference", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{"thread"});
+        return new CompiledConceptDescriptor("rtsj.structure.RawMemoryGet", "jetbrains.mps.baseLanguage.structure.Expression", false, new String[]{"jetbrains.mps.baseLanguage.structure.Expression"}, new String[]{"varType"}, new String[]{});
       case 20:
-        return new CompiledConceptDescriptor("rtsj.structure.ReleaseParametres", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{"overrunHandler", "missHandler"});
+        return new CompiledConceptDescriptor("rtsj.structure.RawMemorySet", "jetbrains.mps.baseLanguage.structure.Statement", false, new String[]{"jetbrains.mps.baseLanguage.structure.Statement"}, new String[]{"varType"}, new String[]{});
       case 21:
-        return new CompiledConceptDescriptor("rtsj.structure.ReleaseParametresAperiodic", "rtsj.structure.ReleaseParametres", false, new String[]{"rtsj.structure.ReleaseParametres"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("rtsj.structure.RealtimeThread", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept"}, new String[]{}, new String[]{"memory"});
       case 22:
-        return new CompiledConceptDescriptor("rtsj.structure.ReleaseParametresPeriodic", "rtsj.structure.ReleaseParametres", false, new String[]{"rtsj.structure.ReleaseParametres"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("rtsj.structure.RealtimeThreadReference", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{"thread"});
       case 23:
-        return new CompiledConceptDescriptor("rtsj.structure.ReleaseParametresSporadic", "rtsj.structure.ReleaseParametres", false, new String[]{"rtsj.structure.ReleaseParametres"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("rtsj.structure.ReleaseParametres", "jetbrains.mps.lang.core.structure.BaseConcept", false, new String[]{"jetbrains.mps.lang.core.structure.BaseConcept"}, new String[]{}, new String[]{"overrunHandler", "missHandler"});
       case 24:
-        return new CompiledConceptDescriptor("rtsj.structure.RunThreadStatement", "jetbrains.mps.baseLanguage.structure.Statement", false, new String[]{"jetbrains.mps.baseLanguage.structure.Statement"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("rtsj.structure.ReleaseParametresAperiodic", "rtsj.structure.ReleaseParametres", false, new String[]{"rtsj.structure.ReleaseParametres"}, new String[]{}, new String[]{});
       case 25:
-        return new CompiledConceptDescriptor("rtsj.structure.ScopedMemory", "rtsj.structure.MemoryArea", false, new String[]{"rtsj.structure.MemoryArea"}, new String[]{"type"}, new String[]{});
+        return new CompiledConceptDescriptor("rtsj.structure.ReleaseParametresPeriodic", "rtsj.structure.ReleaseParametres", false, new String[]{"rtsj.structure.ReleaseParametres"}, new String[]{}, new String[]{});
       case 26:
-        return new CompiledConceptDescriptor("rtsj.structure.SizeEstimator", "jetbrains.mps.baseLanguage.structure.Statement", false, new String[]{"jetbrains.mps.baseLanguage.structure.Statement", "jetbrains.mps.lang.core.structure.INamedConcept"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("rtsj.structure.ReleaseParametresSporadic", "rtsj.structure.ReleaseParametres", false, new String[]{"rtsj.structure.ReleaseParametres"}, new String[]{}, new String[]{});
       case 27:
-        return new CompiledConceptDescriptor("rtsj.structure.SizeEstimatorEstimate", "jetbrains.mps.baseLanguage.structure.Expression", false, new String[]{"jetbrains.mps.baseLanguage.structure.Expression"}, new String[]{}, new String[]{"sizeEstimator"});
+        return new CompiledConceptDescriptor("rtsj.structure.RunThreadStatement", "jetbrains.mps.baseLanguage.structure.Statement", false, new String[]{"jetbrains.mps.baseLanguage.structure.Statement"}, new String[]{}, new String[]{});
       case 28:
-        return new CompiledConceptDescriptor("rtsj.structure.SizeEstimatorReserve", "jetbrains.mps.baseLanguage.structure.Statement", false, new String[]{"jetbrains.mps.baseLanguage.structure.Statement"}, new String[]{}, new String[]{"sizeEstimator"});
+        return new CompiledConceptDescriptor("rtsj.structure.ScopedMemory", "rtsj.structure.MemoryArea", false, new String[]{"rtsj.structure.MemoryArea"}, new String[]{"type"}, new String[]{});
       case 29:
-        return new CompiledConceptDescriptor("rtsj.structure.SporadicThread", "rtsj.structure.RealtimeThread", false, new String[]{"rtsj.structure.RealtimeThread"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("rtsj.structure.SizeEstimator", "jetbrains.mps.baseLanguage.structure.Statement", false, new String[]{"jetbrains.mps.baseLanguage.structure.Statement", "jetbrains.mps.lang.core.structure.INamedConcept"}, new String[]{}, new String[]{});
       case 30:
-        return new CompiledConceptDescriptor("rtsj.structure.WaitForNextPeriod", "jetbrains.mps.baseLanguage.structure.Expression", false, new String[]{"jetbrains.mps.baseLanguage.structure.Expression"}, new String[]{}, new String[]{});
+        return new CompiledConceptDescriptor("rtsj.structure.SizeEstimatorEstimate", "jetbrains.mps.baseLanguage.structure.Expression", false, new String[]{"jetbrains.mps.baseLanguage.structure.Expression"}, new String[]{}, new String[]{"sizeEstimator"});
       case 31:
-        return new CompiledConceptDescriptor("rtsj.structure.WedgeThreadStart", "jetbrains.mps.baseLanguage.structure.Statement", false, new String[]{"jetbrains.mps.baseLanguage.structure.Statement"}, new String[]{}, new String[]{"memory"});
+        return new CompiledConceptDescriptor("rtsj.structure.SizeEstimatorReserve", "jetbrains.mps.baseLanguage.structure.Statement", false, new String[]{"jetbrains.mps.baseLanguage.structure.Statement"}, new String[]{}, new String[]{"sizeEstimator"});
       case 32:
+        return new CompiledConceptDescriptor("rtsj.structure.SporadicThread", "rtsj.structure.RealtimeThread", false, new String[]{"rtsj.structure.RealtimeThread"}, new String[]{}, new String[]{});
+      case 33:
+        return new CompiledConceptDescriptor("rtsj.structure.WaitForNextPeriod", "jetbrains.mps.baseLanguage.structure.Expression", false, new String[]{"jetbrains.mps.baseLanguage.structure.Expression"}, new String[]{}, new String[]{});
+      case 34:
+        return new CompiledConceptDescriptor("rtsj.structure.WedgeThreadStart", "jetbrains.mps.baseLanguage.structure.Statement", false, new String[]{"jetbrains.mps.baseLanguage.structure.Statement"}, new String[]{}, new String[]{"memory"});
+      case 35:
         return new CompiledConceptDescriptor("rtsj.structure.WedgeThreadStop", "jetbrains.mps.baseLanguage.structure.Statement", false, new String[]{"jetbrains.mps.baseLanguage.structure.Statement"}, new String[]{}, new String[]{"memory"});
       default:
         return StructureAspectInterpreted.getInstance().getDescriptor(conceptFqName);
