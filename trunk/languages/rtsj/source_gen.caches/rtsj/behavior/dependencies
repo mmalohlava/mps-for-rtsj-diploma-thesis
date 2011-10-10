@@ -49,6 +49,9 @@
     <classNode dependClassName="rtsj.behavior.ChangeMode_BehaviorDescriptor" />
     <classNode dependClassName="rtsj.behavior.EnterMemoryStatement_BehaviorDescriptor" />
     <classNode dependClassName="rtsj.behavior.ImmortalMemory_BehaviorDescriptor" />
+    <classNode dependClassName="rtsj.behavior.InterThreadChannelPop_BehaviorDescriptor" />
+    <classNode dependClassName="rtsj.behavior.InterThreadChannelPush_BehaviorDescriptor" />
+    <classNode dependClassName="rtsj.behavior.InterThreadChannel_BehaviorDescriptor" />
     <classNode dependClassName="rtsj.behavior.InterruptThread_BehaviorDescriptor" />
     <classNode dependClassName="rtsj.behavior.MainDefinition_BehaviorDescriptor" />
     <classNode dependClassName="rtsj.behavior.MemoryAreaReference_BehaviorDescriptor" />
@@ -91,6 +94,28 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="rtsj.behavior.MemoryArea_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="rtsj.behavior.InterThreadChannelPop_BehaviorDescriptor" file="InterThreadChannelPop_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.Expression_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="rtsj.behavior.InterThreadChannelPush_BehaviorDescriptor" file="InterThreadChannelPush_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.Statement_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="rtsj.behavior.InterThreadChannel_BehaviorDescriptor" file="InterThreadChannel_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.Statement_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_Behavior" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="rtsj.behavior.InterruptThread_BehaviorDescriptor" file="InterruptThread_BehaviorDescriptor.java">
