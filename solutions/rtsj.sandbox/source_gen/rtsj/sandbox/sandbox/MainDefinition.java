@@ -8,6 +8,7 @@ import javax.realtime.MemoryArea;
 import javax.realtime.RawMemoryAccess;
 import javax.realtime.ImmortalMemory;
 import javax.realtime.LTMemory;
+import javax.realtime.ScopedMemory;
 import javax.realtime.SchedulingParameters;
 import javax.realtime.PriorityParameters;
 import javax.realtime.MemoryParameters;
@@ -21,9 +22,11 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 
 public class MainDefinition {
+  private static final String WEDGE_THREAD_NAME_SUFFIX = "WedgeThread";
   private static HashMap<String, RealtimeThread> threads = new HashMap<String, RealtimeThread>();
   private static HashMap<String, MemoryArea> memories = new HashMap<String, MemoryArea>();
   private static HashMap<String, RawMemoryAccess> rawMemories = new HashMap<String, RawMemoryAccess>();
+  private static HashMap<String, InterThreadChannelHolder> channels = new HashMap<String, InterThreadChannelHolder>();
 
   public MainDefinition() {
   }
@@ -32,12 +35,15 @@ public class MainDefinition {
 
     new Main().run();
 
-    MainDefinition.allocateMemory("immortalMemory", ImmortalMemory.instance());
-    MainDefinition.allocateMemory("ControlRodsMemory", new LTMemory(16, 64));
-    MainDefinition.allocateMemory("PrimaryWaterLoopMemory", new LTMemory(16, 64));
-    MainDefinition.allocateMemory("ReactionSimulatorMemory", new LTMemory(16, 64));
+    allocateMemory("immortalMemory", ImmortalMemory.instance(), false);
+    allocateMemory("ControlRodsMemory", new LTMemory(16, 64), false);
+    allocateMemory("PrimaryWaterLoopMemory", new LTMemory(16, 64), false);
+    allocateMemory("ReactionSimulatorMemory", new LTMemory(16, 64), false);
 
     initThreads();
+
+    initChannel("channel1", Integer.class, 5);
+    initChannel("channel2", String.class, 5);
 
     runDefaultMode();
 
@@ -67,8 +73,51 @@ public class MainDefinition {
     return variable;
   }
 
-  public static void allocateMemory(String name, MemoryArea memoryArea) {
+  public static void allocateMemory(String name, MemoryArea memoryArea, boolean initWedgeThread) {
+    if (memories.containsKey(name)) {
+      killProgram("MemoryArea with name " + name + " already exists");
+    }
+
+    if (initWedgeThread) {
+      initWedgeThread(name, (ScopedMemory) memoryArea);
+    }
+
     memories.put(name, memoryArea);
+  }
+
+  private static void initWedgeThread(String memoryName, ScopedMemory memory) {
+    String name = memoryName + WEDGE_THREAD_NAME_SUFFIX;
+
+    WedgeThread thread = new WedgeThread();
+    thread.setMemory(memory);
+
+    threads.put(name, thread);
+  }
+
+  public static void startWedgeThread(String memory) {
+    String name = memory + WEDGE_THREAD_NAME_SUFFIX;
+
+    if (!(threads.containsKey(name))) {
+      killProgram("ScopedMemory " + memory + " has not wedge thread");
+    }
+
+    RealtimeThread thread = threads.get(name);
+    thread.run();
+    try {
+      thread.join();
+    } catch (InterruptedException e) {
+      // ignore 
+    }
+  }
+
+  public static void stopwedgeThread(String memory) {
+    String name = memory + WEDGE_THREAD_NAME_SUFFIX;
+
+    if (!(threads.containsKey(name))) {
+      killProgram("ScopedMemory " + memory + " has not wedge thread");
+    }
+
+    threads.get(name).interrupt();
   }
 
   public static MemoryArea getMemory(String name) {
@@ -94,6 +143,10 @@ public class MainDefinition {
   private static void initThreads() {
 
     {
+      if (threads.containsKey("ReactionSimulator")) {
+        killProgram("RealtimeThread with name " + "ReactionSimulator" + " already exists");
+      }
+
       SchedulingParameters schedulingParameters = new PriorityParameters(5);
       MemoryParameters memoryParameters = null;
       ProcessingGroupParameters processingGroupParameters = null;
@@ -104,6 +157,10 @@ public class MainDefinition {
 
     }
     {
+      if (threads.containsKey("ControlRods")) {
+        killProgram("RealtimeThread with name " + "ControlRods" + " already exists");
+      }
+
       SchedulingParameters schedulingParameters = new PriorityParameters(5);
       MemoryParameters memoryParameters = null;
       ProcessingGroupParameters processingGroupParameters = null;
@@ -114,6 +171,10 @@ public class MainDefinition {
 
     }
     {
+      if (threads.containsKey("PrimaryWaterLoop")) {
+        killProgram("RealtimeThread with name " + "PrimaryWaterLoop" + " already exists");
+      }
+
       SchedulingParameters schedulingParameters = new PriorityParameters(5);
       MemoryParameters memoryParameters = null;
       ProcessingGroupParameters processingGroupParameters = null;
@@ -146,6 +207,14 @@ public class MainDefinition {
 
 
     getThread("ControlRods").setReleaseParameters(new AperiodicParameters(new RelativeTime(0, 0), new RelativeTime(Long.MAX_VALUE, 999999), null, null));
+  }
+
+  public static void initChannel(String name, Class messageType, int messageNumber) {
+    channels.put(name, new InterThreadChannelHolder(messageType, messageNumber));
+  }
+
+  public static InterThreadChannelHolder getChannel(String name) {
+    return channels.get(name);
   }
 
   public static void killProgram(String message) {
