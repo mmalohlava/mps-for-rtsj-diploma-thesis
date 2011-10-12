@@ -31,6 +31,11 @@
     <classNode dependClassName="rtsj.sandbox.sandbox.IReactor" />
     <classNode extendsClassName="java.lang.Runnable" />
   </dependency>
+  <dependency className="rtsj.sandbox.sandbox.InterThreadChannelHolder" file="InterThreadChannelHolder.java">
+    <classNode dependClassName="java.lang.ArrayIndexOutOfBoundsException" />
+    <classNode dependClassName="java.lang.Class" />
+    <classNode extendsClassName="java.lang.Object" />
+  </dependency>
   <dependency className="rtsj.sandbox.sandbox.Main" file="Main.java">
     <classNode dependClassName="rtsj.sandbox.sandbox.ControlRodsImpl" />
     <classNode dependClassName="rtsj.sandbox.sandbox.IControlRods" />
@@ -47,6 +52,7 @@
     <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="java.lang.IllegalAccessException" />
     <classNode dependClassName="java.lang.InstantiationException" />
+    <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.InterruptedException" />
     <classNode dependClassName="java.lang.Long" />
     <classNode dependClassName="java.lang.Object" />
@@ -67,8 +73,11 @@
     <classNode dependClassName="javax.realtime.RelativeTime" />
     <classNode dependClassName="javax.realtime.ReleaseParameters" />
     <classNode dependClassName="javax.realtime.SchedulingParameters" />
+    <classNode dependClassName="javax.realtime.ScopedMemory" />
     <classNode dependClassName="rtsj.sandbox.sandbox.CycleWrapperForPerThread" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.InterThreadChannelHolder" />
     <classNode dependClassName="rtsj.sandbox.sandbox.Main" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.WedgeThread" />
   </dependency>
   <dependency className="rtsj.sandbox.sandbox.PrimaryWaterLoopImpl" file="PrimaryWaterLoopImpl.java">
     <classNode dependClassName="java.lang.Double" />
@@ -86,6 +95,18 @@
     <classNode dependClassName="rtsj.sandbox.sandbox.IWaterLoop" />
     <classNode dependClassName="rtsj.sandbox.sandbox.MainDefinition" />
     <classNode extendsClassName="rtsj.sandbox.sandbox.IReactor" />
+  </dependency>
+  <dependency className="rtsj.sandbox.sandbox.Sandbox" file="Sandbox.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="javax.realtime.RawMemoryAccess" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.MainDefinition" />
+  </dependency>
+  <dependency className="rtsj.sandbox.sandbox.WedgeThread" file="WedgeThread.java">
+    <classNode dependClassName="java.lang.InterruptedException" />
+    <classNode dependClassName="javax.realtime.AperiodicParameters" />
+    <classNode dependClassName="javax.realtime.PriorityParameters" />
+    <classNode dependClassName="javax.realtime.ScopedMemory" />
+    <classNode extendsClassName="javax.realtime.RealtimeThread" />
   </dependency>
 </dependenciesRoot>
 
