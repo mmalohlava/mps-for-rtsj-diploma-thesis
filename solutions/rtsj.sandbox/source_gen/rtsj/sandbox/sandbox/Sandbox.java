@@ -12,9 +12,11 @@ public class Sandbox {
     MainDefinition.getChannel("channel2").push("ss");
     String a = null;
     a = (String) MainDefinition.getChannel("channel2").pop();
+  }
 
-    MainDefinition.allocateRawMemoryAccess("bla", new RawMemoryAccess(null, 0, 1000));
+  public void dummy2() {
+    MainDefinition.allocateRawMemoryAccess("rawMemory1", new RawMemoryAccess(null, 0, 10));
     byte b;
-    b = MainDefinition.getRawMemoryAccess("bla").getByte(5);
+    b = MainDefinition.getRawMemoryAccess("rawMemory1").getByte(5);
   }
 }

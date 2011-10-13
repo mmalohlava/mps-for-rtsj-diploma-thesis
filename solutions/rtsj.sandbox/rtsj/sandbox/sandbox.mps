@@ -669,17 +669,6 @@
             </node>
           </node>
         </node>
-        <node role="statement" roleId="tpee.1068581517665" type="xaf1.RawMemoryAccessCreate" typeId="xaf1.7427614721109169577" id="7329253685571126497">
-          <node role="base" roleId="xaf1.7427614721109169600" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7329253685571126500">
-            <property name="value" nameId="tpee.1068580320021" value="10" />
-          </node>
-          <node role="size" roleId="xaf1.7427614721109169601" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7329253685571126501">
-            <property name="value" nameId="tpee.1068580320021" value="20" />
-          </node>
-          <node role="memory" roleId="xaf1.7329253685571134069" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7329253685571162216">
-            <property name="value" nameId="tpee.1070475926801" value="bla" />
-          </node>
-        </node>
       </node>
     </node>
     <node role="implementedInterface" roleId="tpee.1095933932569" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7296282902787935600">
@@ -729,48 +718,6 @@
             </node>
             <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.LocalInstanceFieldReference" typeId="tpee.7785501532031639928" id="3711103311464519393">
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3711103311464471274" resolveInfo="waterFlow" />
-            </node>
-          </node>
-        </node>
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="7329253685571126507">
-          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="7329253685571126510">
-            <property name="name" nameId="tpck.1169194664001" value="i" />
-            <node role="initializer" roleId="tpee.1068431790190" type="xaf1.RawMemoryGet" typeId="xaf1.7427614721109166103" id="7329253685571126504">
-              <property name="varType" nameId="xaf1.7427614721109166132" value="3" />
-              <node role="offset" roleId="xaf1.7427614721109166124" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7329253685571126505">
-                <property name="value" nameId="tpee.1068580320021" value="0" />
-              </node>
-              <node role="memory" roleId="xaf1.7329253685571076400" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7329253685571133514">
-                <property name="value" nameId="tpee.1070475926801" value="bla" />
-              </node>
-            </node>
-            <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="1730253191439178938">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~Long" resolveInfo="Long" />
-            </node>
-          </node>
-        </node>
-        <node role="statement" roleId="tpee.1068581517665" type="xaf1.RawMemorySet" typeId="xaf1.7427614721109166126" id="7329253685571163200">
-          <node role="value" roleId="xaf1.7427614721109166135" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7329253685571191680">
-            <property name="value" nameId="tpee.1068580320021" value="10" />
-          </node>
-          <node role="memory" roleId="xaf1.7329253685571162902" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7329253685571163203">
-            <property name="value" nameId="tpee.1070475926801" value="bla" />
-          </node>
-          <node role="offset" roleId="xaf1.7427614721109166134" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7329253685571191679">
-            <property name="value" nameId="tpee.1068580320021" value="0" />
-          </node>
-        </node>
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7329253685571126514">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7329253685571127191">
-            <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="7329253685571126515">
-              <link role="classifier" roleId="tpee.1144433057691" targetNodeId="e2lb.~System" resolveInfo="System" />
-              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="e2lb.~System%dout" resolveInfo="out" />
-            </node>
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7329253685571127195">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxg7.~PrintStream%dprint(long)%cvoid" resolveInfo="print" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="7329253685571127196">
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7329253685571126510" resolveInfo="i" />
-              </node>
             </node>
           </node>
         </node>
@@ -1192,16 +1139,20 @@
             </node>
           </node>
         </node>
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="3889169560759670506" />
-        <node role="statement" roleId="tpee.1068581517665" type="xaf1.RawMemoryAccessCreate" typeId="xaf1.7427614721109169577" id="3889169560759670490">
-          <node role="base" roleId="xaf1.7427614721109169600" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="3889169560759670494">
+      </node>
+    </node>
+    <node role="method" roleId="tpee.1107880067339" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="6534409807722548616">
+      <property name="name" nameId="tpck.1169194664001" value="dummy2" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="6534409807722548617" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6534409807722548618" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6534409807722548619">
+        <node role="statement" roleId="tpee.1068581517665" type="xaf1.RawMemory" typeId="xaf1.7427614721109169577" id="6534409807722553613">
+          <property name="name" nameId="tpck.1169194664001" value="rawMemory1" />
+          <node role="base" roleId="xaf1.7427614721109169600" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6534409807722627532">
             <property name="value" nameId="tpee.1068580320021" value="0" />
           </node>
-          <node role="size" roleId="xaf1.7427614721109169601" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="3889169560759670495">
-            <property name="value" nameId="tpee.1068580320021" value="1000" />
-          </node>
-          <node role="memory" roleId="xaf1.7329253685571134069" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3889169560759670493">
-            <property name="value" nameId="tpee.1070475926801" value="bla" />
+          <node role="size" roleId="xaf1.7427614721109169601" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6534409807722627534">
+            <property name="value" nameId="tpee.1068580320021" value="10" />
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="3889169560759670498">
@@ -1210,18 +1161,15 @@
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ByteType" typeId="tpee.1070534604311" id="3889169560759670509" />
           </node>
         </node>
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3889169560759670510">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="3889169560759670511">
-            <node role="rValue" roleId="tpee.1068498886297" type="xaf1.RawMemoryGet" typeId="xaf1.7427614721109166103" id="3889169560759670502">
-              <property name="varType" nameId="xaf1.7427614721109166132" value="0" />
-              <node role="memory" roleId="xaf1.7329253685571076400" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3889169560759670504">
-                <property name="value" nameId="tpee.1070475926801" value="bla" />
-              </node>
-              <node role="offset" roleId="xaf1.7427614721109166124" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="3889169560759673286">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6534409807722627536">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="6534409807722627538">
+            <node role="rValue" roleId="tpee.1068498886297" type="xaf1.RawMemoryGet" typeId="xaf1.7427614721109166103" id="6534409807722627541">
+              <link role="rawMemory" roleId="xaf1.6534409807722500192" targetNodeId="6534409807722553613" resolveInfo="rawMemory1" />
+              <node role="offset" roleId="xaf1.7427614721109166124" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6534409807722627543">
                 <property name="value" nameId="tpee.1068580320021" value="5" />
               </node>
             </node>
-            <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="3889169560759670513">
+            <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6534409807722627537">
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3889169560759670499" resolveInfo="b" />
             </node>
           </node>

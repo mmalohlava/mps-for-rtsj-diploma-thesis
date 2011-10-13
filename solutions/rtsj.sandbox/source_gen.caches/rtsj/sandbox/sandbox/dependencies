@@ -81,9 +81,6 @@
   </dependency>
   <dependency className="rtsj.sandbox.sandbox.PrimaryWaterLoopImpl" file="PrimaryWaterLoopImpl.java">
     <classNode dependClassName="java.lang.Double" />
-    <classNode dependClassName="java.lang.Long" />
-    <classNode dependClassName="java.lang.System" />
-    <classNode dependClassName="javax.realtime.RawMemoryAccess" />
     <classNode dependClassName="rtsj.sandbox.sandbox.IReactor" />
     <classNode dependClassName="rtsj.sandbox.sandbox.MainDefinition" />
     <classNode extendsClassName="rtsj.sandbox.sandbox.IWaterLoop" />

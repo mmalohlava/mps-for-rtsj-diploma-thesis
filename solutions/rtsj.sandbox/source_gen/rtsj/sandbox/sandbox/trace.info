@@ -7,20 +7,23 @@
     <nodeInfo nodeId="2244210341897435278" fileName="Sandbox.java" startLine="11" startPosition="23" endLine="12" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="3889169560759554067" fileName="Sandbox.java" startLine="12" startPosition="53" endLine="13" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="2244210341897227268" fileName="Sandbox.java" startLine="13" startPosition="20" endLine="14" endPosition="61" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3889169560759670506" fileName="Sandbox.java" startLine="14" startPosition="61" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="3889169560759670490" fileName="Sandbox.java" startLine="15" startPosition="0" endLine="16" endPosition="86" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3889169560759670498" fileName="Sandbox.java" startLine="16" startPosition="86" endLine="17" endPosition="11" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3889169560759670510" fileName="Sandbox.java" startLine="17" startPosition="11" endLine="18" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6534409807722553613" fileName="Sandbox.java" startLine="17" startPosition="24" endLine="18" endPosition="91" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3889169560759670498" fileName="Sandbox.java" startLine="18" startPosition="91" endLine="19" endPosition="11" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6534409807722627536" fileName="Sandbox.java" startLine="19" startPosition="11" endLine="20" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="3889169560759676276" fileName="Sandbox.java" startLine="7" startPosition="22" endLine="9" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="Sandbox#()V" />
-    <nodeInfo nodeId="3889169560759676280" fileName="Sandbox.java" startLine="10" startPosition="0" endLine="20" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="dummy#()V" />
+    <nodeInfo nodeId="3889169560759676280" fileName="Sandbox.java" startLine="10" startPosition="0" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="dummy#()V" />
+    <nodeInfo nodeId="6534409807722548616" fileName="Sandbox.java" startLine="16" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="dummy2#()V" />
     <scopeInfo nodeId="3889169560759676279" fileName="Sandbox.java" startLine="8" startPosition="20" endLine="8" endPosition="20" />
     <scopeInfo nodeId="3889169560759676276" fileName="Sandbox.java" startLine="7" startPosition="22" endLine="9" endPosition="3" />
-    <scopeInfo nodeId="3889169560759676283" fileName="Sandbox.java" startLine="11" startPosition="23" endLine="18" endPosition="60">
-      <varInfo nodeId="3889169560759670499" varName="b" />
+    <scopeInfo nodeId="3889169560759676283" fileName="Sandbox.java" startLine="11" startPosition="23" endLine="14" endPosition="61">
       <varInfo nodeId="3889169560759554068" varName="a" />
     </scopeInfo>
-    <scopeInfo nodeId="3889169560759676280" fileName="Sandbox.java" startLine="10" startPosition="0" endLine="20" endPosition="0" />
-    <unitInfo nodeId="3889169560759676274" fileName="Sandbox.java" startLine="7" startPosition="0" endLine="21" endPosition="0" unitName="rtsj.sandbox.sandbox.Sandbox" />
+    <scopeInfo nodeId="6534409807722548619" fileName="Sandbox.java" startLine="17" startPosition="24" endLine="20" endPosition="67">
+      <varInfo nodeId="3889169560759670499" varName="b" />
+    </scopeInfo>
+    <scopeInfo nodeId="3889169560759676280" fileName="Sandbox.java" startLine="10" startPosition="0" endLine="16" endPosition="0" />
+    <scopeInfo nodeId="6534409807722548616" fileName="Sandbox.java" startLine="16" startPosition="0" endLine="22" endPosition="0" />
+    <unitInfo nodeId="3889169560759676274" fileName="Sandbox.java" startLine="7" startPosition="0" endLine="23" endPosition="0" unitName="rtsj.sandbox.sandbox.Sandbox" />
   </root>
   <root nodeId="7296282902787866538">
     <nodeInfo nodeId="3711103311464452439" fileName="ReactionSimulatorImpl.java" startLine="6" startPosition="56" endLine="7" endPosition="104" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="temperature" />
@@ -115,37 +118,31 @@
     <unitInfo nodeId="7296282902787885252" fileName="ControlRodsImpl.java" startLine="7" startPosition="0" endLine="40" endPosition="0" unitName="rtsj.sandbox.sandbox.ControlRodsImpl" />
   </root>
   <root nodeId="7296282902787885278">
-    <nodeInfo nodeId="7296282902787935611" fileName="PrimaryWaterLoopImpl.java" startLine="7" startPosition="57" endLine="8" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="maximalFlow" />
-    <nodeInfo nodeId="3711103311464471274" fileName="PrimaryWaterLoopImpl.java" startLine="9" startPosition="0" endLine="10" endPosition="102" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="waterFlow" />
-    <nodeInfo nodeId="7296282902787935531" fileName="PrimaryWaterLoopImpl.java" startLine="10" startPosition="102" endLine="11" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="reactor" />
-    <nodeInfo nodeId="7296282902787935570" fileName="PrimaryWaterLoopImpl.java" startLine="13" startPosition="33" endLine="14" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7329253685571126497" fileName="PrimaryWaterLoopImpl.java" startLine="14" startPosition="21" endLine="15" endPosition="85" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3711103311464519377" fileName="PrimaryWaterLoopImpl.java" startLine="18" startPosition="21" endLine="19" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3711103311464519387" fileName="PrimaryWaterLoopImpl.java" startLine="20" startPosition="34" endLine="21" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7329253685571126507" fileName="PrimaryWaterLoopImpl.java" startLine="22" startPosition="5" endLine="23" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7329253685571163200" fileName="PrimaryWaterLoopImpl.java" startLine="23" startPosition="65" endLine="24" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7329253685571126514" fileName="PrimaryWaterLoopImpl.java" startLine="24" startPosition="67" endLine="25" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7296282902787935537" fileName="PrimaryWaterLoopImpl.java" startLine="28" startPosition="45" endLine="29" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7296282902787935607" fileName="PrimaryWaterLoopImpl.java" startLine="32" startPosition="27" endLine="33" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3711103311464519385" fileName="PrimaryWaterLoopImpl.java" startLine="19" startPosition="45" endLine="22" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7296282902787885280" fileName="PrimaryWaterLoopImpl.java" startLine="12" startPosition="0" endLine="16" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="PrimaryWaterLoopImpl#()V" />
-    <nodeInfo nodeId="7296282902787935516" fileName="PrimaryWaterLoopImpl.java" startLine="27" startPosition="0" endLine="31" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setReactor#(Lrtsj/sandbox/sandbox/IReactor;)V" />
-    <nodeInfo nodeId="7296282902787935601" fileName="PrimaryWaterLoopImpl.java" startLine="31" startPosition="0" endLine="35" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getFlow#()Ljava/lang/Double;" />
-    <nodeInfo nodeId="7296282902787935511" fileName="PrimaryWaterLoopImpl.java" startLine="17" startPosition="0" endLine="27" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="run#()V" />
-    <scopeInfo nodeId="3711103311464519386" fileName="PrimaryWaterLoopImpl.java" startLine="20" startPosition="34" endLine="21" endPosition="30" />
-    <scopeInfo nodeId="7296282902787935519" fileName="PrimaryWaterLoopImpl.java" startLine="28" startPosition="45" endLine="29" endPosition="23" />
-    <scopeInfo nodeId="7296282902787935604" fileName="PrimaryWaterLoopImpl.java" startLine="32" startPosition="27" endLine="33" endPosition="21" />
-    <scopeInfo nodeId="7296282902787885283" fileName="PrimaryWaterLoopImpl.java" startLine="13" startPosition="33" endLine="15" endPosition="85" />
-    <scopeInfo nodeId="7296282902787885280" fileName="PrimaryWaterLoopImpl.java" startLine="12" startPosition="0" endLine="16" endPosition="3" />
-    <scopeInfo nodeId="7296282902787935516" fileName="PrimaryWaterLoopImpl.java" startLine="27" startPosition="0" endLine="31" endPosition="0">
+    <nodeInfo nodeId="7296282902787935611" fileName="PrimaryWaterLoopImpl.java" startLine="6" startPosition="57" endLine="7" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="maximalFlow" />
+    <nodeInfo nodeId="3711103311464471274" fileName="PrimaryWaterLoopImpl.java" startLine="8" startPosition="0" endLine="9" endPosition="102" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="waterFlow" />
+    <nodeInfo nodeId="7296282902787935531" fileName="PrimaryWaterLoopImpl.java" startLine="9" startPosition="102" endLine="10" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="reactor" />
+    <nodeInfo nodeId="7296282902787935570" fileName="PrimaryWaterLoopImpl.java" startLine="12" startPosition="33" endLine="13" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3711103311464519377" fileName="PrimaryWaterLoopImpl.java" startLine="16" startPosition="21" endLine="17" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3711103311464519387" fileName="PrimaryWaterLoopImpl.java" startLine="18" startPosition="34" endLine="19" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7296282902787935537" fileName="PrimaryWaterLoopImpl.java" startLine="23" startPosition="45" endLine="24" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7296282902787935607" fileName="PrimaryWaterLoopImpl.java" startLine="27" startPosition="27" endLine="28" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7296282902787885280" fileName="PrimaryWaterLoopImpl.java" startLine="11" startPosition="0" endLine="14" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="PrimaryWaterLoopImpl#()V" />
+    <nodeInfo nodeId="3711103311464519385" fileName="PrimaryWaterLoopImpl.java" startLine="17" startPosition="45" endLine="20" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7296282902787935516" fileName="PrimaryWaterLoopImpl.java" startLine="22" startPosition="0" endLine="26" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setReactor#(Lrtsj/sandbox/sandbox/IReactor;)V" />
+    <nodeInfo nodeId="7296282902787935601" fileName="PrimaryWaterLoopImpl.java" startLine="26" startPosition="0" endLine="30" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getFlow#()Ljava/lang/Double;" />
+    <nodeInfo nodeId="7296282902787935511" fileName="PrimaryWaterLoopImpl.java" startLine="15" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="run#()V" />
+    <scopeInfo nodeId="7296282902787885283" fileName="PrimaryWaterLoopImpl.java" startLine="12" startPosition="33" endLine="13" endPosition="21" />
+    <scopeInfo nodeId="3711103311464519386" fileName="PrimaryWaterLoopImpl.java" startLine="18" startPosition="34" endLine="19" endPosition="30" />
+    <scopeInfo nodeId="7296282902787935519" fileName="PrimaryWaterLoopImpl.java" startLine="23" startPosition="45" endLine="24" endPosition="23" />
+    <scopeInfo nodeId="7296282902787935604" fileName="PrimaryWaterLoopImpl.java" startLine="27" startPosition="27" endLine="28" endPosition="21" />
+    <scopeInfo nodeId="7296282902787885280" fileName="PrimaryWaterLoopImpl.java" startLine="11" startPosition="0" endLine="14" endPosition="3" />
+    <scopeInfo nodeId="7296282902787935514" fileName="PrimaryWaterLoopImpl.java" startLine="16" startPosition="21" endLine="20" endPosition="5" />
+    <scopeInfo nodeId="7296282902787935516" fileName="PrimaryWaterLoopImpl.java" startLine="22" startPosition="0" endLine="26" endPosition="0">
       <varInfo nodeId="7296282902787935520" varName="_reactor" />
     </scopeInfo>
-    <scopeInfo nodeId="7296282902787935601" fileName="PrimaryWaterLoopImpl.java" startLine="31" startPosition="0" endLine="35" endPosition="0" />
-    <scopeInfo nodeId="7296282902787935514" fileName="PrimaryWaterLoopImpl.java" startLine="18" startPosition="21" endLine="25" endPosition="24">
-      <varInfo nodeId="7329253685571126510" varName="i" />
-    </scopeInfo>
-    <scopeInfo nodeId="7296282902787935511" fileName="PrimaryWaterLoopImpl.java" startLine="17" startPosition="0" endLine="27" endPosition="0" />
-    <unitInfo nodeId="7296282902787885278" fileName="PrimaryWaterLoopImpl.java" startLine="7" startPosition="0" endLine="36" endPosition="0" unitName="rtsj.sandbox.sandbox.PrimaryWaterLoopImpl" />
+    <scopeInfo nodeId="7296282902787935601" fileName="PrimaryWaterLoopImpl.java" startLine="26" startPosition="0" endLine="30" endPosition="0" />
+    <scopeInfo nodeId="7296282902787935511" fileName="PrimaryWaterLoopImpl.java" startLine="15" startPosition="0" endLine="22" endPosition="0" />
+    <unitInfo nodeId="7296282902787885278" fileName="PrimaryWaterLoopImpl.java" startLine="6" startPosition="0" endLine="31" endPosition="0" unitName="rtsj.sandbox.sandbox.PrimaryWaterLoopImpl" />
   </root>
   <root nodeId="7296282902787935228">
     <nodeInfo nodeId="7296282902787985276" fileName="IReactor.java" startLine="6" startPosition="44" endLine="7" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getTemperature#()Ljava/lang/Double;" />
