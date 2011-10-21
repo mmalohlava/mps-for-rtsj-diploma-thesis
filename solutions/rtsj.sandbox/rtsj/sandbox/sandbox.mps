@@ -75,6 +75,15 @@
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3889169560759676274">
       <property name="name" nameId="tpck.1169194664001" value="Sandbox" />
     </node>
+    <node type="xaf1.ObjectPool" typeId="xaf1.6254049394131213068" id="8317077103298360823">
+      <property name="name" nameId="tpck.1169194664001" value="objectPool1" />
+    </node>
+    <node type="xaf1.ObjectPool" typeId="xaf1.6254049394131213068" id="8317077103298360828">
+      <property name="name" nameId="tpck.1169194664001" value="objectPool2" />
+    </node>
+    <node type="xaf1.ObjectPool" typeId="xaf1.6254049394131213068" id="8317077103298557649">
+      <property name="name" nameId="tpck.1169194664001" value="objectPoolDouble" />
+    </node>
   </roots>
   <root id="3005132233865492713" />
   <root id="7904365484846574974" />
@@ -1164,6 +1173,7 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6534409807722627536">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="6534409807722627538">
             <node role="rValue" roleId="tpee.1068498886297" type="xaf1.RawMemoryGet" typeId="xaf1.7427614721109166103" id="6534409807722627541">
+              <property name="varType" nameId="xaf1.7427614721109166132" value="0" />
               <link role="rawMemory" roleId="xaf1.6534409807722500192" targetNodeId="6534409807722553613" resolveInfo="rawMemory1" />
               <node role="offset" roleId="xaf1.7427614721109166124" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6534409807722627543">
                 <property name="value" nameId="tpee.1068580320021" value="5" />
@@ -1182,6 +1192,33 @@
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="3889169560759676278" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="3889169560759676279" />
     </node>
+  </root>
+  <root id="8317077103298360823">
+    <node role="type" roleId="xaf1.6254049394131213106" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8317077103298682806">
+      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~Thread" resolveInfo="Thread" />
+    </node>
+    <node role="size" roleId="xaf1.6254049394131213107" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="8317077103298360825">
+      <property name="value" nameId="tpee.1068580320021" value="0" />
+    </node>
+    <node role="expandable" roleId="xaf1.6254049394131213108" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="8317077103298360826" />
+  </root>
+  <root id="8317077103298360828">
+    <node role="type" roleId="xaf1.6254049394131213106" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8317077103298682807">
+      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~Thread" resolveInfo="Thread" />
+    </node>
+    <node role="size" roleId="xaf1.6254049394131213107" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="8317077103298360830">
+      <property name="value" nameId="tpee.1068580320021" value="10" />
+    </node>
+    <node role="expandable" roleId="xaf1.6254049394131213108" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="8317077103298360831" />
+  </root>
+  <root id="8317077103298557649">
+    <node role="type" roleId="xaf1.6254049394131213106" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8317077103298682808">
+      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~Exception" resolveInfo="Exception" />
+    </node>
+    <node role="size" roleId="xaf1.6254049394131213107" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="8317077103298557651">
+      <property name="value" nameId="tpee.1068580320021" value="5" />
+    </node>
+    <node role="expandable" roleId="xaf1.6254049394131213108" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="8317077103298557652" />
   </root>
 </model>
 

@@ -29,19 +29,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="6f7b93d8-b1eb-47e9-b31c-3053c481269a" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\tomas\MPSProjects\rtsjSVN\languages\rtsj\classes_gen\rtsj\behavior\RawMemoryAccessCreate_BehaviorDescriptor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\tomas\MPSProjects\rtsjSVN\languages\rtsj\classes_gen\rtsj\editor\RawMemoryAccessCreate_Editor.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\tomas\MPSProjects\rtsjSVN\languages\rtsj\classes_gen\rtsj\structure\RawMemoryAccessCreate.class" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/rtsj.sandbox/source_gen/rtsj/sandbox/sandbox/ObjectPoolElement.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/rtsj.sandbox/source_gen/rtsj/sandbox/sandbox/ObjectPoolI.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/rtsj.sandbox/source_gen/rtsj/sandbox/sandbox/ObjectPooljava_lang_Exception.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/rtsj.sandbox/source_gen/rtsj/sandbox/sandbox/ObjectPooljava_lang_ExceptionElement.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/rtsj.sandbox/source_gen/rtsj/sandbox/sandbox/ObjectPooljava_lang_Thread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/rtsj.sandbox/source_gen/rtsj/sandbox/sandbox/ObjectPooljava_lang_ThreadElement.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/rtsj.sandbox/source_gen.caches/rtsj/sandbox/sandbox/dependencies" afterPath="$PROJECT_DIR$/solutions/rtsj.sandbox/source_gen.caches/rtsj/sandbox/sandbox/dependencies" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/rtsj.sandbox/source_gen.caches/rtsj/sandbox/sandbox/generated" afterPath="$PROJECT_DIR$/solutions/rtsj.sandbox/source_gen.caches/rtsj/sandbox/sandbox/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/rtsj.sandbox/source_gen/rtsj/sandbox/sandbox/trace.info" afterPath="$PROJECT_DIR$/solutions/rtsj.sandbox/source_gen/rtsj/sandbox/sandbox/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/rtsj/generator/template/main@generator.mps" afterPath="$PROJECT_DIR$/languages/rtsj/generator/template/main@generator.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/rtsj/languageModels/behavior.mps" afterPath="$PROJECT_DIR$/languages/rtsj/languageModels/behavior.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/rtsj/languageModels/editor.mps" afterPath="$PROJECT_DIR$/languages/rtsj/languageModels/editor.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/rtsj/languageModels/structure.mps" afterPath="$PROJECT_DIR$/languages/rtsj/languageModels/structure.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rtsj.iws" afterPath="$PROJECT_DIR$/rtsj.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/rtsj.sandbox/rtsj/sandbox/sandbox.mps" afterPath="$PROJECT_DIR$/solutions/rtsj.sandbox/rtsj/sandbox/sandbox.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/rtsj.sandbox/source_gen/rtsj/sandbox/sandbox/PrimaryWaterLoopImpl.java" afterPath="$PROJECT_DIR$/solutions/rtsj.sandbox/source_gen/rtsj/sandbox/sandbox/PrimaryWaterLoopImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/rtsj.sandbox/source_gen/rtsj/sandbox/sandbox/Sandbox.java" afterPath="$PROJECT_DIR$/solutions/rtsj.sandbox/source_gen/rtsj/sandbox/sandbox/Sandbox.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/rtsj.sandbox/source_gen/rtsj/sandbox/sandbox/MainDefinition.java" afterPath="$PROJECT_DIR$/solutions/rtsj.sandbox/source_gen/rtsj/sandbox/sandbox/MainDefinition.java" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="rtsj.iws" />
@@ -71,57 +74,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Sandbox" pinned="false" current="true" current-in-tab="true">
-        <entry file="mps://rtsj.sandbox.sandbox/Sandbox">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="158">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="205" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_fao2ea_a0" cellNumber="0" isInList="false">
-                      <node model="r:b7d8e341-f96e-4c42-b291-623c5063924b(rtsj.sandbox.sandbox)" id="6534409807722548616" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <folded />
-              </memento>
-              <inspectorMemento viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <folded />
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RawMemory" pinned="false" current="false" current-in-tab="false">
-        <entry file="mps://rtsj.structure/RawMemory">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="75" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="TransactionalProperty_ueqr71_b0a" cellNumber="0" isInList="false">
-                      <node model="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" id="7427614721109169577" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <folded />
-              </memento>
-              <inspectorMemento viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <folded />
-              </inspectorMemento>
-              <node nodeId="7427614721109169577" modelId="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MainDefinition" pinned="false" current="false" current-in-tab="false">
         <entry file="mps://rtsj.structure/MainDefinition">
           <provider selected="true" editor-type-id="MPSFileEditor">
@@ -139,6 +91,57 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ObjectPool" pinned="false" current="true" current-in-tab="true">
+        <entry file="mps://rtsj.structure/ObjectPool">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+              <memento viewPositionX="0" viewPositionY="226">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="203" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="Constant_9o3sb9_a0_0" cellNumber="0" isInList="false">
+                      <node model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" id="8317077103298698879" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <folded />
+              </memento>
+              <inspectorMemento viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <folded />
+              </inspectorMemento>
+              <node nodeId="6254049394131222760" modelId="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="objectPool1" pinned="false" current="false" current-in-tab="false">
+        <entry file="mps://rtsj.sandbox.sandbox/objectPool1">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.BaseNodeEditor$BaseEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="123" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="ReferencePresentation_91bvrs_a0a0" cellNumber="0" isInList="false">
+                      <node model="r:b7d8e341-f96e-4c42-b291-623c5063924b(rtsj.sandbox.sandbox)" id="8317077103298682806" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <folded />
+              </memento>
+              <inspectorMemento viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <folded />
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -149,6 +152,13 @@
     <option name="autoscrollToSource" value="true" />
     <option name="info" value="true" />
     <option name="warnings" value="true" />
+  </component>
+  <component name="NodeEditorSearchHistory">
+    <option name="searches">
+      <list>
+        <option value="initObjectPool" />
+      </list>
+    </option>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -211,6 +221,11 @@
         </value>
       </option>
       <option name="jetbrains.mps.build.generictasks.plugin.Generictasks_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.build.gentest.plugin.Gentest_ProjectPlugin">
         <value>
           <PluginState />
         </value>
@@ -432,7 +447,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="FileSystem" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -527,34 +541,21 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="rtsj" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="structure" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Empty" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rtsj" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="rtsj.sandbox" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="rtsj.sandbox" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sandbox" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="FileSystem" />
       <pane id="Favorites" />
       <pane id="VCSRoots" />
     </panes>
@@ -563,8 +564,8 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="merge.driver.suppressed.notification" value="false" />
     <property name="options.lastSelected" value="jetbrains.mps.library.ProjectLibraryManager" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager">
     <list size="0" />
@@ -588,10 +589,10 @@
     <supportedVersion>125</supportedVersion>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="20" width="1378" height="694" extended-state="0" />
+    <frame x="-8" y="20" width="1382" height="694" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3291815" sideWeight="0.4854151" order="20" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3291815" sideWeight="0.47651008" order="20" side_tool="false" content_ui="tabs" />
       <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40535715" sideWeight="0.48844147" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33035713" sideWeight="0.42207307" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -600,22 +601,22 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Replacement" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Module Repository Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31494662" sideWeight="0.35826477" order="6" side_tool="false" content_ui="tabs" x="-3" y="312" width="1337" height="178" />
+      <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31494662" sideWeight="0.3557047" order="6" side_tool="false" content_ui="tabs" x="-3" y="312" width="1337" height="178" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="27" side_tool="false" content_ui="tabs" />
       <window_info id="Generation Tracer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26327598" sideWeight="0.6708185" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2624907" sideWeight="0.6708185" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="23" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32384342" sideWeight="0.47045624" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3291815" sideWeight="0.50860137" order="14" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3291815" sideWeight="0.51752424" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Typesystem Trace" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="24" side_tool="false" content_ui="tabs" />
       <window_info id="Analyze Stacktrace" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31494662" sideWeight="0.46746448" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31494662" sideWeight="0.44369873" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24981302" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="Class Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -652,7 +653,7 @@
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reafactoring of RawMemory access." />
+    <option name="LAST_COMMIT_MESSAGE" value="Object pool" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -670,261 +671,124 @@
     <MESSAGE value="Concept for channel for communication between threads." />
     <MESSAGE value="Functional typesystem checking for excepiton-like concepts + bug fixes." />
     <MESSAGE value="Reafactoring of RawMemory access." />
+    <MESSAGE value="Object pool" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="mps://rtsj.sandbox.sandbox/channel2">
+    <entry file="mps://rtsj.generator.template.main@generator/ObjectPoolImpl">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
+          <memento viewPositionX="0" viewPositionY="303">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="83" />
+                <property name="caretX" value="175" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node model="r:b7d8e341-f96e-4c42-b291-623c5063924b(rtsj.sandbox.sandbox)" id="3889169560759630995" />
+                <cellInfo cellId="Constant_jiideg_a0" cellNumber="0" isInList="false">
+                  <node model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" id="8317077103298583587" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
             <folded />
           </memento>
           <inspectorMemento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="83" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node model="r:b7d8e341-f96e-4c42-b291-623c5063924b(rtsj.sandbox.sandbox)" id="3889169560759630995" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <folded />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://rtsj.structure/RawMemoryType">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="179" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node model="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" id="7427614721109166127" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <folded />
-          </memento>
-          <inspectorMemento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="179" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node model="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" id="7427614721109166127" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <folded />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://rtsj.sandbox.sandbox/ControlRodsImpl">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="273">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="71" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_eb7h0d_c4a" cellNumber="0" isInList="false">
-                  <node model="r:b7d8e341-f96e-4c42-b291-623c5063924b(rtsj.sandbox.sandbox)" id="7296282902787935464" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <folded />
-          </memento>
-          <inspectorMemento viewPositionX="0" viewPositionY="273">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="71" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_eb7h0d_c4a" cellNumber="0" isInList="false">
-                  <node model="r:b7d8e341-f96e-4c42-b291-623c5063924b(rtsj.sandbox.sandbox)" id="7296282902787935464" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <folded />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solutions/rtsj.sandbox/source_gen/rtsj/sandbox/sandbox/MainDefinition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="33" selection-start="1317" selection-end="1317" vertical-scroll-proportion="-9.005831" />
-      </provider>
-    </entry>
-    <entry file="mps://rtsj.structure/AllocateVariableStatement">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="83" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" id="63574088154868402" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <folded />
-          </memento>
-          <inspectorMemento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="83" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" id="63574088154868402" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <folded />
-          </inspectorMemento>
-          <node nodeId="63574088154868402" modelId="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://rtsj.structure/InterThreadChannelPop">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="83" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" id="7960034524145883562" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <folded />
-          </memento>
-          <inspectorMemento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="83" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" id="7960034524145883562" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <folded />
-          </inspectorMemento>
-          <node nodeId="7960034524145883562" modelId="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://rtsj.generator.template.main@generator/InterThreadChannelHolder">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="326">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="55" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_eb7h0d_c4a" cellNumber="0" isInList="false">
-                  <node model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" id="7960034524145883448" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <folded />
-          </memento>
-          <inspectorMemento viewPositionX="0" viewPositionY="326">
             <selectionStack />
             <folded />
           </inspectorMemento>
         </state>
       </provider>
     </entry>
-    <entry file="mps://rtsj.structure/InterThreadChannelPush">
+    <entry file="mps://rtsj.generator.template.main@generator/ObjectPoolElement">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+        <state class="jetbrains.mps.ide.BaseNodeEditor$BaseEditorState">
           <memento viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="83" />
+                <property name="caretX" value="111" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" id="7960034524145883567" />
+                <cellInfo cellId="ReferencePresentation_91bvrs_a0a0" cellNumber="0" isInList="false">
+                  <node model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" id="8317077103298594191" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
             <folded />
           </memento>
-          <inspectorMemento viewPositionX="0" viewPositionY="326">
+          <inspectorMemento viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <folded />
           </inspectorMemento>
-          <node nodeId="7960034524145883567" modelId="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/solutions/rtsj.sandbox/source_gen/rtsj/sandbox/sandbox/Sandbox.java">
+    <entry file="file://$PROJECT_DIR$/languages/rtsj/source_gen/rtsj/generator/template/main/QueriesGenerated.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="4" selection-start="171" selection-end="171" vertical-scroll-proportion="0.35084426" />
+        <state line="342" column="31" selection-start="21113" selection-end="21113" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="mps://rtsj.generator.template.main@generator/main">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="120">
+          <memento viewPositionX="31" viewPositionY="1000">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="315" />
+                <property name="caretX" value="207" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name_1" cellNumber="0" isInList="false">
-                  <node model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" id="2244210341897188805" />
+                <cellInfo cellId="property_name_2" cellNumber="0" isInList="false">
+                  <node model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" id="8317077103298481164" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
             <folded />
           </memento>
-          <inspectorMemento viewPositionX="0" viewPositionY="38">
+          <inspectorMemento viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <folded />
           </inspectorMemento>
         </state>
       </provider>
     </entry>
-    <entry file="mps://rtsj.structure/RawMemorySet">
+    <entry file="mps://rtsj.structure/ObjectPoolFree">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <folded />
+          </memento>
+          <inspectorMemento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <folded />
+          </inspectorMemento>
+          <node nodeId="6254049394131257356" modelId="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://rtsj.structure/ObjectPoolGet">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <folded />
+          </memento>
+          <inspectorMemento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <folded />
+          </inspectorMemento>
+          <node nodeId="6254049394131257361" modelId="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://rtsj.generator.template.main@generator/ObjectPoolI">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.BaseNodeEditor$BaseEditorState">
           <memento viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="187" />
+                <property name="caretX" value="235" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="empty_nullInputMessage" cellNumber="0" isInList="false">
-                  <node model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" id="7329253685571162856" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" id="8317077103298594171" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -934,52 +798,20 @@
             <selectionStack />
             <folded />
           </inspectorMemento>
-          <node nodeId="7329253685571162856" modelId="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" />
         </state>
       </provider>
     </entry>
-    <entry file="mps://rtsj.structure/RawMemoryGet">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="360">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="423" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_fgt3_a0" cellNumber="0" isInList="false">
-                  <node model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" id="6534409807722542244" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_fgt3_a" cellNumber="0" isInList="false">
-                  <node model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" id="6534409807722542244" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <folded />
-          </memento>
-          <inspectorMemento viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <folded />
-          </inspectorMemento>
-          <node nodeId="7427614721109169668" modelId="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://rtsj.sandbox.sandbox/PrimaryWaterLoopImpl">
+    <entry file="mps://rtsj.sandbox.sandbox/objectPool1">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="74">
+          <memento viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="55" />
+                <property name="caretX" value="123" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_eb7h0d_c4a" cellNumber="0" isInList="false">
-                  <node model="r:b7d8e341-f96e-4c42-b291-623c5063924b(rtsj.sandbox.sandbox)" id="3711103311464519385" />
+                <cellInfo cellId="ReferencePresentation_91bvrs_a0a0" cellNumber="0" isInList="false">
+                  <node model="r:b7d8e341-f96e-4c42-b291-623c5063924b(rtsj.sandbox.sandbox)" id="8317077103298682806" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -990,6 +822,57 @@
             <folded />
           </inspectorMemento>
         </state>
+      </provider>
+    </entry>
+    <entry file="mps://rtsj.sandbox.sandbox/objectPool2">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="123" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="ReferencePresentation_91bvrs_a0a0" cellNumber="0" isInList="false">
+                  <node model="r:b7d8e341-f96e-4c42-b291-623c5063924b(rtsj.sandbox.sandbox)" id="8317077103298682807" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <folded />
+          </memento>
+          <inspectorMemento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <folded />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://rtsj.sandbox.sandbox/objectPoolDouble">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="147" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="ReferencePresentation_91bvrs_a0a0" cellNumber="0" isInList="false">
+                  <node model="r:b7d8e341-f96e-4c42-b291-623c5063924b(rtsj.sandbox.sandbox)" id="8317077103298682808" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <folded />
+          </memento>
+          <inspectorMemento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <folded />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solutions/rtsj.sandbox/source_gen/rtsj/sandbox/sandbox/ObjectPooljava_lang_Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="22" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="mps://rtsj.structure/MainDefinition">
@@ -1007,17 +890,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://rtsj.structure/RawMemory">
+    <entry file="mps://rtsj.structure/ObjectPool">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
+          <memento viewPositionX="0" viewPositionY="306">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="75" />
+                <property name="caretX" value="203" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="TransactionalProperty_ueqr71_b0a" cellNumber="0" isInList="false">
-                  <node model="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" id="7427614721109169577" />
+                <cellInfo cellId="Constant_9o3sb9_a0_0" cellNumber="0" isInList="false">
+                  <node model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" id="8317077103298698879" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1027,30 +910,7 @@
             <selectionStack />
             <folded />
           </inspectorMemento>
-          <node nodeId="7427614721109169577" modelId="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://rtsj.sandbox.sandbox/Sandbox">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="158">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="205" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_fao2ea_a0" cellNumber="0" isInList="false">
-                  <node model="r:b7d8e341-f96e-4c42-b291-623c5063924b(rtsj.sandbox.sandbox)" id="6534409807722548616" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <folded />
-          </memento>
-          <inspectorMemento viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <folded />
-          </inspectorMemento>
+          <node nodeId="6254049394131222760" modelId="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" />
         </state>
       </provider>
     </entry>

@@ -27,6 +27,7 @@ public class MainDefinition {
   private static HashMap<String, MemoryArea> memories = new HashMap<String, MemoryArea>();
   private static HashMap<String, RawMemoryAccess> rawMemories = new HashMap<String, RawMemoryAccess>();
   private static HashMap<String, InterThreadChannelHolder> channels = new HashMap<String, InterThreadChannelHolder>();
+  private static HashMap<String, ObjectPoolI> objectPools = new HashMap<String, ObjectPoolI>();
 
   public MainDefinition() {
   }
@@ -44,6 +45,8 @@ public class MainDefinition {
 
     initChannel("channel1", Integer.class, 5);
     initChannel("channel2", String.class, 5);
+
+    initObjectPools();
 
     runDefaultMode();
 
@@ -118,6 +121,28 @@ public class MainDefinition {
     }
 
     threads.get(name).interrupt();
+  }
+
+  public static void initObjectPools() {
+    objectPools.put("objectPool1", new ObjectPooljava_lang_Thread(0, false));
+    objectPools.put("objectPool2", new ObjectPooljava_lang_Thread(10, false));
+    objectPools.put("objectPoolDouble", new ObjectPooljava_lang_Exception(5, false));
+  }
+
+  public static ObjectPoolI getObjectPool(String name) {
+    ObjectPoolI objectPool = objectPools.get(name);
+    if (objectPool == null) {
+      killProgram("ObjectPool " + name + " does not exist.");
+    }
+    return objectPool;
+  }
+
+  public static void freeObjectFromOP(Object object) throws Exception {
+    if (object instanceof ObjectPoolElement) {
+      ((ObjectPoolElement) object).getObjectPool().free(object);
+    } else {
+      throw new Exception("Object is not from ObjectPool");
+    }
   }
 
   public static MemoryArea getMemory(String name) {
