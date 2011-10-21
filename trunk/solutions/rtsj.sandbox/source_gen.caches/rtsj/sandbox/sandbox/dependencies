@@ -77,7 +77,41 @@
     <classNode dependClassName="rtsj.sandbox.sandbox.CycleWrapperForPerThread" />
     <classNode dependClassName="rtsj.sandbox.sandbox.InterThreadChannelHolder" />
     <classNode dependClassName="rtsj.sandbox.sandbox.Main" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.ObjectPoolElement" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.ObjectPoolI" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.ObjectPooljava_lang_Exception" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.ObjectPooljava_lang_Thread" />
     <classNode dependClassName="rtsj.sandbox.sandbox.WedgeThread" />
+  </dependency>
+  <dependency className="rtsj.sandbox.sandbox.ObjectPoolElement" file="ObjectPoolElement.java">
+    <classNode dependClassName="rtsj.sandbox.sandbox.ObjectPoolI" />
+  </dependency>
+  <dependency className="rtsj.sandbox.sandbox.ObjectPoolI" file="ObjectPoolI.java">
+    <classNode dependClassName="java.lang.Object" />
+  </dependency>
+  <dependency className="rtsj.sandbox.sandbox.ObjectPooljava_lang_Exception" file="ObjectPooljava_lang_Exception.java">
+    <classNode dependClassName="java.lang.Boolean" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode extendsClassName="rtsj.sandbox.sandbox.ObjectPoolI" />
+  </dependency>
+  <dependency className="rtsj.sandbox.sandbox.ObjectPooljava_lang_ExceptionElement" file="ObjectPooljava_lang_ExceptionElement.java">
+    <classNode dependClassName="rtsj.sandbox.sandbox.ObjectPoolI" />
+    <classNode extendsClassName="java.lang.Exception" />
+    <classNode extendsClassName="rtsj.sandbox.sandbox.ObjectPoolElement" />
+  </dependency>
+  <dependency className="rtsj.sandbox.sandbox.ObjectPooljava_lang_Thread" file="ObjectPooljava_lang_Thread.java">
+    <classNode dependClassName="java.lang.Boolean" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Thread" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode extendsClassName="rtsj.sandbox.sandbox.ObjectPoolI" />
+  </dependency>
+  <dependency className="rtsj.sandbox.sandbox.ObjectPooljava_lang_ThreadElement" file="ObjectPooljava_lang_ThreadElement.java">
+    <classNode dependClassName="rtsj.sandbox.sandbox.ObjectPoolI" />
+    <classNode extendsClassName="java.lang.Thread" />
+    <classNode extendsClassName="rtsj.sandbox.sandbox.ObjectPoolElement" />
   </dependency>
   <dependency className="rtsj.sandbox.sandbox.PrimaryWaterLoopImpl" file="PrimaryWaterLoopImpl.java">
     <classNode dependClassName="java.lang.Double" />
