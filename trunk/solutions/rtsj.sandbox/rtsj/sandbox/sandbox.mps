@@ -1123,19 +1123,15 @@
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="3889169560759676281" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="3889169560759676282" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="3889169560759676283">
-        <node role="statement" roleId="tpee.1068581517665" type="xaf1.InterThreadChannelPush" typeId="xaf1.7960034524145781069" id="2244210341897435278">
-          <link role="channel" roleId="xaf1.7960034524145781070" targetNodeId="3889169560759630995" resolveInfo="channel2" />
-          <node role="obj" roleId="xaf1.2244210341897386833" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2244210341897435280">
-            <property name="value" nameId="tpee.1070475926801" value="ss" />
-          </node>
-        </node>
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="3889169560759554067">
-          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="3889169560759554068">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="2559548703176205246">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="2559548703176205247">
             <property name="name" nameId="tpck.1169194664001" value="a" />
-            <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3889169560759554069">
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2559548703176205248">
               <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~String" resolveInfo="String" />
             </node>
-            <node role="initializer" roleId="tpee.1068431790190" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="3889169560759554071" />
+            <node role="initializer" roleId="tpee.1068431790190" type="xaf1.InterThreadChannelPush" typeId="xaf1.7960034524145781069" id="2559548703176227401">
+              <link role="channel" roleId="xaf1.7960034524145781070" targetNodeId="3889169560759630995" resolveInfo="channel2" />
+            </node>
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2244210341897227268">
@@ -1144,7 +1140,7 @@
               <link role="channel" roleId="xaf1.7960034524145781123" targetNodeId="3889169560759630995" resolveInfo="channel2" />
             </node>
             <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="2244210341897227269">
-              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3889169560759554068" resolveInfo="a" />
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2559548703176205247" resolveInfo="a" />
             </node>
           </node>
         </node>

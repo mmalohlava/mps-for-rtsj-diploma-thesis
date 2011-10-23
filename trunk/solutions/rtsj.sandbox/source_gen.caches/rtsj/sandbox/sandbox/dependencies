@@ -26,15 +26,25 @@
     <classNode dependClassName="rtsj.sandbox.sandbox.IWaterLoop" />
     <classNode extendsClassName="java.lang.Runnable" />
   </dependency>
+  <dependency className="rtsj.sandbox.sandbox.ITChanneljava_lang_Integer" file="ITChanneljava_lang_Integer.java">
+    <classNode dependClassName="java.lang.ArrayIndexOutOfBoundsException" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode extendsClassName="rtsj.sandbox.sandbox.InterThreadChannel" />
+  </dependency>
+  <dependency className="rtsj.sandbox.sandbox.ITChanneljava_lang_String" file="ITChanneljava_lang_String.java">
+    <classNode dependClassName="java.lang.ArrayIndexOutOfBoundsException" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="rtsj.sandbox.sandbox.InterThreadChannel" />
+  </dependency>
   <dependency className="rtsj.sandbox.sandbox.IWaterLoop" file="IWaterLoop.java">
     <classNode dependClassName="java.lang.Double" />
     <classNode dependClassName="rtsj.sandbox.sandbox.IReactor" />
     <classNode extendsClassName="java.lang.Runnable" />
   </dependency>
-  <dependency className="rtsj.sandbox.sandbox.InterThreadChannelHolder" file="InterThreadChannelHolder.java">
-    <classNode dependClassName="java.lang.ArrayIndexOutOfBoundsException" />
-    <classNode dependClassName="java.lang.Class" />
-    <classNode extendsClassName="java.lang.Object" />
+  <dependency className="rtsj.sandbox.sandbox.InterThreadChannel" file="InterThreadChannel.java">
+    <classNode dependClassName="java.lang.Object" />
   </dependency>
   <dependency className="rtsj.sandbox.sandbox.Main" file="Main.java">
     <classNode dependClassName="rtsj.sandbox.sandbox.ControlRodsImpl" />
@@ -52,7 +62,6 @@
     <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="java.lang.IllegalAccessException" />
     <classNode dependClassName="java.lang.InstantiationException" />
-    <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.InterruptedException" />
     <classNode dependClassName="java.lang.Long" />
     <classNode dependClassName="java.lang.Object" />
@@ -75,7 +84,9 @@
     <classNode dependClassName="javax.realtime.SchedulingParameters" />
     <classNode dependClassName="javax.realtime.ScopedMemory" />
     <classNode dependClassName="rtsj.sandbox.sandbox.CycleWrapperForPerThread" />
-    <classNode dependClassName="rtsj.sandbox.sandbox.InterThreadChannelHolder" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.ITChanneljava_lang_Integer" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.ITChanneljava_lang_String" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.InterThreadChannel" />
     <classNode dependClassName="rtsj.sandbox.sandbox.Main" />
     <classNode dependClassName="rtsj.sandbox.sandbox.ObjectPoolElement" />
     <classNode dependClassName="rtsj.sandbox.sandbox.ObjectPoolI" />
