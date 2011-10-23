@@ -32,6 +32,9 @@
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="3889169560759631620">
       <property name="name" nameId="tpck.1169194664001" value="typeof_RawMemoryGet" />
     </node>
+    <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="2559548703176284423">
+      <property name="name" nameId="tpck.1169194664001" value="typeof_InterThreadChannelPush" />
+    </node>
   </roots>
   <root id="3005132233865401092">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="3005132233865401093">
@@ -306,6 +309,43 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="3889169560759631622">
       <property name="name" nameId="tpck.1169194664001" value="obj" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xaf1.7427614721109166103" resolveInfo="RawMemoryGet" />
+    </node>
+  </root>
+  <root id="2559548703176284423">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="2559548703176284424">
+      <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="2559548703176284426">
+        <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="2559548703176284427">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="2559548703176284428">
+            <node role="term" roleId="tpd4.1174657509053" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="2559548703176311427">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="2559548703176284425" resolveInfo="obj" />
+            </node>
+          </node>
+        </node>
+        <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="2559548703176284430">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2559548703176284431">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2559548703176284432">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2559548703176284433">
+                <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="2559548703176311428">
+                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="2559548703176284425" resolveInfo="obj" />
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2559548703176311429">
+                  <link role="link" roleId="tp25.1138056516764" targetNodeId="xaf1.7960034524145781070" />
+                </node>
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2559548703176284436">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="xaf1.7960034524145781013" />
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="2559548703176284437">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="tpek.1213877337320" resolveInfo="getUnboxedType" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="2559548703176284425">
+      <property name="name" nameId="tpck.1169194664001" value="obj" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xaf1.7960034524145781069" resolveInfo="InterThreadChannelPush" />
     </node>
   </root>
 </model>

@@ -26,7 +26,7 @@ public class MainDefinition {
   private static HashMap<String, RealtimeThread> threads = new HashMap<String, RealtimeThread>();
   private static HashMap<String, MemoryArea> memories = new HashMap<String, MemoryArea>();
   private static HashMap<String, RawMemoryAccess> rawMemories = new HashMap<String, RawMemoryAccess>();
-  private static HashMap<String, InterThreadChannelHolder> channels = new HashMap<String, InterThreadChannelHolder>();
+  private static HashMap<String, InterThreadChannel> channels = new HashMap<String, InterThreadChannel>();
   private static HashMap<String, ObjectPoolI> objectPools = new HashMap<String, ObjectPoolI>();
 
   public MainDefinition() {
@@ -42,10 +42,7 @@ public class MainDefinition {
     allocateMemory("ReactionSimulatorMemory", new LTMemory(16, 64), false);
 
     initThreads();
-
-    initChannel("channel1", Integer.class, 5);
-    initChannel("channel2", String.class, 5);
-
+    initChannels();
     initObjectPools();
 
     runDefaultMode();
@@ -234,11 +231,12 @@ public class MainDefinition {
     getThread("ControlRods").setReleaseParameters(new AperiodicParameters(new RelativeTime(0, 0), new RelativeTime(Long.MAX_VALUE, 999999), null, null));
   }
 
-  public static void initChannel(String name, Class messageType, int messageNumber) {
-    channels.put(name, new InterThreadChannelHolder(messageType, messageNumber));
+  public static void initChannels() {
+    channels.put("channel1", new ITChanneljava_lang_Integer(5));
+    channels.put("channel2", new ITChanneljava_lang_String(5));
   }
 
-  public static InterThreadChannelHolder getChannel(String name) {
+  public static InterThreadChannel getChannel(String name) {
     return channels.get(name);
   }
 
