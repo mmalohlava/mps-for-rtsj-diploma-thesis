@@ -121,9 +121,13 @@
     <nodeInfo nodeId="6534409807722553613" fileName="Sandbox.java" startLine="16" startPosition="24" endLine="17" endPosition="91" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="3889169560759670498" fileName="Sandbox.java" startLine="17" startPosition="91" endLine="18" endPosition="11" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="6534409807722627536" fileName="Sandbox.java" startLine="18" startPosition="11" endLine="19" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1992275765524953757" fileName="Sandbox.java" startLine="22" startPosition="24" endLine="23" endPosition="92" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1992275765524953768" fileName="Sandbox.java" startLine="23" startPosition="92" endLine="24" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1992275765524953774" fileName="Sandbox.java" startLine="24" startPosition="19" endLine="25" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="3889169560759676276" fileName="Sandbox.java" startLine="7" startPosition="22" endLine="9" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="Sandbox#()V" />
     <nodeInfo nodeId="3889169560759676280" fileName="Sandbox.java" startLine="10" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="dummy#()V" />
     <nodeInfo nodeId="6534409807722548616" fileName="Sandbox.java" startLine="15" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="dummy2#()V" />
+    <nodeInfo nodeId="1992275765524953753" fileName="Sandbox.java" startLine="21" startPosition="0" endLine="27" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="dummy3#()V" />
     <scopeInfo nodeId="3889169560759676279" fileName="Sandbox.java" startLine="8" startPosition="20" endLine="8" endPosition="20" />
     <scopeInfo nodeId="3889169560759676276" fileName="Sandbox.java" startLine="7" startPosition="22" endLine="9" endPosition="3" />
     <scopeInfo nodeId="3889169560759676283" fileName="Sandbox.java" startLine="11" startPosition="23" endLine="13" endPosition="66">
@@ -132,9 +136,14 @@
     <scopeInfo nodeId="6534409807722548619" fileName="Sandbox.java" startLine="16" startPosition="24" endLine="19" endPosition="67">
       <varInfo nodeId="3889169560759670499" varName="b" />
     </scopeInfo>
+    <scopeInfo nodeId="1992275765524953756" fileName="Sandbox.java" startLine="22" startPosition="24" endLine="25" endPosition="26">
+      <varInfo nodeId="1992275765524953769" varName="b" />
+      <varInfo nodeId="1992275765524953758" varName="aa" />
+    </scopeInfo>
     <scopeInfo nodeId="3889169560759676280" fileName="Sandbox.java" startLine="10" startPosition="0" endLine="15" endPosition="0" />
     <scopeInfo nodeId="6534409807722548616" fileName="Sandbox.java" startLine="15" startPosition="0" endLine="21" endPosition="0" />
-    <unitInfo nodeId="3889169560759676274" fileName="Sandbox.java" startLine="7" startPosition="0" endLine="22" endPosition="0" unitName="rtsj.sandbox.sandbox.Sandbox" />
+    <scopeInfo nodeId="1992275765524953753" fileName="Sandbox.java" startLine="21" startPosition="0" endLine="27" endPosition="0" />
+    <unitInfo nodeId="3889169560759676274" fileName="Sandbox.java" startLine="7" startPosition="0" endLine="28" endPosition="0" unitName="rtsj.sandbox.sandbox.Sandbox" />
   </root>
   <root nodeId="7296282902787866538">
     <nodeInfo nodeId="3711103311464452439" fileName="ReactionSimulatorImpl.java" startLine="6" startPosition="56" endLine="7" endPosition="104" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="temperature" />

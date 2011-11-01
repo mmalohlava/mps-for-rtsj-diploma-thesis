@@ -18,4 +18,10 @@ public class Sandbox {
     byte b;
     b = MainDefinition.getRawMemoryAccess("rawMemory1").getByte(5);
   }
+
+  public void dummy3() {
+    Integer aa = (Integer) MainDefinition.allocateVariable("immortalMemory", Integer.class);
+    Integer b = aa;
+    System.out.println(b);
+  }
 }

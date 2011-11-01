@@ -121,7 +121,7 @@ public class MainDefinition {
   }
 
   public static void initObjectPools() {
-    objectPools.put("objectPool1", new ObjectPooljava_lang_Thread(0, false));
+    objectPools.put("objectPool1", new ObjectPooljava_lang_Thread(5, false));
     objectPools.put("objectPool2", new ObjectPooljava_lang_Thread(10, false));
     objectPools.put("objectPoolDouble", new ObjectPooljava_lang_Exception(5, false));
   }
