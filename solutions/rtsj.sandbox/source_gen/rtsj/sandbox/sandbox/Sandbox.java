@@ -24,4 +24,8 @@ public class Sandbox {
     Integer b = aa;
     System.out.println(b);
   }
+
+  public void dummy4() {
+    Thread a = (Thread) MainDefinition.getObjectPool("objectPool1").get();
+  }
 }

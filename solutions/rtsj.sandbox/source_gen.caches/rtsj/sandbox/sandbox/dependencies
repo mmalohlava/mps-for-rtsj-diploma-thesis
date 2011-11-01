@@ -139,6 +139,7 @@
   <dependency className="rtsj.sandbox.sandbox.Sandbox" file="Sandbox.java">
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.lang.Thread" />
     <classNode dependClassName="javax.realtime.RawMemoryAccess" />
     <classNode dependClassName="rtsj.sandbox.sandbox.IntProxy" />
     <classNode dependClassName="rtsj.sandbox.sandbox.MainDefinition" />
