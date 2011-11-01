@@ -4,6 +4,6 @@ package rtsj.sandbox.sandbox;
 
 
 public interface InterThreadChannel {
-  public Object getEmpty();
-  public Object getSent();
+  public void push(InterThreadChannelElement obj);
+  public InterThreadChannelElement pop();
 }

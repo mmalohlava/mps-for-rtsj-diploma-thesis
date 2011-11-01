@@ -1796,7 +1796,7 @@
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7960034524145781102">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="7960034524145781103" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7960034524145781104">
-        <property name="text" nameId="tpc2.1073389577007" value="getFreeFromChannel" />
+        <property name="text" nameId="tpc2.1073389577007" value="pushToChannel" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7960034524145781117">
         <property name="text" nameId="tpc2.1073389577007" value="(" />
@@ -1809,6 +1809,12 @@
           </node>
         </node>
       </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4454671662721896980">
+        <property name="text" nameId="tpc2.1073389577007" value="," />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="4454671662721896983">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="xaf1.4454671662721896982" />
+      </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7960034524145781113">
         <property name="text" nameId="tpc2.1073389577007" value=")" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationLeftStyleClassItem" typeId="tpc2.1233758997495" id="7960034524145781114">
@@ -1818,13 +1824,16 @@
           <property name="labelName" nameId="tpc2.1238091709220" value="body-paren" />
         </node>
       </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4454671662722063281">
+        <property name="text" nameId="tpc2.1073389577007" value=";" />
+      </node>
     </node>
   </root>
   <root id="7960034524145781124">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7960034524145781126">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="7960034524145781127" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7960034524145781128">
-        <property name="text" nameId="tpc2.1073389577007" value="getSentFromChannel" />
+        <property name="text" nameId="tpc2.1073389577007" value="popFromChannel" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7960034524145781129">
         <property name="text" nameId="tpc2.1073389577007" value="(" />

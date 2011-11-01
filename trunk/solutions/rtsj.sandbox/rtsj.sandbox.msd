@@ -6,6 +6,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="false">bfbdbf14-2038-46b2-9221-b72d54df5e04(rtsj#3005132233865499107)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>95220e4e-a271-48e4-8488-c48145fd3f16(rtsj)</usedLanguage>
