@@ -63,13 +63,15 @@ public class MainDefinition {
 
   public static Object allocateVariable(String memoryName, Class clazz) {
     Object variable = null;
-    try {
-      variable = getMemory(memoryName).newInstance(clazz);
-    } catch (IllegalAccessException e) {
-      killProgram(e);
-    } catch (InstantiationException e) {
-      killProgram(e);
-    }
+    /*
+      try {
+        variable = getMemory(memoryName).newInstance(clazz);
+      } catch (IllegalAccessException e) {
+        killProgram(e);
+      } catch (InstantiationException e) {
+        killProgram(e);
+      }
+    */
     return variable;
   }
 
@@ -232,8 +234,8 @@ public class MainDefinition {
   }
 
   public static void initChannels() {
-    channels.put("channel1", new ITChanneljava_lang_Integer(5));
-    channels.put("channel2", new ITChanneljava_lang_String(5));
+    channels.put("channel1", new ITChannelrtsj_sandbox_sandbox_IntProxy(5));
+    channels.put("channel2", new ITChannelrtsj_sandbox_sandbox_IntProxy(5));
   }
 
   public static InterThreadChannel getChannel(String name) {

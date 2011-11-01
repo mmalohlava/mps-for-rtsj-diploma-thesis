@@ -9,8 +9,8 @@ public class Sandbox {
   }
 
   public void dummy() {
-    String a = (String) MainDefinition.getChannel("channel2").getEmpty();
-    a = (String) MainDefinition.getChannel("channel2").getEmpty();
+    MainDefinition.getChannel("channel2").push(new IntProxy());
+    IntProxy a = (IntProxy) MainDefinition.getChannel("channel2").pop();
   }
 
   public void dummy2() {
