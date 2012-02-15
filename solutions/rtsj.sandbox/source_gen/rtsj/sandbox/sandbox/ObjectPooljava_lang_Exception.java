@@ -33,7 +33,7 @@ public class ObjectPooljava_lang_Exception implements ObjectPoolI {
   public void free(Object object) {
     for (int i = 0; i < size; ++i) {
       if (objects.get(i) == object) {
-        // <node> 
+        isFree.set(i, true);
       }
     }
   }
