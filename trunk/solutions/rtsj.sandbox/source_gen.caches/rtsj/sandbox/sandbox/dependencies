@@ -26,20 +26,13 @@
     <classNode dependClassName="rtsj.sandbox.sandbox.IWaterLoop" />
     <classNode extendsClassName="java.lang.Runnable" />
   </dependency>
-  <dependency className="rtsj.sandbox.sandbox.ITChannelrtsj_sandbox_sandbox_IntProxy" file="ITChannelrtsj_sandbox_sandbox_IntProxy.java">
-    <classNode dependClassName="java.lang.ArrayIndexOutOfBoundsException" />
-    <classNode dependClassName="rtsj.sandbox.sandbox.IntProxy" />
-    <classNode dependClassName="rtsj.sandbox.sandbox.InterThreadChannelElement" />
-    <classNode extendsClassName="rtsj.sandbox.sandbox.InterThreadChannel" />
-  </dependency>
   <dependency className="rtsj.sandbox.sandbox.IWaterLoop" file="IWaterLoop.java">
     <classNode dependClassName="java.lang.Double" />
     <classNode dependClassName="rtsj.sandbox.sandbox.IReactor" />
     <classNode extendsClassName="java.lang.Runnable" />
   </dependency>
   <dependency className="rtsj.sandbox.sandbox.IntProxy" file="IntProxy.java">
-    <classNode dependClassName="java.lang.Object" />
-    <classNode extendsClassName="rtsj.generator.template.main.InterThreadChannelElement" />
+    <classNode dependClassName="java.lang.Integer" />
   </dependency>
   <dependency className="rtsj.sandbox.sandbox.InterThreadChannel" file="InterThreadChannel.java">
     <classNode dependClassName="rtsj.sandbox.sandbox.InterThreadChannelElement" />
@@ -62,12 +55,10 @@
     <classNode dependClassName="java.lang.IllegalAccessException" />
     <classNode dependClassName="java.lang.InstantiationException" />
     <classNode dependClassName="java.lang.InterruptedException" />
-    <classNode dependClassName="java.lang.Long" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.util.HashMap" />
-    <classNode dependClassName="javax.realtime.AperiodicParameters" />
     <classNode dependClassName="javax.realtime.ImmortalMemory" />
     <classNode dependClassName="javax.realtime.LTMemory" />
     <classNode dependClassName="javax.realtime.MemoryArea" />
@@ -83,7 +74,6 @@
     <classNode dependClassName="javax.realtime.SchedulingParameters" />
     <classNode dependClassName="javax.realtime.ScopedMemory" />
     <classNode dependClassName="rtsj.sandbox.sandbox.CycleWrapperForPerThread" />
-    <classNode dependClassName="rtsj.sandbox.sandbox.ITChannelrtsj_sandbox_sandbox_IntProxy" />
     <classNode dependClassName="rtsj.sandbox.sandbox.InterThreadChannel" />
     <classNode dependClassName="rtsj.sandbox.sandbox.Main" />
     <classNode dependClassName="rtsj.sandbox.sandbox.ObjectPoolElement" />
@@ -141,7 +131,7 @@
     <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.lang.Thread" />
     <classNode dependClassName="javax.realtime.RawMemoryAccess" />
-    <classNode dependClassName="rtsj.sandbox.sandbox.IntProxy" />
+    <classNode dependClassName="javax.realtime.SizeEstimator" />
     <classNode dependClassName="rtsj.sandbox.sandbox.MainDefinition" />
   </dependency>
   <dependency className="rtsj.sandbox.sandbox.WedgeThread" file="WedgeThread.java">

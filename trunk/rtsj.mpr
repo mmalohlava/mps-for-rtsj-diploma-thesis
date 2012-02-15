@@ -6,8 +6,8 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="${project}/solutions/rtsj.sandbox/rtsj.sandbox.msd" />
       <modulePath path="${project}/languages/rtsj/rtsj.mpl" />
+      <modulePath path="${project}/solutions/rtsj.sandbox/rtsj.sandbox.msd" />
     </projectModules>
     <genConfs />
   </component>

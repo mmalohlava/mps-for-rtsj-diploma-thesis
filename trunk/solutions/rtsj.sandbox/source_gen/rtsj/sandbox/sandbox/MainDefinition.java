@@ -17,7 +17,6 @@ import javax.realtime.ReleaseParameters;
 import javax.realtime.PeriodicParameters;
 import javax.realtime.RelativeTime;
 import javax.realtime.NoHeapRealtimeThread;
-import javax.realtime.AperiodicParameters;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
@@ -45,7 +44,7 @@ public class MainDefinition {
     initChannels();
     initObjectPools();
 
-    runDefaultMode();
+    runModeDefaultMode();
 
     getThread("ReactionSimulator").start();
     getThread("ControlRods").start();
@@ -63,15 +62,13 @@ public class MainDefinition {
 
   public static Object allocateVariable(String memoryName, Class clazz) {
     Object variable = null;
-    /*
-      try {
-        variable = getMemory(memoryName).newInstance(clazz);
-      } catch (IllegalAccessException e) {
-        killProgram(e);
-      } catch (InstantiationException e) {
-        killProgram(e);
-      }
-    */
+    try {
+      variable = getMemory(memoryName).newInstance(clazz);
+    } catch (IllegalAccessException e) {
+      killProgram(e);
+    } catch (InstantiationException e) {
+      killProgram(e);
+    }
     return variable;
   }
 
@@ -218,7 +215,7 @@ public class MainDefinition {
     return thread;
   }
 
-  public static void runDefaultMode() {
+  public static void runModeDefaultMode() {
     getThread("ControlRods").start();
 
     try {
@@ -230,12 +227,10 @@ public class MainDefinition {
     getThread("PrimaryWaterLoop").interrupt();
 
 
-    getThread("ControlRods").setReleaseParameters(new AperiodicParameters(new RelativeTime(0, 0), new RelativeTime(Long.MAX_VALUE, 999999), null, null));
+    getThread("ControlRods").setReleaseParameters(new PeriodicParameters(new RelativeTime(1, 0), new RelativeTime(5, 0), new RelativeTime(0, 0), new RelativeTime(5, 0), null, null));
   }
 
   public static void initChannels() {
-    channels.put("channel1", new ITChannelrtsj_sandbox_sandbox_IntProxy(5));
-    channels.put("channel2", new ITChannelrtsj_sandbox_sandbox_IntProxy(5));
   }
 
   public static InterThreadChannel getChannel(String name) {
