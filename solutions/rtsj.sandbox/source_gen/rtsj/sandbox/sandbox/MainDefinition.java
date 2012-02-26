@@ -36,6 +36,7 @@ public class MainDefinition {
     new Main().run();
 
     allocateMemory("immortalMemory", ImmortalMemory.instance(), false);
+    allocateMemory("bla", new LTMemory(2, 8), false);
     allocateMemory("ControlRodsMemory", new LTMemory(16, 64), false);
     allocateMemory("PrimaryWaterLoopMemory", new LTMemory(16, 64), false);
     allocateMemory("ReactionSimulatorMemory", new LTMemory(16, 64), false);

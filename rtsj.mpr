@@ -7,6 +7,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="${project}/languages/rtsj/rtsj.mpl" />
+      <modulePath path="${project}/solutions/rtsj.build/rtsj.build.msd" />
       <modulePath path="${project}/solutions/rtsj.sandbox/rtsj.sandbox.msd" />
     </projectModules>
     <genConfs />

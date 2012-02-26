@@ -130,6 +130,7 @@
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.lang.Thread" />
+    <classNode dependClassName="javax.realtime.LTMemory" />
     <classNode dependClassName="javax.realtime.RawMemoryAccess" />
     <classNode dependClassName="javax.realtime.SizeEstimator" />
     <classNode dependClassName="rtsj.sandbox.sandbox.MainDefinition" />

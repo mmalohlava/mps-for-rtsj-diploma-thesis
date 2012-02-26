@@ -303,7 +303,7 @@
             </node>
             <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="3005132233865437741" />
             <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2740511021581516716">
-              <property name="text" nameId="tpc2.1073389577007" value="kB" />
+              <property name="text" nameId="tpc2.1073389577007" value="B" />
             </node>
           </node>
           <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="3005132233865437742">
@@ -321,7 +321,7 @@
               <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="xaf1.3005132233865429304" />
             </node>
             <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2740511021581516718">
-              <property name="text" nameId="tpc2.1073389577007" value="kB" />
+              <property name="text" nameId="tpc2.1073389577007" value="B" />
             </node>
           </node>
           <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8019732585718431855">
