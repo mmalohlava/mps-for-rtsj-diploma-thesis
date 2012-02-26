@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="rtsj.build.rtsj-compile" file="rtsj-compile.xml" />
+  <dependency className="rtsj.build.rtsj-default" file="rtsj-default.xml" />
+  <dependency className="rtsj.build.rtsj-languages" file="rtsj-languages.xml" />
+  <dependency className="rtsj.build.rtsj" file="rtsj.properties" />
+</dependenciesRoot>
+

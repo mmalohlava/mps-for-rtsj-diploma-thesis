@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <root nodeId="3936669925420445739">
+    <nodeInfo nodeId="3936669925420445739" fileName="rtsj.properties" startLine="1" startPosition="0" endLine="1" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GIndent" />
+    <nodeInfo nodeId="3936669925420445739" fileName="rtsj.properties" startLine="1" startPosition="0" endLine="1" endPosition="8" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="3936669925420445739" fileName="rtsj.properties" startLine="1" startPosition="8" endLine="1" endPosition="9" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="3936669925420445739" fileName="rtsj.properties" startLine="1" startPosition="9" endLine="1" endPosition="43" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="3936669925420445739" fileName="rtsj.properties" startLine="2" startPosition="0" endLine="2" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GIndent" />
+    <nodeInfo nodeId="3936669925420445739" fileName="rtsj.properties" startLine="2" startPosition="0" endLine="2" endPosition="10" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="3936669925420445739" fileName="rtsj.properties" startLine="2" startPosition="10" endLine="2" endPosition="11" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="3936669925420445739" fileName="rtsj.properties" startLine="2" startPosition="11" endLine="2" endPosition="32" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="3936669925420445739" fileName="rtsj.properties" startLine="3" startPosition="0" endLine="3" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GIndent" />
+    <nodeInfo nodeId="3936669925420445739" fileName="rtsj.properties" startLine="3" startPosition="0" endLine="3" endPosition="11" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="3936669925420445739" fileName="rtsj.properties" startLine="3" startPosition="11" endLine="3" endPosition="12" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="3936669925420445739" fileName="rtsj.properties" startLine="3" startPosition="12" endLine="3" endPosition="29" conceptFqName="jetbrains.mps.gtext.structure.GText" />
+    <nodeInfo nodeId="3936669925420445739" fileName="rtsj.properties" startLine="1" startPosition="0" endLine="2" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="3936669925420445739" fileName="rtsj.properties" startLine="1" startPosition="43" endLine="2" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GNewLine" />
+    <nodeInfo nodeId="3936669925420445739" fileName="rtsj.properties" startLine="2" startPosition="0" endLine="3" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="3936669925420445739" fileName="rtsj.properties" startLine="2" startPosition="32" endLine="3" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GNewLine" />
+    <nodeInfo nodeId="3936669925420445739" fileName="rtsj.properties" startLine="3" startPosition="0" endLine="4" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GItemList" />
+    <nodeInfo nodeId="3936669925420445739" fileName="rtsj.properties" startLine="3" startPosition="29" endLine="4" endPosition="0" conceptFqName="jetbrains.mps.gtext.structure.GNewLine" />
+    <unitInfo nodeId="3936669925420445739" fileName="rtsj.properties" startLine="1" startPosition="0" endLine="4" endPosition="0" unitName="rtsj.properties" />
+  </root>
+</debugInfo>
+
