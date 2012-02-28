@@ -11,7 +11,6 @@ public class Sandbox {
   }
 
   public void dummy() {
-
     MainDefinition.allocateMemory("bla", new LTMemory(2, 8), false);
 
   }
