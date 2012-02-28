@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="14" />
+    </dependencies>
+    <rename id="xaf1.3176991082622923859" type="CONCEPT" from="interface" to="inter" />
+  </StructureModification>
+</history>
+

@@ -26,6 +26,12 @@
     <classNode dependClassName="rtsj.sandbox.sandbox.IWaterLoop" />
     <classNode extendsClassName="java.lang.Runnable" />
   </dependency>
+  <dependency className="rtsj.sandbox.sandbox.ITChannelrtsj_sandbox_sandbox_IntProxy" file="ITChannelrtsj_sandbox_sandbox_IntProxy.java">
+    <classNode dependClassName="java.lang.ArrayIndexOutOfBoundsException" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.IntProxy" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.InterThreadChannelElement" />
+    <classNode extendsClassName="rtsj.sandbox.sandbox.InterThreadChannel" />
+  </dependency>
   <dependency className="rtsj.sandbox.sandbox.IWaterLoop" file="IWaterLoop.java">
     <classNode dependClassName="java.lang.Double" />
     <classNode dependClassName="rtsj.sandbox.sandbox.IReactor" />
@@ -33,6 +39,7 @@
   </dependency>
   <dependency className="rtsj.sandbox.sandbox.IntProxy" file="IntProxy.java">
     <classNode dependClassName="java.lang.Integer" />
+    <classNode extendsClassName="rtsj.sandbox.sandbox.InterThreadChannelElement" />
   </dependency>
   <dependency className="rtsj.sandbox.sandbox.InterThreadChannel" file="InterThreadChannel.java">
     <classNode dependClassName="rtsj.sandbox.sandbox.InterThreadChannelElement" />
@@ -74,6 +81,7 @@
     <classNode dependClassName="javax.realtime.SchedulingParameters" />
     <classNode dependClassName="javax.realtime.ScopedMemory" />
     <classNode dependClassName="rtsj.sandbox.sandbox.CycleWrapperForPerThread" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.ITChannelrtsj_sandbox_sandbox_IntProxy" />
     <classNode dependClassName="rtsj.sandbox.sandbox.InterThreadChannel" />
     <classNode dependClassName="rtsj.sandbox.sandbox.Main" />
     <classNode dependClassName="rtsj.sandbox.sandbox.ObjectPoolElement" />
@@ -133,6 +141,7 @@
     <classNode dependClassName="javax.realtime.LTMemory" />
     <classNode dependClassName="javax.realtime.RawMemoryAccess" />
     <classNode dependClassName="javax.realtime.SizeEstimator" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.IntProxy" />
     <classNode dependClassName="rtsj.sandbox.sandbox.MainDefinition" />
   </dependency>
   <dependency className="rtsj.sandbox.sandbox.WedgeThread" file="WedgeThread.java">

@@ -231,6 +231,7 @@ public class MainDefinition {
   }
 
   public static void initChannels() {
+    channels.put("channel1", new ITChannelrtsj_sandbox_sandbox_IntProxy(10));
   }
 
   public static InterThreadChannel getChannel(String name) {

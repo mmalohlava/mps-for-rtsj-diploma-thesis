@@ -4,5 +4,5 @@ package rtsj.sandbox.sandbox;
 
 
 public interface InterThreadChannelElement<T> {
-  public void clone(T target);
+  public void clone(T object);
 }

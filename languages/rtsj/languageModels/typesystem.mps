@@ -674,22 +674,26 @@
   </root>
   <root id="4454671662722060254">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="4454671662722060255">
-      <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateStrongLessThanInequationStatement" typeId="tpd4.1179832490862" id="4454671662722089020">
-        <property name="inequationPriority" nameId="tpd4.1212056105818" value="0" />
-        <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="4454671662722096636">
-          <node role="normalType" roleId="tpd4.1185788644032" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="4454671662722096640">
-            <node role="quotedNode" roleId="tp3r.1196350785114" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="4454671662722096641">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="7eel.4454671662721905451" resolveInfo="InterThreadChannelElement" />
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="1046795583932102643">
+        <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.StatementCommentPart" typeId="tpee.6329021646629175143" id="1046795583932102644">
+          <node role="commentedStatement" roleId="tpee.6329021646629175144" type="tpd4.CreateStrongLessThanInequationStatement" typeId="tpd4.1179832490862" id="4454671662722089020">
+            <property name="inequationPriority" nameId="tpd4.1212056105818" value="0" />
+            <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="4454671662722096636">
+              <node role="normalType" roleId="tpd4.1185788644032" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="4454671662722096640">
+                <node role="quotedNode" roleId="tp3r.1196350785114" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="4454671662722096641">
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="7eel.4454671662721905451" resolveInfo="InterThreadChannelElement" />
+                </node>
+              </node>
             </node>
-          </node>
-        </node>
-        <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="4454671662722096629">
-          <node role="normalType" roleId="tpd4.1185788644032" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4454671662722096631">
-            <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="4454671662722096630">
-              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="4454671662722060256" resolveInfo="obj" />
-            </node>
-            <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="4454671662722096635">
-              <link role="link" roleId="tp25.1138056516764" targetNodeId="xaf1.7960034524145781013" />
+            <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="4454671662722096629">
+              <node role="normalType" roleId="tpd4.1185788644032" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4454671662722096631">
+                <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="4454671662722096630">
+                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="4454671662722060256" resolveInfo="obj" />
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="4454671662722096635">
+                  <link role="link" roleId="tp25.1138056516764" targetNodeId="xaf1.7960034524145781013" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
