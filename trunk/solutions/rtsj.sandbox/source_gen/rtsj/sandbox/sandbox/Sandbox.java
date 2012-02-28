@@ -36,4 +36,11 @@ public class Sandbox {
     estimator.reserve(Integer.class, 2);
     System.out.print(estimator.getEstimate());
   }
+
+  public void dummy6() {
+    IntProxy message = new IntProxy();
+    MainDefinition.getChannel("channel1").push(message);
+
+    IntProxy a = (IntProxy) MainDefinition.getChannel("channel1").pop();
+  }
 }

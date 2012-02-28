@@ -198,9 +198,6 @@
     <node role="createRootRule" roleId="tpf8.1167088157977" type="tpf8.CreateRootRule" typeId="tpf8.1167087469898" id="8317077103298372820">
       <link role="templateNode" roleId="tpf8.1167087469901" targetNodeId="6254049394131281796" resolveInfo="ObjectPoolElement" />
     </node>
-    <node role="createRootRule" roleId="tpf8.1167088157977" type="tpf8.CreateRootRule" typeId="tpf8.1167087469898" id="4454671662722056825">
-      <link role="templateNode" roleId="tpf8.1167087469901" targetNodeId="4454671662721905451" resolveInfo="InterThreadChannelElement" />
-    </node>
     <node role="mappingLabel" roleId="tpf8.1200911492601" type="tpf8.MappingLabelDeclaration" typeId="tpf8.1200911316486" id="6158663341622314080">
       <property name="name" nameId="tpck.1169194664001" value="aa" />
       <link role="sourceConcept" roleId="tpf8.1200911342686" targetNodeId="xaf1.3005132233865386800" resolveInfo="MemoryArea" />

@@ -184,6 +184,11 @@
       <property name="name" nameId="tpck.1169194664001" value="ObjectPoolFree" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
     </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1046795583932046113">
+      <property name="name" nameId="tpck.1169194664001" value="InterThreadChannelElement" />
+      <property name="rootable" nameId="tpce.1096454100552" value="true" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1107796713796" resolveInfo="Interface" />
+    </node>
   </roots>
   <root id="3005132233865386782">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3005132233865386795">
@@ -785,5 +790,6 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
     </node>
   </root>
+  <root id="1046795583932046113" />
 </model>
 
