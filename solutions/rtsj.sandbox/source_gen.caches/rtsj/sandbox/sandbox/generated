@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="1zx4be81r899kzey4rvheg83oxkp1pm">
+<dependencies version="2" modelHash="8wz4ea82ubqtmi7vazcps1yg9u6ex6i">
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
@@ -7,7 +7,7 @@
   <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
-  <dep model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" hash="epfq9b9ewvc329oz03ptrf60mwjy075" />
+  <dep model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" hash="46922vpr9ovu86805hk9t8d2u9an5ls" />
   <common hash="6vo12ndk15f572d3r67f6p4jlqolt9g">
     <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
@@ -27,7 +27,6 @@
   </source>
   <source id="7904365484846574974" hash="7wqqgigbduhtamkmy5abqun68yl5zk7" dependsOnNodes="true">
     <dep root="3005132233865492713" />
-    <dep root="3889169560759676274" />
     <dep root="7296282902787866533" />
     <dep root="7296282902787885237" />
     <dep root="7296282902787885242" />
@@ -123,7 +122,7 @@
   <source id="9175908796922228529" name="DefaultMode" hash="62dys9jgyv5mxevpod53quiomel2hd4">
     <dep model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" />
   </source>
-  <source id="3889169560759676274" name="Sandbox" hash="2435dhdhgf0i9db0r5e7nwb0hh2akna">
+  <source id="3889169560759676274" name="Sandbox" hash="cof1ck9pnsdovqal2m2fb259wu1m1d5">
     <dep root="3005132233865492713" />
     <dep root="8317077103298360823" />
     <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
