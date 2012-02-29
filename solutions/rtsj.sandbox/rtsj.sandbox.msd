@@ -10,6 +10,7 @@
   </dependencies>
   <usedLanguages>
     <usedLanguage>95220e4e-a271-48e4-8488-c48145fd3f16(rtsj)</usedLanguage>
+    <usedLanguage>c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</usedLanguage>
   </usedLanguages>
 </solution>
 
