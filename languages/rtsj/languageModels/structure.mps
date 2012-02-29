@@ -11,25 +11,30 @@
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3005132233865386782">
       <property name="name" nameId="tpck.1169194664001" value="RealtimeThread" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3005132233865386800">
       <property name="name" nameId="tpck.1169194664001" value="MemoryArea" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3005132233865429302">
       <property name="name" nameId="tpck.1169194664001" value="ScopedMemory" />
       <property name="rootable" nameId="tpce.1096454100552" value="true" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="3005132233865386800" resolveInfo="MemoryArea" />
     </node>
     <node type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="3005132233865429329">
       <property name="name" nameId="tpck.1169194664001" value="ScopedMemoryType" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
       <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
       <link role="defaultMember" roleId="tpce.1083241965437" targetNodeId="3005132233865429330" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3005132233865491185">
       <property name="name" nameId="tpck.1169194664001" value="ImmortalMemory" />
       <property name="rootable" nameId="tpce.1096454100552" value="true" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="3005132233865386800" resolveInfo="MemoryArea" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7904365484846534745">
@@ -39,154 +44,190 @@
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7904365484846574988">
       <property name="name" nameId="tpck.1169194664001" value="MemoryAreaReference" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7904365484846582772">
       <property name="name" nameId="tpck.1169194664001" value="RealtimeThreadReference" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9184680382602267965">
       <property name="name" nameId="tpck.1169194664001" value="EnterMemoryStatement" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9184680382602267967">
       <property name="name" nameId="tpck.1169194664001" value="RunThreadStatement" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="63574088154539762">
       <property name="name" nameId="tpck.1169194664001" value="PeriodicThread" />
       <property name="rootable" nameId="tpce.1096454100552" value="true" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="3005132233865386782" resolveInfo="RealtimeThread" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="63574088154539765">
       <property name="name" nameId="tpck.1169194664001" value="AperiodicThread" />
       <property name="rootable" nameId="tpce.1096454100552" value="true" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="3005132233865386782" resolveInfo="RealtimeThread" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="63574088154539766">
       <property name="name" nameId="tpck.1169194664001" value="SporadicThread" />
       <property name="rootable" nameId="tpce.1096454100552" value="true" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="3005132233865386782" resolveInfo="RealtimeThread" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="63574088154658466">
       <property name="name" nameId="tpck.1169194664001" value="AllocateVariableStatement" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068581242863" resolveInfo="LocalVariableDeclaration" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5373531043073845422">
       <property name="name" nameId="tpck.1169194664001" value="SizeEstimator" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory.sizeEstimator" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5373531043073845442">
       <property name="name" nameId="tpck.1169194664001" value="SizeEstimatorReserve" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory.sizeEstimator" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5373531043073895538">
       <property name="name" nameId="tpck.1169194664001" value="SizeEstimatorEstimate" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory.sizeEstimator" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5373531043074068606">
       <property name="name" nameId="tpck.1169194664001" value="AllocateMemoryStatement" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7296282902787822429">
       <property name="name" nameId="tpck.1169194664001" value="WaitForNextPeriod" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3331830405436094005">
       <property name="name" nameId="tpck.1169194664001" value="AllocateAtributte" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068390468200" resolveInfo="FieldDeclaration" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7427614721109166103">
       <property name="name" nameId="tpck.1169194664001" value="RawMemoryGet" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory.rawMemory" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7427614721109166126">
       <property name="name" nameId="tpck.1169194664001" value="RawMemorySet" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory.rawMemory" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
     </node>
     <node type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="7427614721109166127">
       <property name="name" nameId="tpck.1169194664001" value="RawMemoryType" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory.rawMemory" />
       <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
       <link role="defaultMember" roleId="tpce.1083241965437" targetNodeId="7427614721109166128" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7427614721109169577">
       <property name="name" nameId="tpck.1169194664001" value="RawMemory" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory.rawMemory" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4452387463242264181">
       <property name="name" nameId="tpck.1169194664001" value="InterruptThread" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9175908796922228437">
       <property name="name" nameId="tpck.1169194664001" value="Mode" />
       <property name="rootable" nameId="tpce.1096454100552" value="true" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mode" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9175908796922307359">
       <property name="name" nameId="tpck.1169194664001" value="ChangeMode" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mode" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9175908796922371828">
       <property name="name" nameId="tpck.1169194664001" value="ModeChangePriority" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mode" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9175908796922404777">
       <property name="name" nameId="tpck.1169194664001" value="ReleaseParametresPeriodic" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread.releaseParameter" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="9175908796922404872" resolveInfo="ReleaseParametres" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9175908796922404780">
       <property name="name" nameId="tpck.1169194664001" value="ReleaseParametresAperiodic" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread.releaseParameter" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="9175908796922404872" resolveInfo="ReleaseParametres" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9175908796922404782">
       <property name="name" nameId="tpck.1169194664001" value="ReleaseParametresSporadic" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread.releaseParameter" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="9175908796922404872" resolveInfo="ReleaseParametres" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9175908796922404872">
       <property name="name" nameId="tpck.1169194664001" value="ReleaseParametres" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread.releaseParameter" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9175908796922404922">
       <property name="name" nameId="tpck.1169194664001" value="ModeChangeRP" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mode" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7197056783193750305">
       <property name="name" nameId="tpck.1169194664001" value="WedgeThreadStart" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.wedgeThread" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7197056783193750318">
       <property name="name" nameId="tpck.1169194664001" value="WedgeThreadStop" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.wedgeThread" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7960034524145780979">
       <property name="name" nameId="tpck.1169194664001" value="InterThreadChannel" />
       <property name="rootable" nameId="tpce.1096454100552" value="true" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7960034524145781069">
       <property name="name" nameId="tpck.1169194664001" value="InterThreadChannelPush" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7960034524145781122">
       <property name="name" nameId="tpck.1169194664001" value="InterThreadChannelPop" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6254049394131213068">
       <property name="name" nameId="tpck.1169194664001" value="ObjectPool" />
       <property name="rootable" nameId="tpce.1096454100552" value="true" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.objectPool" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6254049394131213233">
       <property name="name" nameId="tpck.1169194664001" value="ObjectPoolGet" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.objectPool" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6254049394131213338">
       <property name="name" nameId="tpck.1169194664001" value="ObjectPoolFree" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.objectPool" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1046795583932046113">
       <property name="name" nameId="tpck.1169194664001" value="InterThreadChannelElement" />
       <property name="rootable" nameId="tpce.1096454100552" value="true" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1107796713796" resolveInfo="Interface" />
     </node>
   </roots>

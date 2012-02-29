@@ -34,30 +34,38 @@
   <roots>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="3005132233865401092">
       <property name="name" nameId="tpck.1169194664001" value="typeof_RealtimeThread" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="3889169560759267645">
       <property name="name" nameId="tpck.1169194664001" value="typeof_WaitForNextPeriod" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="3889169560759400872">
       <property name="name" nameId="tpck.1169194664001" value="typeof_SizeEstimatorEstimate" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory.sizeEstimator" />
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="3889169560759439155">
       <property name="name" nameId="tpck.1169194664001" value="typeof_InterThreadChannelPop" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="3889169560759631620">
       <property name="name" nameId="tpck.1169194664001" value="typeof_RawMemoryGet" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory.rawMemory" />
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="2559548703176284423">
       <property name="name" nameId="tpck.1169194664001" value="typeof_InterThreadChannelPush" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
     </node>
     <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="1781924062099196514">
       <property name="name" nameId="tpck.1169194664001" value="check_aa" />
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="4454671662722060254">
       <property name="name" nameId="tpck.1169194664001" value="typeof_InterThreadChannel" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="4454671662722101190">
       <property name="name" nameId="tpck.1169194664001" value="typeof_ObjectPoolGet" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.objectPool" />
     </node>
   </roots>
   <root id="3005132233865401092">

@@ -14,114 +14,150 @@
   <import index="tpen" modelUID="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" version="-1" implicit="yes" />
   <roots>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3005132233865386787">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.3005132233865386782" resolveInfo="RealtimeThread" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3005132233865429305">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.3005132233865429302" resolveInfo="ScopedMemory" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3005132233865492714">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.3005132233865491185" resolveInfo="ImmortalMemory" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7904365484846534749">
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.7904365484846534745" resolveInfo="MainDefinition" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7904365484846574990">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.7904365484846574988" resolveInfo="MemoryAreaReference" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7904365484846582774">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.7904365484846582772" resolveInfo="RealtimeThreadReference" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="9184680382602310942">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.9184680382602267965" resolveInfo="EnterMemoryStatement" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="9184680382602325442">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.9184680382602267967" resolveInfo="RunThreadStatement" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="63574088154539768">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.63574088154539762" resolveInfo="PeriodicThread" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="63574088154539830">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.63574088154539766" resolveInfo="SporadicThread" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="63574088154585859">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.63574088154539765" resolveInfo="AperiodicThread" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="63574088154658467">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.63574088154658466" resolveInfo="AllocateVariableStatement" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5373531043073845424">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory.sizeEstimator" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.5373531043073845422" resolveInfo="SizeEstimator" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5373531043073895487">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory.sizeEstimator" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.5373531043073845442" resolveInfo="SizeEstimatorReserve" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5373531043073895540">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory.sizeEstimator" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.5373531043073895538" resolveInfo="SizeEstimatorEstimate" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5373531043074068624">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.5373531043074068606" resolveInfo="AllocateMemoryStatement" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7296282902787822446">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.7296282902787822429" resolveInfo="WaitForNextPeriod" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3711103311464173931">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.3331830405436094005" resolveInfo="AllocateAtributte" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7427614721109166139">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory.rawMemory" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.7427614721109166103" resolveInfo="RawMemoryGet" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7427614721109166156">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory.rawMemory" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.7427614721109166126" resolveInfo="RawMemorySet" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7427614721109169603">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory.rawMemory" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.7427614721109169577" resolveInfo="RawMemory" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4452387463242264183">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.4452387463242264181" resolveInfo="InterruptThread" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="9175908796922228441">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mode" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.9175908796922228437" resolveInfo="Mode" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="9175908796922307381">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mode" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.9175908796922307359" resolveInfo="ChangeMode" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="9175908796922371831">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mode" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.9175908796922371828" resolveInfo="ModeChangePriority" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="9175908796922404792">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread.releaseParameter" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.9175908796922404780" resolveInfo="ReleaseParametresAperiodic" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="9175908796922404814">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread.releaseParameter" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.9175908796922404777" resolveInfo="ReleaseParametresPeriodic" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="9175908796922404846">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread.releaseParameter" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.9175908796922404782" resolveInfo="ReleaseParametresSporadic" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="9175908796922404925">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mode" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.9175908796922404922" resolveInfo="ModeChangeRP" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7197056783193750307">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.wedgeThread" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.7197056783193750305" resolveInfo="WedgeThreadStart" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7197056783193750320">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.wedgeThread" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.7197056783193750318" resolveInfo="WedgeThreadStop" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7960034524145781015">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.7960034524145780979" resolveInfo="InterThreadChannel" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7960034524145781100">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.7960034524145781069" resolveInfo="InterThreadChannelPush" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7960034524145781124">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.7960034524145781122" resolveInfo="InterThreadChannelPop" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6254049394131213109">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.objectPool" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.6254049394131213068" resolveInfo="ObjectPool" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6254049394131213271">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.objectPool" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.6254049394131213233" resolveInfo="ObjectPoolGet" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6254049394131213340">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.objectPool" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.6254049394131213338" resolveInfo="ObjectPoolFree" />
     </node>
   </roots>

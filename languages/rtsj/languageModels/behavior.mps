@@ -19,15 +19,19 @@
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <roots>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="2025469200171228836">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="xaf1.63574088154658466" resolveInfo="AllocateVariableStatement" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="6254049394131222791">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.objectPool" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="xaf1.6254049394131213068" resolveInfo="ObjectPool" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="2559548703176069008">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="xaf1.7960034524145780979" resolveInfo="InterThreadChannel" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="1046795583932046114">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="xaf1.1046795583932046113" resolveInfo="InterThreadChannelElement" />
     </node>
   </roots>

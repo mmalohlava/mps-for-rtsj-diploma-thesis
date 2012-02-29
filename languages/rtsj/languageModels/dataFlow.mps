@@ -27,6 +27,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MemoryAssignableState" />
     </node>
     <node type="tp41.DataFlowBuilderDeclaration" typeId="tp41.1206442055221" id="1781924062099195043">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
       <link role="conceptDeclaration" roleId="tp41.1206442096288" targetNodeId="xaf1.63574088154658466" resolveInfo="AllocateVariableStatement" />
     </node>
     <node type="bj1v.Rule" typeId="bj1v.430844094082168520" id="252121068132721203">
