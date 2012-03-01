@@ -16,6 +16,7 @@
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="-1" implicit="yes" />
   <import index="tpcw" modelUID="r:00000000-0000-4000-0000-011c895902bc(jetbrains.mps.lang.sharedConcepts.structure)" version="0" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
+  <import index="scjp" modelUID="r:67f03d57-b58d-4238-96d0-06892e52a363(rtsj.behavior)" version="-1" implicit="yes" />
   <roots>
     <node type="tp3j.SurroundWithIntentionDeclaration" typeId="tp3j.2522969319638198293" id="4880813901684261779">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
@@ -30,6 +31,36 @@
     <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="7022356706857278413">
       <property name="name" nameId="tpck.1169194664001" value="AllocateFieldInMemory" />
       <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="tpee.1068390468200" resolveInfo="FieldDeclaration" />
+    </node>
+    <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="7022356706857279390">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
+      <property name="name" nameId="tpck.1169194664001" value="periodic2Aperiodic" />
+      <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="xaf1.63574088154539762" resolveInfo="PeriodicThread" />
+    </node>
+    <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="7022356706857327328">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
+      <property name="name" nameId="tpck.1169194664001" value="aperiodic2Periodic" />
+      <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="xaf1.63574088154539765" resolveInfo="AperiodicThread" />
+    </node>
+    <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="7022356706857335741">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
+      <property name="name" nameId="tpck.1169194664001" value="periodic2Sporadic" />
+      <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="xaf1.63574088154539762" resolveInfo="PeriodicThread" />
+    </node>
+    <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="7022356706857335759">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
+      <property name="name" nameId="tpck.1169194664001" value="aperiodic2Sporadic" />
+      <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="xaf1.63574088154539765" resolveInfo="AperiodicThread" />
+    </node>
+    <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="7022356706857335777">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
+      <property name="name" nameId="tpck.1169194664001" value="sporadic2Periodic" />
+      <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="xaf1.63574088154539766" resolveInfo="SporadicThread" />
+    </node>
+    <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="7022356706857335795">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
+      <property name="name" nameId="tpck.1169194664001" value="sporadic2Aperiodic" />
+      <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="xaf1.63574088154539766" resolveInfo="SporadicThread" />
     </node>
   </roots>
   <root id="4880813901684261779">
@@ -345,6 +376,186 @@
           <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7022356706857278789">
             <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="7022356706857278788" />
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_DeleteOperation" typeId="tp25.1140133623887" id="7022356706857278793" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="7022356706857279390">
+    <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="7022356706857279391">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7022356706857279392">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7022356706857279395">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7022356706857279396">
+            <property name="value" nameId="tpee.1070475926801" value="Change to Aperiodic" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="executeFunction" roleId="tp3j.2522969319638198291" type="tp3j.ExecuteBlock" typeId="tp3j.1192795911897" id="7022356706857279393">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7022356706857279394">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7022356706857330204">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7022356706857330205">
+            <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="7022356706857330206" />
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="7022356706857330207">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="scjp.7022356706857330179" resolveInfo="swapTo" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7022356706857330208">
+                <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="7022356706857330209">
+                  <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="7022356706857330210">
+                    <link role="concept" roleId="tp25.1138405853777" targetNodeId="xaf1.63574088154539765" resolveInfo="AperiodicThread" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="7022356706857327328">
+    <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="7022356706857327329">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7022356706857327330">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7022356706857327333">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7022356706857327334">
+            <property name="value" nameId="tpee.1070475926801" value="Change to Periodic" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="executeFunction" roleId="tp3j.2522969319638198291" type="tp3j.ExecuteBlock" typeId="tp3j.1192795911897" id="7022356706857327331">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7022356706857327332">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7022356706857330193">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7022356706857330195">
+            <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="7022356706857330194" />
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="7022356706857330199">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="scjp.7022356706857330179" resolveInfo="swapTo" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7022356706857330200">
+                <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="7022356706857330202">
+                  <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="7022356706857330203">
+                    <link role="concept" roleId="tp25.1138405853777" targetNodeId="xaf1.63574088154539762" resolveInfo="PeriodicThread" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="7022356706857335741">
+    <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="7022356706857335742">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7022356706857335743">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7022356706857335746">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7022356706857335747">
+            <property name="value" nameId="tpee.1070475926801" value="Change to Sporadic" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="executeFunction" roleId="tp3j.2522969319638198291" type="tp3j.ExecuteBlock" typeId="tp3j.1192795911897" id="7022356706857335744">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7022356706857335745">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7022356706857335748">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7022356706857335750">
+            <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="7022356706857335749" />
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="7022356706857335754">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="scjp.7022356706857330179" resolveInfo="swapTo" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7022356706857335755">
+                <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="7022356706857335757">
+                  <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="7022356706857335758">
+                    <link role="concept" roleId="tp25.1138405853777" targetNodeId="xaf1.63574088154539766" resolveInfo="SporadicThread" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="7022356706857335759">
+    <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="7022356706857335760">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7022356706857335761">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7022356706857335764">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7022356706857335765">
+            <property name="value" nameId="tpee.1070475926801" value="Change to Sporadic" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="executeFunction" roleId="tp3j.2522969319638198291" type="tp3j.ExecuteBlock" typeId="tp3j.1192795911897" id="7022356706857335762">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7022356706857335763">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7022356706857335766">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7022356706857335768">
+            <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="7022356706857335767" />
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="7022356706857335772">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="scjp.7022356706857330179" resolveInfo="swapTo" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7022356706857335773">
+                <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="7022356706857335775">
+                  <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="7022356706857335776">
+                    <link role="concept" roleId="tp25.1138405853777" targetNodeId="xaf1.63574088154539766" resolveInfo="SporadicThread" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="7022356706857335777">
+    <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="7022356706857335778">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7022356706857335779">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7022356706857335782">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7022356706857335783">
+            <property name="value" nameId="tpee.1070475926801" value="Change to Periodic" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="executeFunction" roleId="tp3j.2522969319638198291" type="tp3j.ExecuteBlock" typeId="tp3j.1192795911897" id="7022356706857335780">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7022356706857335781">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7022356706857335784">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7022356706857335786">
+            <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="7022356706857335785" />
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="7022356706857335790">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="scjp.7022356706857330179" resolveInfo="swapTo" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7022356706857335791">
+                <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="7022356706857335793">
+                  <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="7022356706857335794">
+                    <link role="concept" roleId="tp25.1138405853777" targetNodeId="xaf1.63574088154539762" resolveInfo="PeriodicThread" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="7022356706857335795">
+    <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="7022356706857335796">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7022356706857335797">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7022356706857335800">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7022356706857335801">
+            <property name="value" nameId="tpee.1070475926801" value="Change to Aperiodic" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="executeFunction" roleId="tp3j.2522969319638198291" type="tp3j.ExecuteBlock" typeId="tp3j.1192795911897" id="7022356706857335798">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7022356706857335799">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7022356706857335802">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7022356706857335804">
+            <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="7022356706857335803" />
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="7022356706857335808">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="scjp.7022356706857330179" resolveInfo="swapTo" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7022356706857335809">
+                <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="7022356706857335811">
+                  <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="7022356706857335812">
+                    <link role="concept" roleId="tp25.1138405853777" targetNodeId="xaf1.63574088154539765" resolveInfo="AperiodicThread" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
