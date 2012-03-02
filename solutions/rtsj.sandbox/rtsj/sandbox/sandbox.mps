@@ -13,10 +13,6 @@
     <node type="xaf1.ImmortalMemory" typeId="xaf1.3005132233865491185" id="3005132233865492713">
       <property name="name" nameId="tpck.1169194664001" value="immortalMemory" />
     </node>
-    <node type="xaf1.MainDefinition" typeId="xaf1.7904365484846534745" id="7904365484846574974">
-      <link role="mainPreInit" roleId="xaf1.7296282902787935709" targetNodeId="7296282902787935690" resolveInfo="Main" />
-      <link role="startingMode" roleId="xaf1.9175908796922228524" targetNodeId="9175908796922228529" resolveInfo="DefaultMode" />
-    </node>
     <node type="xaf1.PeriodicThread" typeId="xaf1.63574088154539762" id="7296282902787866533">
       <property name="name" nameId="tpck.1169194664001" value="ReactionSimulator" />
       <property name="generateWaitCycle" nameId="xaf1.3711103311464487889" value="true" />
@@ -88,9 +84,12 @@
     <node type="xaf1.InterThreadChannel" typeId="xaf1.7960034524145780979" id="1046795583932099747">
       <property name="name" nameId="tpck.1169194664001" value="channel1" />
     </node>
+    <node type="xaf1.MainDefinition" typeId="xaf1.7904365484846534745" id="7022356706857381763">
+      <link role="mainPreInit" roleId="xaf1.7296282902787935709" targetNodeId="7296282902787935690" resolveInfo="Main" />
+      <link role="startingMode" roleId="xaf1.9175908796922228524" targetNodeId="9175908796922228529" resolveInfo="DefaultMode" />
+    </node>
   </roots>
   <root id="3005132233865492713" />
-  <root id="7904365484846574974" />
   <root id="7296282902787866533">
     <node role="priority" roleId="xaf1.3005132233865386795" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7296282902787866536">
       <property name="value" nameId="tpee.1068580320021" value="5" />
@@ -1393,5 +1392,6 @@
       <property name="value" nameId="tpee.1068580320021" value="10" />
     </node>
   </root>
+  <root id="7022356706857381763" />
 </model>
 
