@@ -5,8 +5,8 @@ package rtsj.sandbox.sandbox;
 import java.util.ArrayList;
 
 public class ObjectPooljava_lang_Thread implements ObjectPoolI {
-  private ArrayList<Thread> objects;
-  private ArrayList<Boolean> isFree;
+  private ArrayList<Thread> objects = new ArrayList<Thread>();
+  private ArrayList<Boolean> isFree = new ArrayList<Boolean>();
   private int size;
   private boolean expandable;
 
