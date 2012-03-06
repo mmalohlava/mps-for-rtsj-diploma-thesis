@@ -87,6 +87,17 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
       <property name="name" nameId="tpck.1169194664001" value="check_RealtimeThread" />
     </node>
+    <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="8210674499019731201">
+      <property name="name" nameId="tpck.1169194664001" value="check_MainDefinition" />
+    </node>
+    <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="8210674499019882987">
+      <property name="name" nameId="tpck.1169194664001" value="check_InterThreadChannelElement" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
+    </node>
+    <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="8210674499019883011">
+      <property name="name" nameId="tpck.1169194664001" value="check_ImmortalMemory" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
+    </node>
   </roots>
   <root id="3005132233865401092">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="3005132233865401093">
@@ -1246,6 +1257,150 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="4880813901684341096">
       <property name="name" nameId="tpck.1169194664001" value="thisThread" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xaf1.3005132233865386782" resolveInfo="RealtimeThread" />
+    </node>
+  </root>
+  <root id="8210674499019731201">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="8210674499019731202">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="8210674499019732428">
+        <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="8210674499019732429">
+          <property name="name" nameId="tpck.1169194664001" value="count" />
+          <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="8210674499019732430" />
+          <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8210674499019764564">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8210674499019764559">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8210674499019732433">
+                <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="8210674499019732432">
+                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="8210674499019731203" resolveInfo="mainDefinition" />
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetModelOperation" typeId="tp25.1143234257716" id="8210674499019764558" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.Model_RootsOperation" typeId="tp25.1171315804604" id="8210674499019764563">
+                <link role="concept" roleId="tp25.1171315804605" targetNodeId="xaf1.7904365484846534745" resolveInfo="MainDefinition" />
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetSizeOperation" typeId="tp2q.1162935959151" id="8210674499019764568" />
+          </node>
+        </node>
+      </node>
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="8210674499019764570">
+        <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="8210674499019764571">
+          <node role="statement" roleId="tpee.1068581517665" type="tpd4.ReportErrorStatement" typeId="tpd4.1175517767210" id="8210674499019764579">
+            <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8210674499019764582">
+              <property name="value" nameId="tpee.1070475926801" value="Concept 'MainDefinition' must be instatiated exactly once" />
+            </node>
+            <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="8210674499019764583">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="8210674499019731203" resolveInfo="mainDefinition" />
+            </node>
+          </node>
+        </node>
+        <node role="condition" roleId="tpee.1068580123160" type="tpee.GreaterThanExpression" typeId="tpee.1081506762703" id="8210674499019764575">
+          <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="8210674499019764578">
+            <property name="value" nameId="tpee.1068580320021" value="1" />
+          </node>
+          <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8210674499019764574">
+            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8210674499019732429" resolveInfo="count" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="8210674499019731203">
+      <property name="name" nameId="tpck.1169194664001" value="mainDefinition" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xaf1.7904365484846534745" resolveInfo="MainDefinition" />
+    </node>
+  </root>
+  <root id="8210674499019882987">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="8210674499019882988">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="8210674499019882990">
+        <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="8210674499019882991">
+          <property name="name" nameId="tpck.1169194664001" value="count" />
+          <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="8210674499019882992" />
+          <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8210674499019882993">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8210674499019882994">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8210674499019882995">
+                <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="8210674499019883008">
+                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="8210674499019882989" resolveInfo="channelElement" />
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetModelOperation" typeId="tp25.1143234257716" id="8210674499019882997" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.Model_RootsOperation" typeId="tp25.1171315804604" id="8210674499019882998">
+                <link role="concept" roleId="tp25.1171315804605" targetNodeId="xaf1.1046795583932046113" resolveInfo="InterThreadChannelElement" />
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetSizeOperation" typeId="tp2q.1162935959151" id="8210674499019882999" />
+          </node>
+        </node>
+      </node>
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="8210674499019883000">
+        <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="8210674499019883001">
+          <node role="statement" roleId="tpee.1068581517665" type="tpd4.ReportErrorStatement" typeId="tpd4.1175517767210" id="8210674499019883002">
+            <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8210674499019883003">
+              <property name="value" nameId="tpee.1070475926801" value="Concept 'InterThreadChannelElement' must be instatiated exactly once" />
+            </node>
+            <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="8210674499019883009">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="8210674499019882989" resolveInfo="channelElement" />
+            </node>
+          </node>
+        </node>
+        <node role="condition" roleId="tpee.1068580123160" type="tpee.GreaterThanExpression" typeId="tpee.1081506762703" id="8210674499019883005">
+          <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="8210674499019883006">
+            <property name="value" nameId="tpee.1068580320021" value="1" />
+          </node>
+          <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8210674499019883007">
+            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8210674499019882991" resolveInfo="count" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="8210674499019882989">
+      <property name="name" nameId="tpck.1169194664001" value="channelElement" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xaf1.1046795583932046113" resolveInfo="InterThreadChannelElement" />
+    </node>
+  </root>
+  <root id="8210674499019883011">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="8210674499019883012">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="8210674499019883054">
+        <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="8210674499019883055">
+          <property name="name" nameId="tpck.1169194664001" value="count" />
+          <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="8210674499019883056" />
+          <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8210674499019883057">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8210674499019883058">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8210674499019883059">
+                <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="8210674499019883072">
+                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="8210674499019883013" resolveInfo="immortalMemory" />
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetModelOperation" typeId="tp25.1143234257716" id="8210674499019883061" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.Model_RootsOperation" typeId="tp25.1171315804604" id="8210674499019883062">
+                <link role="concept" roleId="tp25.1171315804605" targetNodeId="xaf1.3005132233865491185" resolveInfo="ImmortalMemory" />
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetSizeOperation" typeId="tp2q.1162935959151" id="8210674499019883063" />
+          </node>
+        </node>
+      </node>
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="8210674499019883064">
+        <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="8210674499019883065">
+          <node role="statement" roleId="tpee.1068581517665" type="tpd4.ReportErrorStatement" typeId="tpd4.1175517767210" id="8210674499019883066">
+            <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8210674499019883067">
+              <property name="value" nameId="tpee.1070475926801" value="Concept 'ImmortalMemory' must be instatiated exactly once" />
+            </node>
+            <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="8210674499019883073">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="8210674499019883013" resolveInfo="immortalMemory" />
+            </node>
+          </node>
+        </node>
+        <node role="condition" roleId="tpee.1068580123160" type="tpee.GreaterThanExpression" typeId="tpee.1081506762703" id="8210674499019883069">
+          <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="8210674499019883070">
+            <property name="value" nameId="tpee.1068580320021" value="1" />
+          </node>
+          <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8210674499019883071">
+            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8210674499019883055" resolveInfo="count" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="8210674499019883013">
+      <property name="name" nameId="tpck.1169194664001" value="immortalMemory" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xaf1.3005132233865491185" resolveInfo="ImmortalMemory" />
     </node>
   </root>
 </model>

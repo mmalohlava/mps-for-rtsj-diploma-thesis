@@ -18,8 +18,6 @@ public class ITChannelrtsj_sandbox_sandbox_IntProxy implements InterThreadChanne
   }
 
   public void push(InterThreadChannelElement obj) {
-    IntProxy result = null;
-
     if (pushPointer == popPointer) {
       throw new ArrayIndexOutOfBoundsException();
     }

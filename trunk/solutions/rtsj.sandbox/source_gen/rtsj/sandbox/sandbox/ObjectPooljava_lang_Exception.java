@@ -5,8 +5,8 @@ package rtsj.sandbox.sandbox;
 import java.util.ArrayList;
 
 public class ObjectPooljava_lang_Exception implements ObjectPoolI {
-  private ArrayList<Exception> objects;
-  private ArrayList<Boolean> isFree;
+  private ArrayList<Exception> objects = new ArrayList<Exception>();
+  private ArrayList<Boolean> isFree = new ArrayList<Boolean>();
   private int size;
   private boolean expandable;
 

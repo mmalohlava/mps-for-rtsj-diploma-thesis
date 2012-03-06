@@ -12,7 +12,6 @@ public class Sandbox {
 
   public void dummy() {
     MainDefinition.allocateMemory("bla", new LTMemory(2, 8), false);
-
   }
 
   public void dummy2() {
@@ -42,5 +41,12 @@ public class Sandbox {
     MainDefinition.getChannel("channel1").push(message);
 
     IntProxy a = (IntProxy) MainDefinition.getChannel("channel1").pop();
+  }
+
+  public void dummy7() {
+
+
+
+
   }
 }
