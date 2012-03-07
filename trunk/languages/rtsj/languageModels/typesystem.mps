@@ -57,7 +57,7 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
     </node>
     <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="1781924062099196514">
-      <property name="name" nameId="tpck.1169194664001" value="check_aa" />
+      <property name="name" nameId="tpck.1169194664001" value="check_MemoryAssigning" />
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="4454671662722060254">
       <property name="name" nameId="tpck.1169194664001" value="typeof_InterThreadChannel" />
@@ -648,24 +648,7 @@
                     </node>
                   </node>
                 </node>
-                <node role="ifFalseStatement" roleId="tpee.1082485599094" type="tpee.BlockStatement" typeId="tpee.1082485599095" id="252121068132724123">
-                  <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="252121068132724124">
-                    <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="4880813901684129117">
-                      <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.StatementCommentPart" typeId="tpee.6329021646629175143" id="4880813901684129118">
-                        <node role="commentedStatement" roleId="tpee.6329021646629175144" type="tpd4.WarningStatement" typeId="tpd4.1207055528241" id="252121068132724125">
-                          <node role="warningText" roleId="tpd4.1207055552304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="252121068132724126">
-                            <property name="value" nameId="tpee.1070475926801" value="nic" />
-                          </node>
-                          <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="252121068132724127">
-                            <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="1781924062099196519" resolveInfo="iVariableAssignment" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
               </node>
-              <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="252121068132487559" />
             </node>
             <node role="condition" roleId="tpee.1068580123160" type="tpee.InstanceOfExpression" typeId="tpee.1081256982272" id="252121068132561038">
               <node role="classType" roleId="tpee.1081256993305" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="252121068132561041">

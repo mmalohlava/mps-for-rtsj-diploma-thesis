@@ -637,8 +637,8 @@
           <node role="ifFalseStatement" roleId="tpee.1082485599094" type="tpee.BlockStatement" typeId="tpee.1082485599095" id="252121068132721237">
             <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="252121068132721238">
               <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="252121068132721239">
-                <node role="expression" roleId="tpee.1068581517676" type="tpee.EnumConstantReference" typeId="tpee.1083260308424" id="252121068132721242">
-                  <link role="enumConstantDeclaration" roleId="tpee.1083260308426" targetNodeId="6868777471677432366" resolveInfo="UNKNOWN" />
+                <node role="expression" roleId="tpee.1068581517676" type="tpee.EnumConstantReference" typeId="tpee.1083260308424" id="2279892417240982153">
+                  <link role="enumConstantDeclaration" roleId="tpee.1083260308426" targetNodeId="1992275765524949658" resolveInfo="IMMORTAL" />
                   <link role="enumClass" roleId="tpee.1144432896254" targetNodeId="1992275765524949626" resolveInfo="MemoryAssignableState" />
                 </node>
               </node>
@@ -699,16 +699,56 @@
       <link role="concept" roleId="bj1v.4943044633101738901" targetNodeId="xaf1.63574088154658466" resolveInfo="AllocateVariableStatement" />
     </node>
     <node role="actions" roleId="bj1v.4943044633101742986" type="tpee.StatementList" typeId="tpee.1068580123136" id="252121068132721208">
-      <node role="statement" roleId="tpee.1068581517665" type="bj1v.EmitInstruction" typeId="bj1v.4217760266503579796" id="6371033132130114742">
-        <node role="instructionRef" roleId="bj1v.4217760266503650651" type="bj1v.InstructionReference" typeId="bj1v.4217760266503638748" id="6371033132130114745">
-          <link role="instruction" roleId="bj1v.4217760266503638757" targetNodeId="1992275765524949654" resolveInfo="scoped" />
-          <node role="argument" roleId="bj1v.4217760266503638749" type="bj1v.ApplicableNodeReference" typeId="bj1v.4943044633102057744" id="252121068132731457">
-            <link role="applicableNode" roleId="bj1v.4943044633102057745" targetNodeId="252121068132721207" resolveInfo="allocateVariableStatement" />
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="2279892417240941057">
+        <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="2279892417240941058">
+          <node role="statement" roleId="tpee.1068581517665" type="bj1v.EmitInstruction" typeId="bj1v.4217760266503579796" id="6371033132130114742">
+            <node role="instructionRef" roleId="bj1v.4217760266503650651" type="bj1v.InstructionReference" typeId="bj1v.4217760266503638748" id="6371033132130114745">
+              <link role="instruction" roleId="bj1v.4217760266503638757" targetNodeId="1992275765524949668" resolveInfo="immortal" />
+              <node role="argument" roleId="bj1v.4217760266503638749" type="bj1v.ApplicableNodeReference" typeId="bj1v.4943044633102057744" id="252121068132731457">
+                <link role="applicableNode" roleId="bj1v.4943044633102057745" targetNodeId="252121068132721207" resolveInfo="allocateVariableStatement" />
+              </node>
+            </node>
+            <node role="position" roleId="bj1v.24089196731087404" type="tp3t.InsertAfterPosition" typeId="tp3t.1649655856141352248" id="252121068132721211" />
+            <node role="target" roleId="bj1v.323410281720600578" type="bj1v.ApplicableNodeReference" typeId="bj1v.4943044633102057744" id="252121068132731450">
+              <link role="applicableNode" roleId="bj1v.4943044633102057745" targetNodeId="252121068132721207" resolveInfo="allocateVariableStatement" />
+            </node>
           </node>
         </node>
-        <node role="position" roleId="bj1v.24089196731087404" type="tp3t.InsertAfterPosition" typeId="tp3t.1649655856141352248" id="252121068132721211" />
-        <node role="target" roleId="bj1v.323410281720600578" type="bj1v.ApplicableNodeReference" typeId="bj1v.4943044633102057744" id="252121068132731450">
-          <link role="applicableNode" roleId="bj1v.4943044633102057745" targetNodeId="252121068132721207" resolveInfo="allocateVariableStatement" />
+        <node role="condition" roleId="tpee.1068580123160" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2279892417240974050">
+          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2279892417240974057">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2279892417240941062">
+              <node role="operand" roleId="tpee.1197027771414" type="bj1v.ApplicableNodeReference" typeId="bj1v.4943044633102057744" id="2279892417240941061">
+                <link role="applicableNode" roleId="bj1v.4943044633102057745" targetNodeId="252121068132721207" resolveInfo="allocateVariableStatement" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2279892417240974049">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="xaf1.63574088154681841" />
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2279892417240974061">
+              <link role="link" roleId="tp25.1138056516764" targetNodeId="xaf1.7904365484846574989" />
+            </node>
+          </node>
+          <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="2279892417240974054">
+            <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="2279892417240974056">
+              <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="xaf1.3005132233865491185" resolveInfo="ImmortalMemory" />
+            </node>
+          </node>
+        </node>
+        <node role="ifFalseStatement" roleId="tpee.1082485599094" type="tpee.BlockStatement" typeId="tpee.1082485599095" id="2279892417240974062">
+          <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="2279892417240974063">
+            <node role="statement" roleId="tpee.1068581517665" type="bj1v.EmitInstruction" typeId="bj1v.4217760266503579796" id="2279892417240974064">
+              <node role="instructionRef" roleId="bj1v.4217760266503650651" type="bj1v.InstructionReference" typeId="bj1v.4217760266503638748" id="2279892417240974065">
+                <link role="instruction" roleId="bj1v.4217760266503638757" targetNodeId="1992275765524949654" resolveInfo="scoped" />
+                <node role="argument" roleId="bj1v.4217760266503638749" type="bj1v.ApplicableNodeReference" typeId="bj1v.4943044633102057744" id="2279892417240974066">
+                  <link role="applicableNode" roleId="bj1v.4943044633102057745" targetNodeId="252121068132721207" resolveInfo="allocateVariableStatement" />
+                </node>
+              </node>
+              <node role="position" roleId="bj1v.24089196731087404" type="tp3t.InsertAfterPosition" typeId="tp3t.1649655856141352248" id="2279892417240974067" />
+              <node role="target" roleId="bj1v.323410281720600578" type="bj1v.ApplicableNodeReference" typeId="bj1v.4943044633102057744" id="2279892417240974068">
+                <link role="applicableNode" roleId="bj1v.4943044633102057745" targetNodeId="252121068132721207" resolveInfo="allocateVariableStatement" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
