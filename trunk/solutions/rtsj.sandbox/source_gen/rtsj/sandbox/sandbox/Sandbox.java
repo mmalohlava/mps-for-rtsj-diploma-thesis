@@ -7,6 +7,8 @@ import javax.realtime.RawMemoryAccess;
 import javax.realtime.SizeEstimator;
 
 public class Sandbox {
+  private Double field = (Double) MainDefinition.allocateVariable("immortalMemory", Double.class);
+
   public Sandbox() {
   }
 
@@ -21,7 +23,7 @@ public class Sandbox {
   }
 
   public void dummy3() {
-    Integer aa = (Integer) MainDefinition.allocateVariable("immortalMemory", Integer.class);
+    Integer aa = (Integer) MainDefinition.allocateVariable("ControlRodsMemory", Integer.class);
     Integer b = aa;
     System.out.println(b);
   }
@@ -44,9 +46,8 @@ public class Sandbox {
   }
 
   public void dummy7() {
-
-
-
-
+    int a = (Integer) MainDefinition.allocateVariable("ControlRodsMemory", Integer.class);
+    int bb = a;
+    System.out.print(bb);
   }
 }

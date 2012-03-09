@@ -135,6 +135,7 @@
     <classNode extendsClassName="rtsj.sandbox.sandbox.IReactor" />
   </dependency>
   <dependency className="rtsj.sandbox.sandbox.Sandbox" file="Sandbox.java">
+    <classNode dependClassName="java.lang.Double" />
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.lang.Thread" />
@@ -142,6 +143,11 @@
     <classNode dependClassName="javax.realtime.RawMemoryAccess" />
     <classNode dependClassName="javax.realtime.SizeEstimator" />
     <classNode dependClassName="rtsj.sandbox.sandbox.IntProxy" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.MainDefinition" />
+  </dependency>
+  <dependency className="rtsj.sandbox.sandbox.Sandbox2" file="Sandbox2.java">
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="rtsj.sandbox.sandbox.MainDefinition" />
   </dependency>
   <dependency className="rtsj.sandbox.sandbox.WedgeThread" file="WedgeThread.java">
