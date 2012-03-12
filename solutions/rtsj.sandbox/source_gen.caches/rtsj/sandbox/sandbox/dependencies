@@ -6,9 +6,22 @@
     <classNode extendsClassName="java.lang.Runnable" />
   </dependency>
   <dependency className="rtsj.sandbox.sandbox.DummyProductionLine" file="DummyProductionLine.java">
+    <classNode dependClassName="java.lang.InterruptedException" />
+    <classNode dependClassName="java.lang.Math" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.lang.Thread" />
+    <classNode dependClassName="java.util.Random" />
+    <classNode dependClassName="java.util.concurrent.atomic.AtomicLong" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.JarData" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.SweetData" />
     <classNode extendsClassName="rtsj.sandbox.sandbox.ProductionLine" />
+    <classNode extendsClassName="rtsj.sandbox.sandbox.WeighingMachine" />
   </dependency>
   <dependency className="rtsj.sandbox.sandbox.DummyWorkerConsole" file="DummyWorkerConsole.java">
+    <classNode dependClassName="java.lang.InterruptedException" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.lang.Thread" />
+    <classNode dependClassName="java.util.concurrent.atomic.AtomicLong" />
     <classNode extendsClassName="rtsj.sandbox.sandbox.WorkerConsole" />
   </dependency>
   <dependency className="rtsj.sandbox.sandbox.InterThreadChannel" file="InterThreadChannel.java">
@@ -20,14 +33,21 @@
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="rtsj.sandbox.sandbox.JarTriage" file="JarTriage.java">
+    <classNode dependClassName="java.lang.InterruptedException" />
+    <classNode dependClassName="java.lang.Math" />
+    <classNode dependClassName="javax.realtime.NoHeapRealtimeThread" />
     <classNode dependClassName="javax.realtime.PeriodicParameters" />
     <classNode dependClassName="javax.realtime.PriorityParameters" />
-    <classNode dependClassName="javax.realtime.RealtimeThread" />
     <classNode dependClassName="javax.realtime.RelativeTime" />
     <classNode dependClassName="rtsj.sandbox.sandbox.AuditLog" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.JarData" />
     <classNode dependClassName="rtsj.sandbox.sandbox.MainDefinition" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.Measurement" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.PrioritySpecifications" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.SweetData" />
     <classNode dependClassName="rtsj.sandbox.sandbox.WorkerConsole" />
     <classNode extendsClassName="java.lang.Runnable" />
+    <classNode extendsClassName="java.lang.RuntimeException" />
   </dependency>
   <dependency className="rtsj.sandbox.sandbox.MainDefinition" file="MainDefinition.java">
     <classNode dependClassName="java.io.PrintWriter" />
@@ -43,19 +63,18 @@
     <classNode dependClassName="java.util.HashMap" />
     <classNode dependClassName="javax.realtime.ImmortalMemory" />
     <classNode dependClassName="javax.realtime.MemoryArea" />
-    <classNode dependClassName="javax.realtime.PeriodicParameters" />
-    <classNode dependClassName="javax.realtime.PriorityParameters" />
     <classNode dependClassName="javax.realtime.RawMemoryAccess" />
     <classNode dependClassName="javax.realtime.RealtimeThread" />
-    <classNode dependClassName="javax.realtime.RelativeTime" />
     <classNode dependClassName="javax.realtime.ScopedMemory" />
     <classNode dependClassName="rtsj.sandbox.sandbox.InterThreadChannel" />
     <classNode dependClassName="rtsj.sandbox.sandbox.ObjectPoolElement" />
     <classNode dependClassName="rtsj.sandbox.sandbox.ObjectPoolI" />
-    <classNode dependClassName="rtsj.sandbox.sandbox.Rann" />
     <classNode dependClassName="rtsj.sandbox.sandbox.WedgeThread" />
   </dependency>
   <dependency className="rtsj.sandbox.sandbox.Measurement" file="Measurement.java" />
+  <dependency className="rtsj.sandbox.sandbox.MeasurementManager" file="MeasurementManager.java">
+    <classNode dependClassName="rtsj.sandbox.sandbox.Measurement" />
+  </dependency>
   <dependency className="rtsj.sandbox.sandbox.MonitoringSystem" file="MonitoringSystem.java">
     <classNode dependClassName="rtsj.sandbox.sandbox.ProductionLine" />
     <classNode dependClassName="rtsj.sandbox.sandbox.WorkerConsole" />
@@ -72,8 +91,19 @@
   <dependency className="rtsj.sandbox.sandbox.ObjectPoolI" file="ObjectPoolI.java">
     <classNode dependClassName="java.lang.Object" />
   </dependency>
-  <dependency className="rtsj.sandbox.sandbox.ProductionLine" file="ProductionLine.java" />
-  <dependency className="rtsj.sandbox.sandbox.Rann" file="Rann.java">
+  <dependency className="rtsj.sandbox.sandbox.PrioritySpecifications" file="PrioritySpecifications.java" />
+  <dependency className="rtsj.sandbox.sandbox.ProductionLine" file="ProductionLine.java">
+    <classNode dependClassName="rtsj.sandbox.sandbox.WeighingMachine" />
+  </dependency>
+  <dependency className="rtsj.sandbox.sandbox.ProductionLinePoller" file="ProductionLinePoller.java">
+    <classNode dependClassName="java.lang.InterruptedException" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.lang.Thread" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.JarTriage" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.MainDefinition" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.Measurement" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.MeasurementManager" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.ProductionLine" />
     <classNode extendsClassName="java.lang.Runnable" />
   </dependency>
   <dependency className="rtsj.sandbox.sandbox.RunDemo" file="RunDemo.java">
@@ -95,7 +125,16 @@
     <classNode dependClassName="rtsj.sandbox.sandbox.SweetData" />
     <classNode dependClassName="rtsj.sandbox.sandbox.WorkerConsole" />
   </dependency>
-  <dependency className="rtsj.sandbox.sandbox.SweetData" file="SweetData.java" />
+  <dependency className="rtsj.sandbox.sandbox.Sandbox" file="Sandbox.java">
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.Integer[]" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.MainDefinition" />
+  </dependency>
+  <dependency className="rtsj.sandbox.sandbox.SweetData" file="SweetData.java">
+    <classNode dependClassName="java.lang.RuntimeException" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="rtsj.sandbox.sandbox.JarData" />
+  </dependency>
   <dependency className="rtsj.sandbox.sandbox.WedgeThread" file="WedgeThread.java">
     <classNode dependClassName="java.lang.InterruptedException" />
     <classNode dependClassName="javax.realtime.AperiodicParameters" />

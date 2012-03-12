@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-2fstygy2o3888izvbi2lq0d31zxmecc">
+<dependencies version="2" modelHash="-oddxinlkquj72m1ux48qc1p5rfcf4r">
+  <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
   <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
-  <dep model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" hash="-5p74zkz3zw9o60rs09pa9r4xt6zoc5x" />
-  <common hash="-eibm2ypa9kyysofnx5dq2vw5ga2qf6w">
+  <dep model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" hash="yejose97oby8jpxd1n0cb19qy5ovad" />
+  <common hash="bdpojv0d9f9a4sit1tkw0ktixnoouhl">
     <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
@@ -23,14 +24,9 @@
   <source id="3005132233865492713" name="immortalMemory" hash="-50ar6nwed5g0t0l6mrj6mxsy6i11cqh">
     <dep model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" />
   </source>
-  <source id="1046795583932099734" name="InterThreadChannelElement" hash="cdvj19hltwiltlz238gw0auvsf758qz">
-    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
-    <file name="InterThreadChannelElement.java" />
-  </source>
   <source id="7022356706857381763" hash="7gnadni12ys64jvwxoshbu7czxgak1e" dependsOnNodes="true">
     <dep root="3005132233865492713" />
     <dep root="5991677292904601772" />
-    <dep root="5991677292905005542" />
     <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
@@ -55,7 +51,7 @@
     <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
     <file name="MonitoringSystem.java" />
   </source>
-  <source id="5991677292904361839" name="ProductionLine" hash="-i18oliy400kpk0x0wyiqd40q6emxhg">
+  <source id="5991677292904361839" name="ProductionLine" hash="-zubko0u7balcbkyb57f85elb80rtyq">
     <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
     <file name="ProductionLine.java" />
   </source>
@@ -63,7 +59,7 @@
     <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
     <file name="WeighingMachine.java" />
   </source>
-  <source id="5991677292904361892" name="WorkerConsole" hash="-5ar3my8nnmsioqndgymd5rqj8x6rq0x">
+  <source id="5991677292904361892" name="WorkerConsole" hash="87pxgglghxiaqsml56k7q6grz8befh4">
     <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
     <file name="WorkerConsole.java" />
   </source>
@@ -71,13 +67,17 @@
     <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
     <file name="MonitoringSystemImpl.java" />
   </source>
-  <source id="5991677292904378197" name="DummyProductionLine" hash="b1yh68t9it34wphwm85rxfqx1mv302j">
+  <source id="5991677292904378197" name="DummyProductionLine" hash="6zjv97e7t03h4lvo2ojmkdpdddyoofw">
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
     <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
     <file name="DummyProductionLine.java" />
   </source>
-  <source id="5991677292904378244" name="SweetData" hash="-1ihdifef4xxj6p5e4g50ibynxb2qzis">
+  <source id="5991677292904378244" name="SweetData" hash="-69s5ahmgghut6tfo598rn6a70k263vs">
     <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
     <file name="SweetData.java" />
   </source>
   <source id="5991677292904378605" name="JarData" hash="d3othw7pqkmkyi64kogf4m6udku63gq">
@@ -85,11 +85,15 @@
     <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
     <file name="JarData.java" />
   </source>
-  <source id="5991677292904388719" name="DummyWorkerConsole" hash="-5iou461b7i6ushilzf4h7usdwxcqi5w">
+  <source id="5991677292904388719" name="DummyWorkerConsole" hash="32vfbro9r1itxl9squq5p73wno9wcwx">
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
     <file name="DummyWorkerConsole.java" />
   </source>
-  <source id="5991677292904561593" name="Measurement" hash="7hplkvkmkhpk5z08zy0hskct806dmg6">
+  <source id="5991677292904561593" name="Measurement" hash="8euqjw3w6s7imjpeusuzd6juaf2mh2">
     <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
@@ -97,7 +101,7 @@
     <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
     <file name="Measurement.java" />
   </source>
-  <source id="5991677292904601772" name="JarTriage" hash="-2lnra6q5291383c6q3bz72xp0zztmx4">
+  <source id="5991677292904601772" name="JarTriage" hash="21t29nzzprpkfkia4d4qx2arnlc2p94">
     <dep root="3005132233865492713" />
     <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
@@ -111,12 +115,38 @@
     <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
     <file name="AuditLog.java" />
   </source>
-  <source id="5991677292905005542" name="ThreadBla" hash="-5bevxzw3p8mt2dv35811m5tn6ilw5hm">
-    <dep model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" />
-  </source>
-  <source id="5991677292905005550" name="Rann" hash="dtivithcxkokuwd2u8w112n2nl8layp">
+  <source id="3327954350460087737" name="PrioritySpecifications" hash="dv3w52vpay6p6f7l946hc7wdhubrv89">
     <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
-    <file name="Rann.java" />
+    <file name="PrioritySpecifications.java" />
+  </source>
+  <source id="3327954350460108326" name="ProductionLinePoller" hash="-c6738sywfujpyaxai2zp05sieqg9hdp">
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <dep model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" />
+    <file name="ProductionLinePoller.java" />
+  </source>
+  <source id="3327954350460108352" name="MeasurementManager" hash="-1ydj0abd1wtc7hah1ygo64k1p0lt83a">
+    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <file name="MeasurementManager.java" />
+  </source>
+  <source id="3327954350460829566" name="Sandbox" hash="-el7wnfwnxbu2kcj3pra6y5xok32jntm">
+    <dep root="3005132233865492713" />
+    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <dep model="r:f74dec29-fafa-48fe-a6ad-1a2966b35353(rtsj.generator.template.main@generator)" />
+    <file name="Sandbox.java" />
+  </source>
+  <source id="3327954350460904811" name="InterThreadChannelElement" hash="-4rpgqmc5gpf5p9ysbepqkdgh916rrq1">
+    <dep model="r:00000000-0000-4000-0000-011c895902cb(jetbrains.mps.baseLanguage.generator.java.closures@generator)" />
+    <file name="InterThreadChannelElement.java" />
   </source>
 </dependencies>
 

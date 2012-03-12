@@ -32,4 +32,102 @@ public class SweetData {
 
   public SweetData() {
   }
+
+  public static int targetNumberOfSweetsPerJar(short sweetType, short jarType) {
+    switch (jarType) {
+      case JarData.SMALL_JAR:
+        return targetNumberOfSweetsPerSmallJar(sweetType);
+      case JarData.MEDIUM_JAR:
+        return targetNumberOfSweetsPerMediumJar(sweetType);
+      case JarData.LARGE_JAR:
+        return targetNumberOfSweetsPerLargeJar(sweetType);
+      default:
+        throw new RuntimeException("Unknown jar type: " + jarType + " passed");
+    }
+  }
+
+  private static int targetNumberOfSweetsPerLargeJar(short sweetType) {
+    switch (sweetType) {
+      case CHOCOLATE_CARAMELS:
+        return CHOCOLATE_CARAMELS_PER_LARGE_JAR;
+      case GIANT_GOBSTOPPERS:
+        return GIANT_GOBSTOPPERS_PER_LARGE_JAR;
+      case RHUBARD_AND_CUSTARDS:
+        return RHUBARB_AND_CUSTARDS_PER_LARGE_JAR;
+      case SHERBERT_LEMONS:
+        return SHERBERT_LEMONS_PER_LARGE_JAR;
+      case LIQUORICE_LACES:
+        return LIQUORICE_LACES_PER_LARGE_JAR;
+      default:
+        throw new RuntimeException("Uknown sweet type code: " + sweetType);
+    }
+  }
+
+  private static int targetNumberOfSweetsPerMediumJar(short sweetType) {
+    switch (sweetType) {
+      case CHOCOLATE_CARAMELS:
+        return CHOCOLATE_CARAMELS_PER_MEDIUM_JAR;
+      case GIANT_GOBSTOPPERS:
+        return GIANT_GOBSTOPPERS_PER_MEDIUM_JAR;
+      case RHUBARD_AND_CUSTARDS:
+        return RHUBARB_AND_CUSTARDS_PER_MEDIUM_JAR;
+      case SHERBERT_LEMONS:
+        return SHERBERT_LEMONS_PER_MEDIUM_JAR;
+      case LIQUORICE_LACES:
+        return LIQUORICE_LACES_PER_MEDIUM_JAR;
+      default:
+        throw new RuntimeException("Uknown sweet type code: " + sweetType);
+    }
+  }
+
+  private static int targetNumberOfSweetsPerSmallJar(short sweetType) {
+    switch (sweetType) {
+      case CHOCOLATE_CARAMELS:
+        return CHOCOLATE_CARAMELS_PER_SMALL_JAR;
+      case GIANT_GOBSTOPPERS:
+        return GIANT_GOBSTOPPERS_PER_SMALL_JAR;
+      case RHUBARD_AND_CUSTARDS:
+        return RHUBARB_AND_CUSTARDS_PER_SMALL_JAR;
+      case SHERBERT_LEMONS:
+        return SHERBERT_LEMONS_PER_SMALL_JAR;
+      case LIQUORICE_LACES:
+        return LIQUORICE_LACES_PER_SMALL_JAR;
+      default:
+        throw new RuntimeException("Uknown sweet type code: " + sweetType);
+    }
+  }
+
+  public static int massOfEachSweetGrams(short type) {
+    switch (type) {
+      case CHOCOLATE_CARAMELS:
+        return CHOCOLATE_CARAMELS_MASS_GRAMS;
+      case GIANT_GOBSTOPPERS:
+        return GIANT_GOBSTOPPERS_MASS_GRAMS;
+      case RHUBARD_AND_CUSTARDS:
+        return RHUBARB_AND_CUSTARDS_MASS_GRAMS;
+      case SHERBERT_LEMONS:
+        return SHERBERT_LEMONS_MASS_GRAMS;
+      case LIQUORICE_LACES:
+        return LIQUORICE_LACES_MASS_GRAMS;
+      default:
+        throw new RuntimeException("Uknown sweet type code: " + type);
+    }
+  }
+
+  public static String getNameOfSweet(short type) {
+    switch (type) {
+      case CHOCOLATE_CARAMELS:
+        return "Chocolate Caramels";
+      case GIANT_GOBSTOPPERS:
+        return "Giant Gobstoppers";
+      case RHUBARD_AND_CUSTARDS:
+        return "Rhubarb and Custards";
+      case SHERBERT_LEMONS:
+        return "Sherbert Lemons";
+      case LIQUORICE_LACES:
+        return "Liquorice Laces";
+      default:
+        throw new RuntimeException("Uknown sweet type code: " + type);
+    }
+  }
 }

@@ -80,11 +80,6 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="3005132233865386782" resolveInfo="RealtimeThread" />
     </node>
-    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="63574088154658466">
-      <property name="name" nameId="tpck.1169194664001" value="AllocateVariableStatement" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068581242863" resolveInfo="LocalVariableDeclaration" />
-    </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5373531043073845422">
       <property name="name" nameId="tpck.1169194664001" value="SizeEstimator" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory.sizeEstimator" />
@@ -469,16 +464,6 @@
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="2279892417240982378">
       <property name="value" nameId="tpce.1105725733873" value="Create new speriodic thread" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
-  </root>
-  <root id="63574088154658466">
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="63574088154679963">
-      <property name="value" nameId="tpce.1105725733873" value="allocateVariableStatement" />
-      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
-    </node>
-    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="2279892417240902814">
-      <property name="value" nameId="tpce.1105725733873" value="Allocate variable in defined memory" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
   </root>

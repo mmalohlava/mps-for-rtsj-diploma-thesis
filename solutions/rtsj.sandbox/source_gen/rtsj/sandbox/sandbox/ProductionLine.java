@@ -6,7 +6,7 @@ package rtsj.sandbox.sandbox;
 public interface ProductionLine {
   public short getJarType();
   public short getSweetType();
-  public void getWeighingMachine();
+  public WeighingMachine getWeighingMachine();
   public long getLastJarId();
   public long getNumberOfJarsMissed();
 }
