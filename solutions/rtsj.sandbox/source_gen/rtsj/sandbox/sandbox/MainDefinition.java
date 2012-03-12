@@ -7,16 +7,10 @@ import javax.realtime.RealtimeThread;
 import javax.realtime.MemoryArea;
 import javax.realtime.RawMemoryAccess;
 import javax.realtime.ImmortalMemory;
-import javax.realtime.LTMemory;
 import javax.realtime.ScopedMemory;
-import javax.realtime.SchedulingParameters;
 import javax.realtime.PriorityParameters;
-import javax.realtime.MemoryParameters;
-import javax.realtime.ProcessingGroupParameters;
-import javax.realtime.ReleaseParameters;
 import javax.realtime.PeriodicParameters;
 import javax.realtime.RelativeTime;
-import javax.realtime.NoHeapRealtimeThread;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
@@ -33,31 +27,17 @@ public class MainDefinition {
 
   public static void main(String[] argc) {
 
-    new Main().run();
 
     allocateMemory("immortalMemory", ImmortalMemory.instance(), false);
-    allocateMemory("ControlRodsMemory", new LTMemory(16, 64), false);
-    allocateMemory("PrimaryWaterLoopMemory", new LTMemory(16, 64), false);
-    allocateMemory("ReactionSimulatorMemory", new LTMemory(16, 64), false);
 
     initThreads();
     initChannels();
     initObjectPools();
 
-    runModeDefaultMode();
-
-    getThread("ReactionSimulator").start();
-    getThread("ControlRods").start();
-    getThread("PrimaryWaterLoop").start();
 
 
-    try {
-      getThread("ReactionSimulator").join();
-      getThread("ControlRods").join();
-      getThread("PrimaryWaterLoop").join();
-    } catch (InterruptedException e) {
-      // ignore 
-    }
+
+
   }
 
   public static Object allocateVariable(String memoryName, Class clazz) {
@@ -70,6 +50,12 @@ public class MainDefinition {
       killProgram(e);
     }
     return variable;
+  }
+
+  public static Object allocaArray(String memoryName, Class clazz, int count) {
+    Object array = null;
+    array = getMemory(memoryName).newArray(clazz, count);
+    return array;
   }
 
   public static void allocateMemory(String name, MemoryArea memoryArea, boolean initWedgeThread) {
@@ -120,9 +106,6 @@ public class MainDefinition {
   }
 
   public static void initObjectPools() {
-    objectPools.put("objectPool1", new ObjectPooljava_lang_Thread(5, false));
-    objectPools.put("objectPool2", new ObjectPooljava_lang_Thread(10, false));
-    objectPools.put("objectPoolDouble", new ObjectPooljava_lang_Exception(5, false));
   }
 
   public static ObjectPoolI getObjectPool(String name) {
@@ -163,48 +146,11 @@ public class MainDefinition {
 
   private static void initThreads() {
 
-    {
-      if (threads.containsKey("ReactionSimulator")) {
-        killProgram("RealtimeThread with name " + "ReactionSimulator" + " already exists");
-      }
-
-      SchedulingParameters schedulingParameters = new PriorityParameters(5);
-      MemoryParameters memoryParameters = null;
-      ProcessingGroupParameters processingGroupParameters = null;
-      ReleaseParameters releaseParameters = new PeriodicParameters(new RelativeTime(2, 0), new RelativeTime(5, 0), new RelativeTime(0, 0), new RelativeTime(5, 0), null, null);
-
-      threads.put("ReactionSimulator", new RealtimeThread(schedulingParameters, releaseParameters, memoryParameters, getMemory("ReactionSimulatorMemory"), processingGroupParameters, new CycleWrapperForPerThread(Main.getReactor())));
-
-
+    if (threads.containsKey("ThreadBla")) {
+      killProgram("RealtimeThread with name " + "ThreadBla" + " already exists");
     }
-    {
-      if (threads.containsKey("ControlRods")) {
-        killProgram("RealtimeThread with name " + "ControlRods" + " already exists");
-      }
 
-      SchedulingParameters schedulingParameters = new PriorityParameters(5);
-      MemoryParameters memoryParameters = null;
-      ProcessingGroupParameters processingGroupParameters = null;
-      ReleaseParameters releaseParameters = new PeriodicParameters(new RelativeTime(0, 0), new RelativeTime(8, 0), new RelativeTime(0, 0), new RelativeTime(8, 0), null, null);
-
-
-      threads.put("ControlRods", new NoHeapRealtimeThread(schedulingParameters, releaseParameters, memoryParameters, getMemory("ControlRodsMemory"), processingGroupParameters, Main.getControlRods()));
-
-    }
-    {
-      if (threads.containsKey("PrimaryWaterLoop")) {
-        killProgram("RealtimeThread with name " + "PrimaryWaterLoop" + " already exists");
-      }
-
-      SchedulingParameters schedulingParameters = new PriorityParameters(5);
-      MemoryParameters memoryParameters = null;
-      ProcessingGroupParameters processingGroupParameters = null;
-      ReleaseParameters releaseParameters = new PeriodicParameters(new RelativeTime(2, 0), new RelativeTime(5, 0), new RelativeTime(0, 0), new RelativeTime(5, 0), null, null);
-
-      threads.put("PrimaryWaterLoop", new RealtimeThread(schedulingParameters, releaseParameters, memoryParameters, getMemory("PrimaryWaterLoopMemory"), processingGroupParameters, new CycleWrapperForPerThread(Main.getWaterLoop())));
-
-
-    }
+    threads.put("ThreadBla", new RealtimeThread(new PriorityParameters(5), new PeriodicParameters(new RelativeTime(0, 0), new RelativeTime(2, 0), new RelativeTime(0, 0), new RelativeTime(2, 0), null, null), null, MainDefinition.getMemory("immortalMemory"), null, new Rann()));
   }
 
   public static RealtimeThread getThread(String name) {
@@ -215,23 +161,7 @@ public class MainDefinition {
     return thread;
   }
 
-  public static void runModeDefaultMode() {
-    getThread("ControlRods").start();
-
-    try {
-      getThread("ControlRods").join();
-    } catch (InterruptedException e) {
-      // ignore 
-    }
-
-    getThread("PrimaryWaterLoop").interrupt();
-
-
-    getThread("ControlRods").setReleaseParameters(new PeriodicParameters(new RelativeTime(1, 0), new RelativeTime(5, 0), new RelativeTime(0, 0), new RelativeTime(5, 0), null, null));
-  }
-
   public static void initChannels() {
-    channels.put("channel1", new ITChannelrtsj_sandbox_sandbox_IntProxy(10));
   }
 
   public static InterThreadChannel getChannel(String name) {
