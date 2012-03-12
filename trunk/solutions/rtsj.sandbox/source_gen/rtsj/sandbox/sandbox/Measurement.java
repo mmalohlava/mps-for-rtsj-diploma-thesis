@@ -37,4 +37,12 @@ public class Measurement {
   public long timestamp() {
     return time;
   }
+
+  public void set(long jarId, int jarMassGrams, short sweetType, short jarType, long time) {
+    this.jarId = jarId;
+    this.jarMassGrams = jarMassGrams;
+    this.sweetType = sweetType;
+    this.jarType = jarType;
+    this.time = time;
+  }
 }

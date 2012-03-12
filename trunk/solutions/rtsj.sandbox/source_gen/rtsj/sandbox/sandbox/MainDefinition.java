@@ -8,9 +8,6 @@ import javax.realtime.MemoryArea;
 import javax.realtime.RawMemoryAccess;
 import javax.realtime.ImmortalMemory;
 import javax.realtime.ScopedMemory;
-import javax.realtime.PriorityParameters;
-import javax.realtime.PeriodicParameters;
-import javax.realtime.RelativeTime;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
@@ -146,11 +143,6 @@ public class MainDefinition {
 
   private static void initThreads() {
 
-    if (threads.containsKey("ThreadBla")) {
-      killProgram("RealtimeThread with name " + "ThreadBla" + " already exists");
-    }
-
-    threads.put("ThreadBla", new RealtimeThread(new PriorityParameters(5), new PeriodicParameters(new RelativeTime(0, 0), new RelativeTime(2, 0), new RelativeTime(0, 0), new RelativeTime(2, 0), null, null), null, MainDefinition.getMemory("immortalMemory"), null, new Rann()));
   }
 
   public static RealtimeThread getThread(String name) {

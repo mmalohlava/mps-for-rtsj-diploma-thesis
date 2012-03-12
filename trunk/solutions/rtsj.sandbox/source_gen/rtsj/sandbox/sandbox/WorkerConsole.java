@@ -6,6 +6,6 @@ package rtsj.sandbox.sandbox;
 public interface WorkerConsole {
   public void jarOverfilled(long jarId);
   public void jarUnderfilled(long jarId);
-  public void getTotalJarsOverfilled(long jarId);
-  public void getTotalJarsUnderfilled(long jarId);
+  public long getTotalJarsOverfilled(long jarId);
+  public long getTotalJarsUnderfilled(long jarId);
 }
