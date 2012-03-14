@@ -14,7 +14,7 @@
   <language namespace="7fa12e9c-b949-4976-b4fa-19accbc320b4(jetbrains.mps.lang.dataFlow)" />
   <language namespace="af65afd8-f0dd-4942-87d9-63a55f2a9db1(jetbrains.mps.lang.behavior)" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
-  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="16" />
+  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="21" />
   <import index="tpek" modelUID="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" version="-1" />
   <import index="zam7" modelUID="f:java_stub#95220e4e-a271-48e4-8488-c48145fd3f16#javax.realtime(rtsj/javax.realtime@java_stub)" version="-1" />
   <import index="k7g3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" version="-1" />
@@ -155,13 +155,13 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.wedgeThread" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="7960034524145781140">
-      <property name="name" nameId="tpck.1169194664001" value="InterThreadChannelImpl" />
+      <property name="name" nameId="tpck.1169194664001" value="CommunicationChannelImpl" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
     </node>
     <node type="tpf8.TemplateDeclaration" typeId="tpf8.1092059087312" id="7960034524145883562">
-      <property name="name" nameId="tpck.1169194664001" value="reduce_InterThreadChannelPop" />
+      <property name="name" nameId="tpck.1169194664001" value="reduce_CommunicationChannelPop" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
-      <link role="applicableConcept" roleId="tpf8.1168285871518" targetNodeId="xaf1.7960034524145781122" resolveInfo="InterThreadChannelPop" />
+      <link role="applicableConcept" roleId="tpf8.1168285871518" targetNodeId="xaf1.7960034524145781122" resolveInfo="CommunicationChannelPop" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="6254049394131222760">
       <property name="name" nameId="tpck.1169194664001" value="ObjectPoolImpl" />
@@ -195,17 +195,17 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.objectPool" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="2559548703176068073">
-      <property name="name" nameId="tpck.1169194664001" value="InterThreadChannel" />
+      <property name="name" nameId="tpck.1169194664001" value="CommunicationChannel" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
     </node>
     <node type="tpee.Interface" typeId="tpee.1107796713796" id="4454671662721905451">
-      <property name="name" nameId="tpck.1169194664001" value="InterThreadChannelElement" />
+      <property name="name" nameId="tpck.1169194664001" value="CommunicationChannelElement" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
     </node>
     <node type="tpf8.TemplateDeclaration" typeId="tpf8.1092059087312" id="4454671662721906366">
-      <property name="name" nameId="tpck.1169194664001" value="reduce_InterThreadChannelPush" />
+      <property name="name" nameId="tpck.1169194664001" value="reduce_CommunicationChannelPush" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
-      <link role="applicableConcept" roleId="tpf8.1168285871518" targetNodeId="xaf1.7960034524145781069" resolveInfo="InterThreadChannelPush" />
+      <link role="applicableConcept" roleId="tpf8.1168285871518" targetNodeId="xaf1.7960034524145781069" resolveInfo="CommunicationChannelPush" />
     </node>
     <node type="tpf8.TemplateDeclaration" typeId="tpf8.1092059087312" id="3801488968793909414">
       <property name="name" nameId="tpck.1169194664001" value="reduce_AllocateVariableExpression" />
@@ -245,9 +245,6 @@
       <property name="name" nameId="tpck.1169194664001" value="case_ScopedMemoryRefLocal" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
       <link role="applicableConcept" roleId="tpf8.1168285871518" targetNodeId="xaf1.3005132233865429302" resolveInfo="ScopedMemory" />
-    </node>
-    <node type="tpf8.TemplateDeclaration" typeId="tpf8.1092059087312" id="9160275732584312477">
-      <property name="name" nameId="tpck.1169194664001" value="ff" />
     </node>
   </roots>
   <root id="3005132233865499108">
@@ -321,7 +318,7 @@
       <link role="templateNode" roleId="tpf8.1167087469901" targetNodeId="3711103311464487858" resolveInfo="CycleWrapperForPerThread" />
     </node>
     <node role="createRootRule" roleId="tpf8.1167088157977" type="tpf8.CreateRootRule" typeId="tpf8.1167087469898" id="2244210341897188804">
-      <link role="templateNode" roleId="tpf8.1167087469901" targetNodeId="2559548703176068073" resolveInfo="InterThreadChannel" />
+      <link role="templateNode" roleId="tpf8.1167087469901" targetNodeId="2559548703176068073" resolveInfo="CommunicationChannel" />
     </node>
     <node role="createRootRule" roleId="tpf8.1167088157977" type="tpf8.CreateRootRule" typeId="tpf8.1167087469898" id="2244210341897188805">
       <link role="templateNode" roleId="tpf8.1167087469901" targetNodeId="7197056783193750599" resolveInfo="WedgeThread" />
@@ -551,16 +548,16 @@
     </node>
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="7960034524145883560">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
-      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="xaf1.7960034524145781122" resolveInfo="InterThreadChannelPop" />
+      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="xaf1.7960034524145781122" resolveInfo="CommunicationChannelPop" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.TemplateDeclarationReference" typeId="tpf8.1168559333462" id="7960034524145883564">
-        <link role="template" roleId="tpf8.1722980698497626483" targetNodeId="7960034524145883562" resolveInfo="reduce_InterThreadChannelPop" />
+        <link role="template" roleId="tpf8.1722980698497626483" targetNodeId="7960034524145883562" resolveInfo="reduce_CommunicationChannelPop" />
       </node>
     </node>
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="4454671662721906364">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
-      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="xaf1.7960034524145781069" resolveInfo="InterThreadChannelPush" />
+      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="xaf1.7960034524145781069" resolveInfo="CommunicationChannelPush" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.TemplateDeclarationReference" typeId="tpf8.1168559333462" id="4454671662721906368">
-        <link role="template" roleId="tpf8.1722980698497626483" targetNodeId="4454671662721906366" resolveInfo="reduce_InterThreadChannelPush" />
+        <link role="template" roleId="tpf8.1722980698497626483" targetNodeId="4454671662721906366" resolveInfo="reduce_CommunicationChannelPush" />
       </node>
     </node>
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="6254049394131257354">
@@ -785,8 +782,8 @@
     </node>
     <node role="rootMappingRule" roleId="tpf8.1167514678247" type="tpf8.Root_MappingRule" typeId="tpf8.1167514355419" id="2559548703176101215">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
-      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="xaf1.7960034524145780979" resolveInfo="InterThreadChannel" />
-      <link role="template" roleId="tpf8.1167514355421" targetNodeId="7960034524145781140" resolveInfo="InterThreadChannelImpl" />
+      <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="xaf1.7960034524145780979" resolveInfo="CommunicationChannel" />
+      <link role="template" roleId="tpf8.1167514355421" targetNodeId="7960034524145781140" resolveInfo="CommunicationChannelImpl" />
       <node role="conditionFunction" roleId="tpf8.1167169362365" type="tpf8.BaseMappingRule_Condition" typeId="tpf8.1167168920554" id="2559548703176101256">
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2559548703176101257">
           <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="2559548703176101258">
@@ -807,7 +804,7 @@
                     <node role="operand" roleId="tpee.1197027771414" type="tpf3.TemplateFunctionParameter_generationContext" typeId="tpf3.1216860049635" id="2559548703176101266" />
                     <node role="operation" roleId="tpee.1197027833540" type="tpf3.GenerationContextOp_SessionObjectAccess" typeId="tpf3.1217889725928" id="2559548703176101267">
                       <node role="userKey" roleId="tpf3.1217890689512" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2559548703176101268">
-                        <property name="value" nameId="tpee.1070475926801" value="ITChannel" />
+                        <property name="value" nameId="tpee.1070475926801" value="CommunicationChannel" />
                       </node>
                     </node>
                   </node>
@@ -1024,7 +1021,7 @@
     </node>
     <node role="dropRootRule" roleId="tpf8.1219952894531" type="tpf8.DropRootRule" typeId="tpf8.1219952072943" id="7960034524145883555">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
-      <link role="applicableConcept" roleId="tpf8.1219952338328" targetNodeId="xaf1.7960034524145780979" resolveInfo="InterThreadChannel" />
+      <link role="applicableConcept" roleId="tpf8.1219952338328" targetNodeId="xaf1.7960034524145780979" resolveInfo="CommunicationChannel" />
       <node role="conditionFunction" roleId="tpf8.1219952317655" type="tpf8.DropRootRule_Condition" typeId="tpf8.1219952151850" id="7960034524145883556">
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7960034524145883557">
           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7960034524145883558">
@@ -1129,7 +1126,7 @@
           <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~String" resolveInfo="String" />
         </node>
         <node role="parameter" roleId="tpee.1109201940907" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2559548703176101387">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2559548703176068073" resolveInfo="InterThreadChannel" />
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2559548703176068073" resolveInfo="CommunicationChannel" />
         </node>
       </node>
       <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7960034524145883688">
@@ -1139,7 +1136,7 @@
             <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~String" resolveInfo="String" />
           </node>
           <node role="typeParameter" roleId="tpee.1212687122400" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2559548703176101391">
-            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2559548703176068073" resolveInfo="InterThreadChannel" />
+            <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2559548703176068073" resolveInfo="CommunicationChannel" />
           </node>
         </node>
       </node>
@@ -3339,7 +3336,7 @@
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7960034524145883731">
                 <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="7960034524145883733">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7960034524145781142" resolveInfo="InterThreadChannelImpl" />
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7960034524145781142" resolveInfo="CommunicationChannelImpl" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2559548703176101444">
                     <property name="value" nameId="tpee.1068580320021" value="10" />
                     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="2559548703176101481">
@@ -3386,7 +3383,7 @@
                       <node role="operation" roleId="tpee.1197027833540" type="tpf3.GenerationContextOp_GetOriginalInputModel" typeId="tpf3.1217026863835" id="2559548703176101465" />
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tp25.Model_NodesOperation" typeId="tp25.1171323947159" id="2559548703176101466">
-                      <link role="concept" roleId="tp25.1171323947160" targetNodeId="xaf1.7960034524145780979" resolveInfo="InterThreadChannel" />
+                      <link role="concept" roleId="tp25.1171323947160" targetNodeId="xaf1.7960034524145780979" resolveInfo="CommunicationChannel" />
                     </node>
                   </node>
                 </node>
@@ -3421,7 +3418,7 @@
         </node>
       </node>
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2559548703176101395">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2559548703176068073" resolveInfo="InterThreadChannel" />
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2559548703176068073" resolveInfo="CommunicationChannel" />
       </node>
     </node>
     <node role="staticMethod" roleId="tpee.1070462273904" type="tpee.StaticMethodDeclaration" typeId="tpee.1081236700938" id="9160275732584344139">
@@ -6253,7 +6250,7 @@
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="7960034524145860673" />
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.ArrayType" typeId="tpee.1070534760951" id="7960034524145860676">
         <node role="componentType" roleId="tpee.1070534760952" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2559548703176051634">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="4454671662721905451" resolveInfo="InterThreadChannelElement" />
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="4454671662721905451" resolveInfo="CommunicationChannelElement" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="2559548703176068650">
             <node role="sourceNodeQuery" roleId="tpf8.1168024447342" type="tpf8.SourceSubstituteMacro_SourceNodeQuery" typeId="tpf8.1168024337012" id="2559548703176068653">
               <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2559548703176068654">
@@ -6352,7 +6349,7 @@
                   </node>
                 </node>
                 <node role="componentType" roleId="tpee.1184951007469" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2559548703176068659">
-                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="4454671662721905451" resolveInfo="InterThreadChannelElement" />
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="4454671662721905451" resolveInfo="CommunicationChannelElement" />
                   <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="2559548703176068661">
                     <node role="sourceNodeQuery" roleId="tpf8.1168024447342" type="tpf8.SourceSubstituteMacro_SourceNodeQuery" typeId="tpf8.1168024337012" id="2559548703176068664">
                       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2559548703176068665">
@@ -6394,10 +6391,10 @@
       </node>
     </node>
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.RootTemplateAnnotation" typeId="tpf8.1168619357332" id="7960034524145781146">
-      <link role="applicableConcept" roleId="tpf8.1168619429071" targetNodeId="xaf1.7960034524145780979" resolveInfo="InterThreadChannel" />
+      <link role="applicableConcept" roleId="tpf8.1168619429071" targetNodeId="xaf1.7960034524145780979" resolveInfo="CommunicationChannel" />
     </node>
     <node role="implementedInterface" roleId="tpee.1095933932569" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2559548703176068608">
-      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2559548703176068073" resolveInfo="InterThreadChannel" />
+      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2559548703176068073" resolveInfo="CommunicationChannel" />
     </node>
     <node role="method" roleId="tpee.1107880067339" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="2559548703176068755">
       <property name="isAbstract" nameId="tpee.1178608670077" value="false" />
@@ -6501,7 +6498,7 @@
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="4454671662721905464">
         <property name="name" nameId="tpck.1169194664001" value="obj" />
         <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="4454671662721905465">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="4454671662721905451" resolveInfo="InterThreadChannelElement" />
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="4454671662721905451" resolveInfo="CommunicationChannelElement" />
         </node>
       </node>
     </node>
@@ -6510,7 +6507,7 @@
       <property name="name" nameId="tpck.1169194664001" value="pop" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2559548703176068802" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="4454671662721906345">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="4454671662721905451" resolveInfo="InterThreadChannelElement" />
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="4454671662721905451" resolveInfo="CommunicationChannelElement" />
       </node>
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2559548703176068804">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="7960034524145883481">
@@ -6532,7 +6529,7 @@
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="7960034524145883507">
             <property name="name" nameId="tpck.1169194664001" value="result" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="4454671662721906346">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="4454671662721905451" resolveInfo="InterThreadChannelElement" />
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="4454671662721905451" resolveInfo="CommunicationChannelElement" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.ArrayAccessExpression" typeId="tpee.1173175405605" id="7960034524145883511">
               <node role="index" roleId="tpee.1173175577737" type="tpee.LocalInstanceFieldReference" typeId="tpee.7785501532031639928" id="7960034524145883514">
@@ -7306,7 +7303,7 @@
               <node role="operand" roleId="tpee.1197027771414" type="tpf3.TemplateFunctionParameter_generationContext" typeId="tpf3.1216860049635" id="2559548703176101304" />
               <node role="operation" roleId="tpee.1197027833540" type="tpf3.GenerationContextOp_SessionObjectAccess" typeId="tpf3.1217889725928" id="2559548703176101305">
                 <node role="userKey" roleId="tpf3.1217890689512" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2559548703176101306">
-                  <property name="value" nameId="tpee.1070475926801" value="ITChannel" />
+                  <property name="value" nameId="tpee.1070475926801" value="CommunicationChannel" />
                 </node>
               </node>
             </node>
@@ -7353,7 +7350,7 @@
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="4454671662721905448">
         <property name="name" nameId="tpck.1169194664001" value="obj" />
         <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="4454671662721905461">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="4454671662721905451" resolveInfo="InterThreadChannelElement" />
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="4454671662721905451" resolveInfo="CommunicationChannelElement" />
         </node>
       </node>
     </node>
@@ -7363,7 +7360,7 @@
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2559548703176068083" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2559548703176068084" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="4454671662721905462">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="4454671662721905451" resolveInfo="InterThreadChannelElement" />
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="4454671662721905451" resolveInfo="CommunicationChannelElement" />
       </node>
     </node>
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2559548703176068074" />
@@ -8084,96 +8081,6 @@
         <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2993823323997410431" />
         <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2993823323997410432" />
       </node>
-    </node>
-  </root>
-  <root id="9160275732584312477">
-    <node role="contentNode" roleId="tpf8.1092060348987" type="tpee.ClassConcept" typeId="tpee.1068390468198" id="9160275732584312479">
-      <property name="nonStatic" nameId="tpee.521412098689998745" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="ww" />
-      <node role="method" roleId="tpee.1107880067339" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="9160275732584312485">
-        <property name="name" nameId="tpck.1169194664001" value="g" />
-        <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="9160275732584312486" />
-        <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="9160275732584312487" />
-        <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="9160275732584312488">
-          <node role="statement" roleId="tpee.1068581517665" type="tpee.CommentedStatementsBlock" typeId="tpee.1177326519037" id="9160275732584323723">
-            <node role="statement" roleId="tpee.1177326540772" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="9160275732584312489">
-              <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9160275732584312490">
-                <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="9160275732584312491">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="zam7.~ScopedMemory%denter(java%dlang%dRunnable)%cvoid" resolveInfo="enter" />
-                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="9160275732584312492">
-                    <node role="creator" roleId="tpee.1145553007750" type="tpee.AnonymousClassCreator" typeId="tpee.1182160077978" id="9160275732584312493">
-                      <node role="cls" roleId="tpee.1182160096073" type="tpee.AnonymousClass" typeId="tpee.1170345865475" id="9160275732584312494">
-                        <property name="nonStatic" nameId="tpee.521412098689998745" value="true" />
-                        <link role="classifier" roleId="tpee.1170346070688" targetNodeId="e2lb.~Runnable" resolveInfo="Runnable" />
-                        <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~Object%d&lt;init&gt;()" resolveInfo="Object" />
-                        <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="9160275732584312495" />
-                        <node role="method" roleId="tpee.1107880067339" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="9160275732584312496">
-                          <property name="isAbstract" nameId="tpee.1178608670077" value="false" />
-                          <property name="name" nameId="tpck.1169194664001" value="run" />
-                          <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="9160275732584312497" />
-                          <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="9160275732584312498" />
-                          <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="9160275732584312499">
-                            <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="9160275732584312500">
-                              <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="9160275732584312501">
-                                <property name="name" nameId="tpck.1169194664001" value="a" />
-                                <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="9160275732584312502" />
-                              </node>
-                              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.LoopMacro" typeId="tpf8.1118786554307" id="9160275732584312503">
-                                <node role="sourceNodesQuery" roleId="tpf8.1167952069335" type="tpf8.SourceSubstituteMacro_SourceNodesQuery" typeId="tpf8.1167951910403" id="9160275732584312504">
-                                  <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="9160275732584312505">
-                                    <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="9160275732584312506">
-                                      <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9160275732584312507">
-                                        <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9160275732584312508">
-                                          <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="9160275732584312509" />
-                                          <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="9160275732584312510">
-                                            <link role="link" roleId="tp25.1138056516764" targetNodeId="xaf1.9184680382602310941" />
-                                          </node>
-                                        </node>
-                                        <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="9160275732584312511">
-                                          <link role="link" roleId="tp25.1138056546658" targetNodeId="tpee.1068581517665" />
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.CopySrcNodeMacro" typeId="tpf8.1114706874351" id="9160275732584312512">
-                                <node role="sourceNodeQuery" roleId="tpf8.1168024447342" type="tpf8.SourceSubstituteMacro_SourceNodeQuery" typeId="tpf8.1168024337012" id="9160275732584312513">
-                                  <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="9160275732584312514">
-                                    <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="9160275732584312515">
-                                      <node role="expression" roleId="tpee.1068580123156" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="9160275732584312516" />
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="9160275732584323854">
-            <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="9160275732584323855">
-              <property name="name" nameId="tpck.1169194664001" value="i" />
-              <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="9160275732584323856" />
-              <node role="initializer" roleId="tpee.1068431790190" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="9160275732584323860">
-                <property name="value" nameId="tpee.1068580320021" value="0" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="9160275732584312480" />
-      <node role="constructor" roleId="tpee.1068390468201" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="9160275732584312481">
-        <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="9160275732584312482" />
-        <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="9160275732584312483" />
-        <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="9160275732584312484" />
-      </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="9160275732584323925" />
     </node>
   </root>
 </model>

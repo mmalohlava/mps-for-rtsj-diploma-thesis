@@ -18,5 +18,35 @@
     </dependencies>
     <rename id="xaf1.9184680382602310941" type="CHILD" from="body" to="runnable" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="16" />
+    </dependencies>
+    <rename id="xaf1.7960034524145780979" type="CONCEPT" from="InterThreadChannel" to="CommunicationInterThreadChannel" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="17" />
+    </dependencies>
+    <rename id="xaf1.7960034524145780979" type="CONCEPT" from="CommunicationInterThreadChannel" to="CommunicationChannel" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="18" />
+    </dependencies>
+    <rename id="xaf1.1046795583932046113" type="CONCEPT" from="InterThreadChannelElement" to="CommunicationChannelElement" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="19" />
+    </dependencies>
+    <rename id="xaf1.7960034524145781122" type="CONCEPT" from="InterThreadChannelPop" to="CommunicationChannelPop" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="20" />
+    </dependencies>
+    <rename id="xaf1.7960034524145781069" type="CONCEPT" from="InterThreadChannelPush" to="CommunicationChannelPush" />
+  </StructureModification>
 </history>
 

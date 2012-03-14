@@ -10,7 +10,7 @@
   <language namespace="97a52717-898f-4598-8150-573d9fd03868(jetbrains.mps.analyzers)" />
   <language namespace="d4615e3b-d671-4ba9-af01-2b78369b0ba7(jetbrains.mps.lang.pattern)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="16" />
+  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="21" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" />
   <import index="mu20" modelUID="r:fc94574f-a075-45e6-9927-48e7e87153e6(jetbrains.mps.analyzers.runtime.framework)" version="-1" />
   <import index="k7g3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" version="-1" />
@@ -45,7 +45,7 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory.sizeEstimator" />
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="3889169560759439155">
-      <property name="name" nameId="tpck.1169194664001" value="typeof_InterThreadChannelPop" />
+      <property name="name" nameId="tpck.1169194664001" value="typeof_CommunicationChannelPop" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="3889169560759631620">
@@ -53,14 +53,14 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory.rawMemory" />
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="2559548703176284423">
-      <property name="name" nameId="tpck.1169194664001" value="typeof_InterThreadChannelPush" />
+      <property name="name" nameId="tpck.1169194664001" value="typeof_CommunicationChannelPush" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
     </node>
     <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="1781924062099196514">
       <property name="name" nameId="tpck.1169194664001" value="check_MemoryAssigning" />
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="4454671662722060254">
-      <property name="name" nameId="tpck.1169194664001" value="typeof_InterThreadChannel" />
+      <property name="name" nameId="tpck.1169194664001" value="typeof_CommunicationChannel" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="4454671662722101190">
@@ -77,7 +77,7 @@
     </node>
     <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="4880813901684341004">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
-      <property name="name" nameId="tpck.1169194664001" value="check_InterThreadChannel" />
+      <property name="name" nameId="tpck.1169194664001" value="check_CommunicationChannel" />
     </node>
     <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="4880813901684341049">
       <property name="name" nameId="tpck.1169194664001" value="check_ObjectPool" />
@@ -91,7 +91,7 @@
       <property name="name" nameId="tpck.1169194664001" value="check_MainDefinition" />
     </node>
     <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="8210674499019882987">
-      <property name="name" nameId="tpck.1169194664001" value="check_InterThreadChannelElement" />
+      <property name="name" nameId="tpck.1169194664001" value="check_CommunicationChannelElement" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
     </node>
     <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="8210674499019883011">
@@ -233,7 +233,7 @@
     </node>
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="3889169560759439157">
       <property name="name" nameId="tpck.1169194664001" value="obj" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xaf1.7960034524145781122" resolveInfo="InterThreadChannelPop" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xaf1.7960034524145781122" resolveInfo="CommunicationChannelPop" />
     </node>
   </root>
   <root id="3889169560759631620">
@@ -428,7 +428,7 @@
     </node>
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="2559548703176284425">
       <property name="name" nameId="tpck.1169194664001" value="obj" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xaf1.7960034524145781069" resolveInfo="InterThreadChannelPush" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xaf1.7960034524145781069" resolveInfo="CommunicationChannelPush" />
     </node>
   </root>
   <root id="1781924062099196514">
@@ -760,7 +760,7 @@
     </node>
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="4454671662722060256">
       <property name="name" nameId="tpck.1169194664001" value="obj" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xaf1.7960034524145780979" resolveInfo="InterThreadChannel" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xaf1.7960034524145780979" resolveInfo="CommunicationChannel" />
     </node>
   </root>
   <root id="4454671662722101190">
@@ -995,7 +995,7 @@
         <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4880813901684341009">
           <property name="name" nameId="tpck.1169194664001" value="allChannels" />
           <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeListType" typeId="tp25.1145383075378" id="4880813901684341010">
-            <link role="elementConcept" roleId="tp25.1145383142433" targetNodeId="xaf1.7960034524145780979" resolveInfo="InterThreadChannel" />
+            <link role="elementConcept" roleId="tp25.1145383142433" targetNodeId="xaf1.7960034524145780979" resolveInfo="CommunicationChannel" />
           </node>
           <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4880813901684341011">
             <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4880813901684341012">
@@ -1005,7 +1005,7 @@
               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetModelOperation" typeId="tp25.1143234257716" id="4880813901684341014" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Model_RootsOperation" typeId="tp25.1171315804604" id="4880813901684341015">
-              <link role="concept" roleId="tp25.1171315804605" targetNodeId="xaf1.7960034524145780979" resolveInfo="InterThreadChannel" />
+              <link role="concept" roleId="tp25.1171315804605" targetNodeId="xaf1.7960034524145780979" resolveInfo="CommunicationChannel" />
             </node>
           </node>
         </node>
@@ -1054,7 +1054,7 @@
               <node role="statement" roleId="tpee.1068581517665" type="tpd4.ReportErrorStatement" typeId="tpd4.1175517767210" id="4880813901684341035">
                 <node role="errorString" roleId="tpd4.1175517851849" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="4880813901684341036">
                   <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4880813901684341037">
-                    <property name="value" nameId="tpee.1070475926801" value="' is already used for another Channel." />
+                    <property name="value" nameId="tpee.1070475926801" value="' is already used for another CommunicationChannel." />
                   </node>
                   <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="4880813901684341038">
                     <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4880813901684341039">
@@ -1081,7 +1081,7 @@
     </node>
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="4880813901684341007">
       <property name="name" nameId="tpck.1169194664001" value="thisChannel" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xaf1.7960034524145780979" resolveInfo="InterThreadChannel" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xaf1.7960034524145780979" resolveInfo="CommunicationChannel" />
     </node>
   </root>
   <root id="4880813901684341049">
@@ -1337,7 +1337,7 @@
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetModelOperation" typeId="tp25.1143234257716" id="8210674499019882997" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp25.Model_RootsOperation" typeId="tp25.1171315804604" id="8210674499019882998">
-                <link role="concept" roleId="tp25.1171315804605" targetNodeId="xaf1.1046795583932046113" resolveInfo="InterThreadChannelElement" />
+                <link role="concept" roleId="tp25.1171315804605" targetNodeId="xaf1.1046795583932046113" resolveInfo="CommunicationChannelElement" />
               </node>
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp2q.GetSizeOperation" typeId="tp2q.1162935959151" id="8210674499019882999" />
@@ -1348,7 +1348,7 @@
         <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="8210674499019883001">
           <node role="statement" roleId="tpee.1068581517665" type="tpd4.ReportErrorStatement" typeId="tpd4.1175517767210" id="8210674499019883002">
             <node role="errorString" roleId="tpd4.1175517851849" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8210674499019883003">
-              <property name="value" nameId="tpee.1070475926801" value="Concept 'InterThreadChannelElement' must be instatiated exactly once" />
+              <property name="value" nameId="tpee.1070475926801" value="Concept 'CommunicationChannelElement' must be instatiated exactly once" />
             </node>
             <node role="nodeToReport" roleId="tpd4.1227096802790" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="8210674499019883009">
               <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="8210674499019882989" resolveInfo="channelElement" />
@@ -1367,7 +1367,7 @@
     </node>
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="8210674499019882989">
       <property name="name" nameId="tpck.1169194664001" value="channelElement" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xaf1.1046795583932046113" resolveInfo="InterThreadChannelElement" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xaf1.1046795583932046113" resolveInfo="CommunicationChannelElement" />
     </node>
   </root>
   <root id="8210674499019883011">

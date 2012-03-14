@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="16">
+<model modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="21">
   <persistence version="7" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <language namespace="95220e4e-a271-48e4-8488-c48145fd3f16(rtsj)" />
@@ -7,7 +7,7 @@
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
-  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="16" implicit="yes" />
+  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="21" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3005132233865386782">
       <property name="name" nameId="tpck.1169194664001" value="RealtimeThread" />
@@ -183,18 +183,18 @@
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7960034524145780979">
-      <property name="name" nameId="tpck.1169194664001" value="InterThreadChannel" />
+      <property name="name" nameId="tpck.1169194664001" value="CommunicationChannel" />
       <property name="rootable" nameId="tpce.1096454100552" value="true" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7960034524145781069">
-      <property name="name" nameId="tpck.1169194664001" value="InterThreadChannelPush" />
+      <property name="name" nameId="tpck.1169194664001" value="CommunicationChannelPush" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7960034524145781122">
-      <property name="name" nameId="tpck.1169194664001" value="InterThreadChannelPop" />
+      <property name="name" nameId="tpck.1169194664001" value="CommunicationChannelPop" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
     </node>
@@ -215,7 +215,7 @@
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1046795583932046113">
-      <property name="name" nameId="tpck.1169194664001" value="InterThreadChannelElement" />
+      <property name="name" nameId="tpck.1169194664001" value="CommunicationChannelElement" />
       <property name="rootable" nameId="tpce.1096454100552" value="true" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1107796713796" resolveInfo="Interface" />
@@ -880,7 +880,7 @@
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="channel" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="7960034524145780979" resolveInfo="InterThreadChannel" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7960034524145780979" resolveInfo="CommunicationChannel" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="2559548703176205250">
       <property name="value" nameId="tpce.1105725733873" value="pushToChannel" />
@@ -896,7 +896,7 @@
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="channel" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="7960034524145780979" resolveInfo="InterThreadChannel" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7960034524145780979" resolveInfo="CommunicationChannel" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="2559548703176205251">
       <property name="value" nameId="tpce.1105725733873" value="popFromChannel" />
