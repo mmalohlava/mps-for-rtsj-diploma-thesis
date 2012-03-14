@@ -115,6 +115,10 @@
       <property name="name" nameId="tpck.1169194664001" value="typeof_EnterMemoryStatement" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
     </node>
+    <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="6669225085930097527">
+      <property name="name" nameId="tpck.1169194664001" value="typeof_CommunicationChannelIsEmpty" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
+    </node>
   </roots>
   <root id="3005132233865401092">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="3005132233865401093">
@@ -1599,6 +1603,32 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="9160275732584474551">
       <property name="name" nameId="tpck.1169194664001" value="statement" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xaf1.9184680382602267965" resolveInfo="EnterMemoryStatement" />
+    </node>
+  </root>
+  <root id="6669225085930097527">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="6669225085930097528">
+      <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="6669225085930097534">
+        <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="6669225085930097538">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="6669225085930097539">
+            <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="6669225085930097541">
+              <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="6669225085930097542">
+                <link role="concept" roleId="tp25.1138405853777" targetNodeId="tpee.1070534644030" resolveInfo="BooleanType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="6669225085930097537">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="6669225085930097531">
+            <node role="term" roleId="tpd4.1174657509053" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="6669225085930097533">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="6669225085930097529" resolveInfo="channelIsEmpty" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="6669225085930097529">
+      <property name="name" nameId="tpck.1169194664001" value="channelIsEmpty" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xaf1.6669225085930097505" resolveInfo="CommunicationChannelIsEmpty" />
     </node>
   </root>
 </model>
