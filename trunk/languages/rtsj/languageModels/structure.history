@@ -48,5 +48,11 @@
     </dependencies>
     <rename id="xaf1.7960034524145781069" type="CONCEPT" from="InterThreadChannelPush" to="CommunicationChannelPush" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="21" />
+    </dependencies>
+    <rename id="xaf1.6669225085929993771" type="PROPERTY" from="s" to="implType" />
+  </StructureModification>
 </history>
 
