@@ -6,7 +6,7 @@
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
   <language namespace="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="16" />
+  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="21" />
   <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="32" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpen" modelUID="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" version="-1" implicit="yes" />
@@ -128,15 +128,15 @@
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7960034524145781015">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.7960034524145780979" resolveInfo="InterThreadChannel" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.7960034524145780979" resolveInfo="CommunicationChannel" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7960034524145781100">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.7960034524145781069" resolveInfo="InterThreadChannelPush" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.7960034524145781069" resolveInfo="CommunicationChannelPush" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7960034524145781124">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.7960034524145781122" resolveInfo="InterThreadChannelPop" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.7960034524145781122" resolveInfo="CommunicationChannelPop" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6254049394131213109">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.objectPool" />
@@ -152,7 +152,7 @@
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4880813901684171222">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.1046795583932046113" resolveInfo="InterThreadChannelElement" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.1046795583932046113" resolveInfo="CommunicationChannelElement" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3801488968793744061">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />

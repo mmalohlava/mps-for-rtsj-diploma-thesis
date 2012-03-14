@@ -8,7 +8,7 @@
   <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" version="-1" />
   <import index="k7g3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" version="-1" />
   <import index="vft3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util.concurrent.atomic(JDK/java.util.concurrent.atomic@java_stub)" version="-1" />
-  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="16" implicit="yes" />
+  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="21" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <roots>
@@ -80,9 +80,6 @@
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="3327954350460829566">
       <property name="name" nameId="tpck.1169194664001" value="Sandbox" />
     </node>
-    <node type="xaf1.InterThreadChannelElement" typeId="xaf1.1046795583932046113" id="3327954350460904811">
-      <property name="name" nameId="tpck.1169194664001" value="InterThreadChannelElement" />
-    </node>
     <node type="xaf1.ScopedMemory" typeId="xaf1.3005132233865429302" id="2993823323997169772">
       <property name="name" nameId="tpck.1169194664001" value="globalMemory" />
       <property name="global" nameId="xaf1.2993823323997118774" value="true" />
@@ -93,6 +90,9 @@
     <node type="xaf1.ImmortalMemory" typeId="xaf1.3005132233865491185" id="2993823323997410412">
       <property name="name" nameId="tpck.1169194664001" value="immortalMemory" />
       <property name="global" nameId="xaf1.2993823323997118774" value="true" />
+    </node>
+    <node type="xaf1.CommunicationChannelElement" typeId="xaf1.1046795583932046113" id="6669225085929992519">
+      <property name="name" nameId="tpck.1169194664001" value="CommunicationChannelElement" />
     </node>
   </roots>
   <root id="7022356706857381763" />
@@ -4859,25 +4859,6 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="3327954350460829571" />
     </node>
   </root>
-  <root id="3327954350460904811">
-    <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="3327954350460904812" />
-    <node role="typeVariableDeclaration" roleId="tpee.1109279881614" type="tpee.TypeVariableDeclaration" typeId="tpee.1109279763828" id="3327954350460904813">
-      <property name="name" nameId="tpck.1169194664001" value="T" />
-    </node>
-    <node role="method" roleId="tpee.1107880067339" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="3327954350460904814">
-      <property name="name" nameId="tpck.1169194664001" value="clone" />
-      <property name="isAbstract" nameId="tpee.1178608670077" value="true" />
-      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="3327954350460904815" />
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="3327954350460904816" />
-      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="3327954350460904817" />
-      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="3327954350460904818">
-        <property name="name" nameId="tpck.1169194664001" value="object" />
-        <node role="type" roleId="tpee.5680397130376446158" type="tpee.TypeVariableReference" typeId="tpee.1109283449304" id="3327954350460904819">
-          <link role="typeVariableDeclaration" roleId="tpee.1109283546497" targetNodeId="3327954350460904813" resolveInfo="T" />
-        </node>
-      </node>
-    </node>
-  </root>
   <root id="2993823323997169772">
     <node role="initial" roleId="xaf1.3005132233865429303" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2993823323997248310">
       <property name="value" nameId="tpee.1068580320021" value="64" />
@@ -4936,5 +4917,24 @@
     </node>
   </root>
   <root id="2993823323997410412" />
+  <root id="6669225085929992519">
+    <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6669225085929992520" />
+    <node role="typeVariableDeclaration" roleId="tpee.1109279881614" type="tpee.TypeVariableDeclaration" typeId="tpee.1109279763828" id="6669225085929992521">
+      <property name="name" nameId="tpck.1169194664001" value="T" />
+    </node>
+    <node role="method" roleId="tpee.1107880067339" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="6669225085929992522">
+      <property name="name" nameId="tpck.1169194664001" value="clone" />
+      <property name="isAbstract" nameId="tpee.1178608670077" value="true" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="6669225085929992523" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6669225085929992524" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6669225085929992525" />
+      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="6669225085929992526">
+        <property name="name" nameId="tpck.1169194664001" value="object" />
+        <node role="type" roleId="tpee.5680397130376446158" type="tpee.TypeVariableReference" typeId="tpee.1109283449304" id="6669225085929992527">
+          <link role="typeVariableDeclaration" roleId="tpee.1109283546497" targetNodeId="6669225085929992521" resolveInfo="T" />
+        </node>
+      </node>
+    </node>
+  </root>
 </model>
 

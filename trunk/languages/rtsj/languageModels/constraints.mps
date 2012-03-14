@@ -5,12 +5,12 @@
   <language namespace="95220e4e-a271-48e4-8488-c48145fd3f16(rtsj)" />
   <language namespace="13744753-c81f-424a-9c1b-cf8943bf4e86(jetbrains.mps.lang.sharedConcepts)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+  <import index="k7g3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
-  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="16" implicit="yes" />
+  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="21" implicit="yes" />
   <import index="tp1t" modelUID="r:00000000-0000-4000-0000-011c8959030d(jetbrains.mps.lang.constraints.structure)" version="8" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="-1" implicit="yes" />
-  <import index="k7g3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" version="-1" implicit="yes" />
   <import index="tpcw" modelUID="r:00000000-0000-4000-0000-011c895902bc(jetbrains.mps.lang.sharedConcepts.structure)" version="0" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <roots>
@@ -28,11 +28,11 @@
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4880813901684075991">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
-      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="xaf1.7960034524145780979" resolveInfo="InterThreadChannel" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="xaf1.7960034524145780979" resolveInfo="CommunicationChannel" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4880813901684075996">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
-      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="xaf1.1046795583932046113" resolveInfo="InterThreadChannelElement" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="xaf1.1046795583932046113" resolveInfo="CommunicationChannelElement" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4880813901684076001">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.objectPool" />
