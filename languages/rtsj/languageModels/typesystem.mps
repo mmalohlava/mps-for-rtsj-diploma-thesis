@@ -59,10 +59,6 @@
     <node type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="1781924062099196514">
       <property name="name" nameId="tpck.1169194664001" value="check_MemoryAssigning" />
     </node>
-    <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="4454671662722060254">
-      <property name="name" nameId="tpck.1169194664001" value="typeof_CommunicationChannel" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.channel" />
-    </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="4454671662722101190">
       <property name="name" nameId="tpck.1169194664001" value="typeof_ObjectPoolGet" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="pattern.objectPool" />
@@ -242,6 +238,12 @@
   </root>
   <root id="3889169560759631620">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="3889169560759631621">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="6669225085930608940">
+        <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="6669225085930608941">
+          <property name="text" nameId="tpee.6329021646629104958" value="set type of concept due to the type of variable" />
+        </node>
+      </node>
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="6669225085930608943" />
       <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="3889169560759631672">
         <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="3889169560759631673">
           <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="3889169560759631627">
@@ -758,15 +760,6 @@
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
     </node>
   </root>
-  <root id="4454671662722060254">
-    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="4454671662722060255">
-      <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="4454671662722089019" />
-    </node>
-    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="4454671662722060256">
-      <property name="name" nameId="tpck.1169194664001" value="obj" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xaf1.7960034524145780979" resolveInfo="CommunicationChannel" />
-    </node>
-  </root>
   <root id="4454671662722101190">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="4454671662722101191">
       <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="4454671662722101197">
@@ -804,6 +797,11 @@
   </root>
   <root id="4880813901684311308">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="4880813901684311309">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="6669225085930608948">
+        <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="6669225085930608949">
+          <property name="text" nameId="tpee.6329021646629104958" value="check of uniqueness of memory area's name" />
+        </node>
+      </node>
       <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4880813901684339309">
         <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4880813901684339310">
           <property name="name" nameId="tpck.1169194664001" value="allMemory" />
@@ -823,7 +821,6 @@
           </node>
         </node>
       </node>
-      <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="4880813901684337618" />
       <node role="statement" roleId="tpee.1068581517665" type="tp2q.ForEachStatement" typeId="tp2q.1153943597977" id="4880813901684334271">
         <node role="variable" roleId="tp2q.1153944400369" type="tp2q.ForEachVariable" typeId="tp2q.1153944193378" id="4880813901684334272">
           <property name="name" nameId="tpck.1169194664001" value="memory" />
@@ -900,6 +897,11 @@
   </root>
   <root id="4880813901684340949">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="4880813901684340950">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="6669225085930614812">
+        <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="6669225085930614813">
+          <property name="text" nameId="tpee.6329021646629104958" value="check of uniqueness of mode's name" />
+        </node>
+      </node>
       <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4880813901684340954">
         <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4880813901684340955">
           <property name="name" nameId="tpck.1169194664001" value="allModes" />
@@ -919,7 +921,6 @@
           </node>
         </node>
       </node>
-      <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="4880813901684340970" />
       <node role="statement" roleId="tpee.1068581517665" type="tp2q.ForEachStatement" typeId="tp2q.1153943597977" id="4880813901684340971">
         <node role="variable" roleId="tp2q.1153944400369" type="tp2q.ForEachVariable" typeId="tp2q.1153944193378" id="4880813901684340972">
           <property name="name" nameId="tpck.1169194664001" value="mode" />
@@ -995,6 +996,11 @@
   </root>
   <root id="4880813901684341004">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="4880813901684341005">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="6669225085930614814">
+        <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="6669225085930614815">
+          <property name="text" nameId="tpee.6329021646629104958" value="check of uniqueness of channel's name" />
+        </node>
+      </node>
       <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4880813901684341008">
         <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4880813901684341009">
           <property name="name" nameId="tpck.1169194664001" value="allChannels" />
@@ -1014,7 +1020,6 @@
           </node>
         </node>
       </node>
-      <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="4880813901684341016" />
       <node role="statement" roleId="tpee.1068581517665" type="tp2q.ForEachStatement" typeId="tp2q.1153943597977" id="4880813901684341017">
         <node role="variable" roleId="tp2q.1153944400369" type="tp2q.ForEachVariable" typeId="tp2q.1153944193378" id="4880813901684341018">
           <property name="name" nameId="tpck.1169194664001" value="channel" />
@@ -1090,6 +1095,11 @@
   </root>
   <root id="4880813901684341049">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="4880813901684341050">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="6669225085930614816">
+        <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="6669225085930614817">
+          <property name="text" nameId="tpee.6329021646629104958" value="check of uniqueness of object pool's name" />
+        </node>
+      </node>
       <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4880813901684341052">
         <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4880813901684341053">
           <property name="name" nameId="tpck.1169194664001" value="allPools" />
@@ -1109,7 +1119,6 @@
           </node>
         </node>
       </node>
-      <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="4880813901684341060" />
       <node role="statement" roleId="tpee.1068581517665" type="tp2q.ForEachStatement" typeId="tp2q.1153943597977" id="4880813901684341061">
         <node role="variable" roleId="tp2q.1153944400369" type="tp2q.ForEachVariable" typeId="tp2q.1153944193378" id="4880813901684341062">
           <property name="name" nameId="tpck.1169194664001" value="pool" />
@@ -1185,6 +1194,11 @@
   </root>
   <root id="4880813901684341093">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="4880813901684341094">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="6669225085930614818">
+        <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="6669225085930614819">
+          <property name="text" nameId="tpee.6329021646629104958" value="check of uniqueness of realtime thread's name" />
+        </node>
+      </node>
       <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4880813901684341097">
         <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4880813901684341098">
           <property name="name" nameId="tpck.1169194664001" value="allThreads" />
@@ -1204,7 +1218,6 @@
           </node>
         </node>
       </node>
-      <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="4880813901684341105" />
       <node role="statement" roleId="tpee.1068581517665" type="tp2q.ForEachStatement" typeId="tp2q.1153943597977" id="4880813901684341106">
         <node role="variable" roleId="tp2q.1153944400369" type="tp2q.ForEachVariable" typeId="tp2q.1153944193378" id="4880813901684341107">
           <property name="name" nameId="tpck.1169194664001" value="thread" />
@@ -1280,6 +1293,11 @@
   </root>
   <root id="8210674499019731201">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="8210674499019731202">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="6669225085930608965">
+        <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="6669225085930608967">
+          <property name="text" nameId="tpee.6329021646629104958" value="MainDefinition must be instatiated at exactly once" />
+        </node>
+      </node>
       <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="8210674499019732428">
         <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="8210674499019732429">
           <property name="name" nameId="tpck.1169194664001" value="count" />
@@ -1328,6 +1346,11 @@
   </root>
   <root id="8210674499019882987">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="8210674499019882988">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="6669225085930608957">
+        <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="6669225085930608958">
+          <property name="text" nameId="tpee.6329021646629104958" value="CommunicationChannelElement must be instatiated at exactly once" />
+        </node>
+      </node>
       <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="8210674499019882990">
         <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="8210674499019882991">
           <property name="name" nameId="tpck.1169194664001" value="count" />
@@ -1376,6 +1399,11 @@
   </root>
   <root id="8210674499019883011">
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="8210674499019883012">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="6669225085930608945">
+        <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="6669225085930608946">
+          <property name="text" nameId="tpee.6329021646629104958" value="Immortal memory must be instatiated at exactly once " />
+        </node>
+      </node>
       <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="8210674499019883054">
         <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="8210674499019883055">
           <property name="name" nameId="tpck.1169194664001" value="count" />

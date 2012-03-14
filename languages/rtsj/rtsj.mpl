@@ -23,13 +23,13 @@
   </stubModelEntries>
   <sourcePath />
   <dependencies>
+    <dependency reexport="false">97a52717-898f-4598-8150-573d9fd03868(jetbrains.mps.analyzers)</dependency>
     <dependency reexport="false">af19274f-5f89-42dd-8f3c-c9932448f7f2(jetbrains.mps.analyzers.runtime)</dependency>
     <dependency reexport="false">774bf8a0-62e5-41e1-af63-f4812e60e48b(jetbrains.mps.baseLanguage.checkedDots)</dependency>
     <dependency reexport="false">83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)</dependency>
-    <dependency reexport="false">bfbdbf14-2038-46b2-9221-b72d54df5e04(rtsj#3005132233865499107)</dependency>
-    <dependency reexport="false">97a52717-898f-4598-8150-573d9fd03868(jetbrains.mps.analyzers)</dependency>
     <dependency reexport="false">019b622b-0aef-4dd3-86d0-4eef01f3f6bb(jetbrains.mps.ide)</dependency>
     <dependency reexport="false">7fa12e9c-b949-4976-b4fa-19accbc320b4(jetbrains.mps.lang.dataFlow)</dependency>
+    <dependency reexport="false">bfbdbf14-2038-46b2-9221-b72d54df5e04(rtsj#3005132233865499107)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>97a52717-898f-4598-8150-573d9fd03868(jetbrains.mps.analyzers)</usedLanguage>
