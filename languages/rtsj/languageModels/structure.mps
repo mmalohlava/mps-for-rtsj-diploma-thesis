@@ -124,7 +124,8 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7427614721109169577">
       <property name="name" nameId="tpck.1169194664001" value="RawMemory" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory.rawMemory" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
+      <property name="rootable" nameId="tpce.1096454100552" value="true" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4452387463242264181">
       <property name="name" nameId="tpck.1169194664001" value="InterruptThread" />
@@ -653,7 +654,7 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="7427614721109169599">
-      <property name="value" nameId="tpce.1105725733873" value="rawMemoryAccessCreate" />
+      <property name="value" nameId="tpce.1105725733873" value="rawMemoryAccess" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="2279892417240982161">
