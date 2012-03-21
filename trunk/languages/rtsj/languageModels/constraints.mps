@@ -65,6 +65,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
       <link role="concept" roleId="tp1t.1213093996982" targetNodeId="xaf1.7904365484846574988" resolveInfo="MemoryAreaReference" />
     </node>
+    <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4020617927602087872">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="memory.rawMemory" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="xaf1.7427614721109169577" resolveInfo="RawMemory" />
+    </node>
   </roots>
   <root id="4880813901684074211">
     <node role="canBeChild" roleId="tp1t.1213106463729" type="tp1t.ConstraintFunction_CanBeAChild" typeId="tp1t.1202989531578" id="4880813901684074212">
@@ -692,6 +696,17 @@
             <node role="expression" roleId="tpee.1068581517676" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="9160275732584513600">
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="9160275732584513593" resolveInfo="result" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+  <root id="4020617927602087872">
+    <node role="canBeChild" roleId="tp1t.1213106463729" type="tp1t.ConstraintFunction_CanBeAChild" typeId="tp1t.1202989531578" id="4020617927602087876">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4020617927602087877">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4020617927602087878">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="4020617927602087879">
+            <property name="value" nameId="tpee.1068580123138" value="false" />
           </node>
         </node>
       </node>
