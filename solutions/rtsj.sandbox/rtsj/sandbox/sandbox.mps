@@ -4297,7 +4297,7 @@
           <node role="statement" roleId="tpee.1068581517665" type="xaf1.AllocateMemoryStatement" typeId="xaf1.5373531043074068606" id="6669225085930092159">
             <node role="memory" roleId="xaf1.5373531043074068623" type="xaf1.ScopedMemory" typeId="xaf1.3005132233865429302" id="6669225085930092160">
               <property name="name" nameId="tpck.1169194664001" value="triageThreadMemory" />
-              <node role="wedgeThread" roleId="xaf1.8019732585718431853" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="6669225085930092163" />
+              <property name="immediateAlloc" nameId="xaf1.4020617927601808611" value="true" />
               <node role="initial" roleId="xaf1.3005132233865429303" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="6669225085930092164">
                 <link role="classifier" roleId="tpee.1144433057691" targetNodeId="5991677292904601772" resolveInfo="JarTriage" />
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5991677292904601800" resolveInfo="TRIAGE_THREAD_SCOPE_SIZE_BYTES" />
@@ -6206,13 +6206,13 @@
         <node role="statement" roleId="tpee.1068581517665" type="xaf1.AllocateMemoryStatement" typeId="xaf1.5373531043074068606" id="6669225085930092067">
           <node role="memory" roleId="xaf1.5373531043074068623" type="xaf1.ScopedMemory" typeId="xaf1.3005132233865429302" id="6669225085930092068">
             <property name="name" nameId="tpck.1169194664001" value="pollerThreadMemory" />
+            <property name="immediateAlloc" nameId="xaf1.4020617927601808611" value="true" />
             <node role="initial" roleId="xaf1.3005132233865429303" type="tpee.LocalStaticFieldReference" typeId="tpee.1172008963197" id="6669225085930092072">
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3327954350460108933" resolveInfo="POLLER_THREAD_SCOPE_SIZE_BYTES" />
             </node>
             <node role="maximal" roleId="xaf1.3005132233865429304" type="tpee.LocalStaticFieldReference" typeId="tpee.1172008963197" id="6669225085930092073">
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3327954350460108933" resolveInfo="POLLER_THREAD_SCOPE_SIZE_BYTES" />
             </node>
-            <node role="wedgeThread" roleId="xaf1.8019732585718431853" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="6669225085930092071" />
           </node>
         </node>
       </node>
@@ -6274,9 +6274,6 @@
     <node role="maximal" roleId="xaf1.3005132233865429304" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6669225085930603530">
       <property name="value" nameId="tpee.1068580320021" value="16" />
     </node>
-    <node role="wedgeThread" roleId="xaf1.8019732585718431853" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="6669225085930603527">
-      <property name="value" nameId="tpee.1068580123138" value="true" />
-    </node>
     <node role="initial" roleId="xaf1.3005132233865429303" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6669225085930603529">
       <property name="value" nameId="tpee.1068580320021" value="8" />
     </node>
@@ -6287,6 +6284,11 @@
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="6669225085930604599" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6669225085930604600" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6669225085930604601">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="4020617927601974213">
+          <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4020617927601974214">
+            <property name="text" nameId="tpee.6329021646629104958" value="muj koment" />
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="xaf1.AllocateMemoryStatement" typeId="xaf1.5373531043074068606" id="6669225085930604603">
           <node role="memory" roleId="xaf1.5373531043074068623" type="xaf1.ScopedMemory" typeId="xaf1.3005132233865429302" id="6669225085930604604">
             <property name="global" nameId="xaf1.2993823323997118774" value="true" />
@@ -6297,7 +6299,6 @@
             <node role="maximal" roleId="xaf1.3005132233865429304" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6669225085930604609">
               <property name="value" nameId="tpee.1068580320021" value="8" />
             </node>
-            <node role="wedgeThread" roleId="xaf1.8019732585718431853" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="6669225085930604607" />
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="xaf1.AllocateMemoryStatement" typeId="xaf1.5373531043074068606" id="6669225085930605718">
@@ -6309,7 +6310,19 @@
             <node role="maximal" roleId="xaf1.3005132233865429304" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6669225085930605724">
               <property name="value" nameId="tpee.1068580320021" value="14" />
             </node>
-            <node role="wedgeThread" roleId="xaf1.8019732585718431853" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="6669225085930605722" />
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="xaf1.AllocateMemoryStatement" typeId="xaf1.5373531043074068606" id="4020617927601889575">
+          <node role="memory" roleId="xaf1.5373531043074068623" type="xaf1.ScopedMemory" typeId="xaf1.3005132233865429302" id="4020617927601889576">
+            <property name="global" nameId="xaf1.2993823323997118774" value="false" />
+            <property name="name" nameId="tpck.1169194664001" value="LocalMemoryImmediate" />
+            <property name="immediateAlloc" nameId="xaf1.4020617927601808611" value="true" />
+            <node role="initial" roleId="xaf1.3005132233865429303" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="4020617927601889579">
+              <property name="value" nameId="tpee.1068580320021" value="8" />
+            </node>
+            <node role="maximal" roleId="xaf1.3005132233865429304" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="4020617927601889580">
+              <property name="value" nameId="tpee.1068580320021" value="16" />
+            </node>
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="6669225085930604610" />
