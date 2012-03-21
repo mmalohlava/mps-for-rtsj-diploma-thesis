@@ -92,6 +92,7 @@
     <node type="xaf1.ScopedMemory" typeId="xaf1.3005132233865429302" id="6669225085930603523">
       <property name="global" nameId="xaf1.2993823323997118774" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="GlobalScopedMemory" />
+      <property name="wedgeThread" nameId="xaf1.4020617927601743794" value="true" />
     </node>
     <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="6669225085930604592">
       <property name="name" nameId="tpck.1169194664001" value="Sandbox" />
@@ -6391,7 +6392,12 @@
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="6669225085930605725" />
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="6669225085930604630" />
+        <node role="statement" roleId="tpee.1068581517665" type="xaf1.WedgeThreadStart" typeId="xaf1.7197056783193750305" id="4020617927602166323">
+          <link role="memory" roleId="xaf1.7197056783193750306" targetNodeId="6669225085930603523" resolveInfo="GlobalScopedMemory" />
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="xaf1.WedgeThreadStop" typeId="xaf1.7197056783193750318" id="4020617927602174217">
+          <link role="memory" roleId="xaf1.7197056783193750319" targetNodeId="6669225085930603523" resolveInfo="GlobalScopedMemory" />
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="6669225085930604623" />
       </node>
     </node>
