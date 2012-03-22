@@ -8,7 +8,7 @@
   <language namespace="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" />
   <language namespace="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="22" />
+  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="27" />
   <import index="qxeo" modelUID="f:java_stub#37a3367b-1fb2-44d8-aa6b-18075e74e003#jetbrains.mps.nodeEditor(MPS.Classpath/jetbrains.mps.nodeEditor@java_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp3j" modelUID="r:00000000-0000-4000-0000-011c89590353(jetbrains.mps.lang.intentions.structure)" version="8" implicit="yes" />
@@ -73,7 +73,7 @@
     <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="9160275732584529066">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
       <property name="name" nameId="tpck.1169194664001" value="CreateRunnable" />
-      <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="xaf1.9184680382602267965" resolveInfo="EnterMemoryStatement" />
+      <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="xaf1.9184680382602267965" resolveInfo="EnterMemory" />
     </node>
   </roots>
   <root id="4880813901684261779">
@@ -97,12 +97,12 @@
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="8750188059154310853">
             <property name="name" nameId="tpck.1169194664001" value="enterMemoryStatement" />
             <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="8750188059154310854">
-              <link role="concept" roleId="tp25.1138405853777" targetNodeId="xaf1.9184680382602267965" resolveInfo="EnterMemoryStatement" />
+              <link role="concept" roleId="tp25.1138405853777" targetNodeId="xaf1.9184680382602267965" resolveInfo="EnterMemory" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="8750188059154310855">
               <node role="creator" roleId="tpee.1145553007750" type="tpdg.SNodeCreatorAndInitializer" typeId="tpdg.5979988948250981289" id="3885013146871858849">
                 <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="3885013146871858850">
-                  <link role="concept" roleId="tp25.1138405853777" targetNodeId="xaf1.9184680382602267965" resolveInfo="EnterMemoryStatement" />
+                  <link role="concept" roleId="tp25.1138405853777" targetNodeId="xaf1.9184680382602267965" resolveInfo="EnterMemory" />
                 </node>
               </node>
             </node>

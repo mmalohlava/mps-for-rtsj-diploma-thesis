@@ -8,7 +8,7 @@
   <language namespace="d4615e3b-d671-4ba9-af01-2b78369b0ba7(jetbrains.mps.lang.pattern)" />
   <language namespace="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="22" />
+  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="27" />
   <import index="k7g3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" version="-1" />
   <import index="ttcm" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#com.sun.java.util.jar.pack(JDK/com.sun.java.util.jar.pack@java_stub)" version="-1" />
   <import index="bj1v" modelUID="r:8b09f5e2-b403-4747-aaa3-eac5acb1f753(jetbrains.mps.analyzers.structure)" version="0" />
@@ -36,7 +36,7 @@
     </node>
     <node type="tp41.DataFlowBuilderDeclaration" typeId="tp41.1206442055221" id="8480848386194551312">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
-      <link role="conceptDeclaration" roleId="tp41.1206442096288" targetNodeId="xaf1.3801488968793744055" resolveInfo="AllocateVariableExpression" />
+      <link role="conceptDeclaration" roleId="tp41.1206442096288" targetNodeId="xaf1.3801488968793744055" resolveInfo="AllocateVariable" />
     </node>
   </roots>
   <root id="1992275765524949617">
@@ -801,7 +801,7 @@
   <root id="252121068132721203">
     <node role="condition" roleId="bj1v.3325264799421290838" type="bj1v.ConceptCondition" typeId="bj1v.4943044633101449694" id="252121068132721207">
       <property name="name" nameId="tpck.1169194664001" value="variableExpression" />
-      <link role="concept" roleId="bj1v.4943044633101738901" targetNodeId="xaf1.3801488968793744055" resolveInfo="AllocateVariableExpression" />
+      <link role="concept" roleId="bj1v.4943044633101738901" targetNodeId="xaf1.3801488968793744055" resolveInfo="AllocateVariable" />
     </node>
     <node role="actions" roleId="bj1v.4943044633101742986" type="tpee.StatementList" typeId="tpee.1068580123136" id="252121068132721208">
       <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="2279892417240941057">

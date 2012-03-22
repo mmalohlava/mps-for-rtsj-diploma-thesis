@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="22">
+<model modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="27">
   <persistence version="7" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <language namespace="95220e4e-a271-48e4-8488-c48145fd3f16(rtsj)" />
@@ -7,7 +7,7 @@
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
-  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="22" implicit="yes" />
+  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="27" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3005132233865386782">
       <property name="name" nameId="tpck.1169194664001" value="RealtimeThread" />
@@ -53,12 +53,12 @@
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9184680382602267965">
-      <property name="name" nameId="tpck.1169194664001" value="EnterMemoryStatement" />
+      <property name="name" nameId="tpck.1169194664001" value="EnterMemory" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9184680382602267967">
-      <property name="name" nameId="tpck.1169194664001" value="RunThreadStatement" />
+      <property name="name" nameId="tpck.1169194664001" value="RunThread" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
     </node>
@@ -96,7 +96,7 @@
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5373531043074068606">
-      <property name="name" nameId="tpck.1169194664001" value="AllocateMemoryStatement" />
+      <property name="name" nameId="tpck.1169194664001" value="AllocateMemory" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068580123157" resolveInfo="Statement" />
     </node>
@@ -223,12 +223,12 @@
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3801488968793744055">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
-      <property name="name" nameId="tpck.1169194664001" value="AllocateVariableExpression" />
+      <property name="name" nameId="tpck.1169194664001" value="AllocateVariable" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5991677292904424979">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
-      <property name="name" nameId="tpck.1169194664001" value="AllocateArrayExpression" />
+      <property name="name" nameId="tpck.1169194664001" value="AllocateArray" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5991677292904813388">

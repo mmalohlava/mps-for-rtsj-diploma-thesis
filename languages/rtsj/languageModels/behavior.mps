@@ -9,7 +9,7 @@
   <language namespace="d7a92d38-f7db-40d0-8431-763b0c3c9f20(jetbrains.mps.lang.intentions)" />
   <language namespace="f2801650-65d5-424e-bb1b-463a8781b786(jetbrains.mps.baseLanguage.javadoc)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="22" />
+  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="27" />
   <import index="k7g3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" version="-1" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -64,7 +64,7 @@
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="9160275732584843759">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
-      <link role="concept" roleId="1i04.1225194240799" targetNodeId="xaf1.9184680382602267965" resolveInfo="EnterMemoryStatement" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="xaf1.9184680382602267965" resolveInfo="EnterMemory" />
     </node>
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="6669225085930562875">
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="xaf1.7904365484846534745" resolveInfo="MainDefinition" />
