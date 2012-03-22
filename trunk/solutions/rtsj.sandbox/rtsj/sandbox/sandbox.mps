@@ -8,7 +8,7 @@
   <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" version="-1" />
   <import index="k7g3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" version="-1" />
   <import index="vft3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util.concurrent.atomic(JDK/java.util.concurrent.atomic@java_stub)" version="-1" />
-  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="22" implicit="yes" />
+  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="27" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <roots>
@@ -262,7 +262,7 @@
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="5991677292904378140" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="5991677292904378143" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="5991677292904378142">
-        <node role="statement" roleId="tpee.1068581517665" type="xaf1.EnterMemoryStatement" typeId="xaf1.9184680382602267965" id="5991677292904378160">
+        <node role="statement" roleId="tpee.1068581517665" type="xaf1.EnterMemory" typeId="xaf1.9184680382602267965" id="5991677292904378160">
           <node role="memory" roleId="xaf1.9184680382602310940" type="xaf1.MemoryAreaReference" typeId="xaf1.7904365484846574988" id="5991677292904378163">
             <link role="memory" roleId="xaf1.7904365484846574989" targetNodeId="2993823323997410412" resolveInfo="immortalMemory" />
           </node>
@@ -637,7 +637,7 @@
           <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5991677292904361839" resolveInfo="ProductionLine" />
         </node>
       </node>
-      <node role="initializer" roleId="tpee.1068431790190" type="xaf1.AllocateArrayExpression" typeId="xaf1.5991677292904424979" id="5991677292904472508">
+      <node role="initializer" roleId="tpee.1068431790190" type="xaf1.AllocateArray" typeId="xaf1.5991677292904424979" id="5991677292904472508">
         <node role="memory" roleId="xaf1.5991677292904424980" type="xaf1.MemoryAreaReference" typeId="xaf1.7904365484846574988" id="5991677292904549712">
           <link role="memory" roleId="xaf1.7904365484846574989" targetNodeId="2993823323997410412" resolveInfo="immortalMemory" />
         </node>
@@ -655,7 +655,7 @@
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5991677292904363550">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5991677292904361892" resolveInfo="WorkerConsole" />
       </node>
-      <node role="initializer" roleId="tpee.1068431790190" type="xaf1.AllocateVariableExpression" typeId="xaf1.3801488968793744055" id="5991677292904388715">
+      <node role="initializer" roleId="tpee.1068431790190" type="xaf1.AllocateVariable" typeId="xaf1.3801488968793744055" id="5991677292904388715">
         <node role="memory" roleId="xaf1.3801488968793744056" type="xaf1.MemoryAreaReference" typeId="xaf1.7904365484846574988" id="5991677292904388718">
           <link role="memory" roleId="xaf1.7904365484846574989" targetNodeId="2993823323997410412" resolveInfo="immortalMemory" />
         </node>
@@ -847,7 +847,7 @@
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6669225085930195122">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5991677292904601835" resolveInfo="AuditLog" />
       </node>
-      <node role="initializer" roleId="tpee.1068431790190" type="xaf1.AllocateVariableExpression" typeId="xaf1.3801488968793744055" id="6669225085930195210">
+      <node role="initializer" roleId="tpee.1068431790190" type="xaf1.AllocateVariable" typeId="xaf1.3801488968793744055" id="6669225085930195210">
         <node role="memory" roleId="xaf1.3801488968793744056" type="xaf1.MemoryAreaReference" typeId="xaf1.7904365484846574988" id="6669225085930195213">
           <link role="memory" roleId="xaf1.7904365484846574989" targetNodeId="2993823323997410412" resolveInfo="immortalMemory" />
         </node>
@@ -952,7 +952,7 @@
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="6669225085930195221" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="6669225085930195224" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6669225085930195223">
-        <node role="statement" roleId="tpee.1068581517665" type="xaf1.EnterMemoryStatement" typeId="xaf1.9184680382602267965" id="6669225085930195225">
+        <node role="statement" roleId="tpee.1068581517665" type="xaf1.EnterMemory" typeId="xaf1.9184680382602267965" id="6669225085930195225">
           <node role="memory" roleId="xaf1.9184680382602310940" type="xaf1.MemoryAreaReference" typeId="xaf1.7904365484846574988" id="6669225085930195228">
             <link role="memory" roleId="xaf1.7904365484846574989" targetNodeId="2993823323997410412" resolveInfo="immortalMemory" />
           </node>
@@ -4291,7 +4291,7 @@
         <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="5991677292904601831" />
         <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5991677292904601832" />
         <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="5991677292904601833">
-          <node role="statement" roleId="tpee.1068581517665" type="xaf1.AllocateMemoryStatement" typeId="xaf1.5373531043074068606" id="6669225085930092159">
+          <node role="statement" roleId="tpee.1068581517665" type="xaf1.AllocateMemory" typeId="xaf1.5373531043074068606" id="6669225085930092159">
             <node role="memory" roleId="xaf1.5373531043074068623" type="xaf1.ScopedMemory" typeId="xaf1.3005132233865429302" id="6669225085930092160">
               <property name="name" nameId="tpck.1169194664001" value="triageThreadMemory" />
               <property name="immediateAlloc" nameId="xaf1.4020617927601808611" value="true" />
@@ -4580,7 +4580,7 @@
         <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="3327954350460063573" />
         <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="3327954350460063576" />
         <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="3327954350460063575">
-          <node role="statement" roleId="tpee.1068581517665" type="xaf1.EnterMemoryStatement" typeId="xaf1.9184680382602267965" id="6669225085930092178">
+          <node role="statement" roleId="tpee.1068581517665" type="xaf1.EnterMemory" typeId="xaf1.9184680382602267965" id="6669225085930092178">
             <node role="memory" roleId="xaf1.9184680382602310940" type="xaf1.MemoryAreaReference" typeId="xaf1.7904365484846574988" id="6669225085930092181">
               <link role="memory" roleId="xaf1.7904365484846574989" targetNodeId="6669225085930092160" resolveInfo="triageThreadMemory" />
             </node>
@@ -4595,7 +4595,7 @@
         <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="3327954350460063580" />
         <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="3327954350460063589" />
         <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="3327954350460063582">
-          <node role="statement" roleId="tpee.1068581517665" type="xaf1.EnterMemoryStatement" typeId="xaf1.9184680382602267965" id="6669225085930092189">
+          <node role="statement" roleId="tpee.1068581517665" type="xaf1.EnterMemory" typeId="xaf1.9184680382602267965" id="6669225085930092189">
             <node role="memory" roleId="xaf1.9184680382602310940" type="xaf1.MemoryAreaReference" typeId="xaf1.7904365484846574988" id="6669225085930092192">
               <link role="memory" roleId="xaf1.7904365484846574989" targetNodeId="6669225085930092160" resolveInfo="triageThreadMemory" />
             </node>
@@ -5858,7 +5858,7 @@
             </node>
           </node>
           <node role="body" roleId="tpee.1154032183016" type="tpee.StatementList" typeId="tpee.1068580123136" id="3327954350460109069">
-            <node role="statement" roleId="tpee.1068581517665" type="xaf1.EnterMemoryStatement" typeId="xaf1.9184680382602267965" id="6669225085930092075">
+            <node role="statement" roleId="tpee.1068581517665" type="xaf1.EnterMemory" typeId="xaf1.9184680382602267965" id="6669225085930092075">
               <node role="memory" roleId="xaf1.9184680382602310940" type="xaf1.MemoryAreaReference" typeId="xaf1.7904365484846574988" id="6669225085930092078">
                 <link role="memory" roleId="xaf1.7904365484846574989" targetNodeId="6669225085930092068" resolveInfo="pollerThreadMemory" />
               </node>
@@ -5903,7 +5903,7 @@
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="3327954350460109075" />
-        <node role="statement" roleId="tpee.1068581517665" type="xaf1.EnterMemoryStatement" typeId="xaf1.9184680382602267965" id="6669225085930092096">
+        <node role="statement" roleId="tpee.1068581517665" type="xaf1.EnterMemory" typeId="xaf1.9184680382602267965" id="6669225085930092096">
           <node role="memory" roleId="xaf1.9184680382602310940" type="xaf1.MemoryAreaReference" typeId="xaf1.7904365484846574988" id="6669225085930092099">
             <link role="memory" roleId="xaf1.7904365484846574989" targetNodeId="6669225085930092068" resolveInfo="pollerThreadMemory" />
           </node>
@@ -6192,7 +6192,7 @@
             </node>
           </node>
         </node>
-        <node role="statement" roleId="tpee.1068581517665" type="xaf1.AllocateMemoryStatement" typeId="xaf1.5373531043074068606" id="6669225085930092067">
+        <node role="statement" roleId="tpee.1068581517665" type="xaf1.AllocateMemory" typeId="xaf1.5373531043074068606" id="6669225085930092067">
           <node role="memory" roleId="xaf1.5373531043074068623" type="xaf1.ScopedMemory" typeId="xaf1.3005132233865429302" id="6669225085930092068">
             <property name="name" nameId="tpck.1169194664001" value="pollerThreadMemory" />
             <property name="immediateAlloc" nameId="xaf1.4020617927601808611" value="true" />
@@ -6278,7 +6278,7 @@
             <property name="text" nameId="tpee.6329021646629104958" value="muj koment" />
           </node>
         </node>
-        <node role="statement" roleId="tpee.1068581517665" type="xaf1.AllocateMemoryStatement" typeId="xaf1.5373531043074068606" id="6669225085930604603">
+        <node role="statement" roleId="tpee.1068581517665" type="xaf1.AllocateMemory" typeId="xaf1.5373531043074068606" id="6669225085930604603">
           <node role="memory" roleId="xaf1.5373531043074068623" type="xaf1.ScopedMemory" typeId="xaf1.3005132233865429302" id="6669225085930604604">
             <property name="global" nameId="xaf1.2993823323997118774" value="true" />
             <property name="name" nameId="tpck.1169194664001" value="GlobalMemoryLate" />
@@ -6290,7 +6290,7 @@
             </node>
           </node>
         </node>
-        <node role="statement" roleId="tpee.1068581517665" type="xaf1.AllocateMemoryStatement" typeId="xaf1.5373531043074068606" id="6669225085930605718">
+        <node role="statement" roleId="tpee.1068581517665" type="xaf1.AllocateMemory" typeId="xaf1.5373531043074068606" id="6669225085930605718">
           <node role="memory" roleId="xaf1.5373531043074068623" type="xaf1.ScopedMemory" typeId="xaf1.3005132233865429302" id="6669225085930605719">
             <property name="name" nameId="tpck.1169194664001" value="LocalMemory" />
             <node role="initial" roleId="xaf1.3005132233865429303" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6669225085930605723">
@@ -6301,7 +6301,7 @@
             </node>
           </node>
         </node>
-        <node role="statement" roleId="tpee.1068581517665" type="xaf1.AllocateMemoryStatement" typeId="xaf1.5373531043074068606" id="4020617927601889575">
+        <node role="statement" roleId="tpee.1068581517665" type="xaf1.AllocateMemory" typeId="xaf1.5373531043074068606" id="4020617927601889575">
           <node role="memory" roleId="xaf1.5373531043074068623" type="xaf1.ScopedMemory" typeId="xaf1.3005132233865429302" id="4020617927601889576">
             <property name="global" nameId="xaf1.2993823323997118774" value="false" />
             <property name="name" nameId="tpck.1169194664001" value="memoryArea" />
@@ -6321,7 +6321,7 @@
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6669225085930604616">
               <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~Integer" resolveInfo="Integer" />
             </node>
-            <node role="initializer" roleId="tpee.1068431790190" type="xaf1.AllocateVariableExpression" typeId="xaf1.3801488968793744055" id="6669225085930604618">
+            <node role="initializer" roleId="tpee.1068431790190" type="xaf1.AllocateVariable" typeId="xaf1.3801488968793744055" id="6669225085930604618">
               <node role="memory" roleId="xaf1.3801488968793744056" type="xaf1.MemoryAreaReference" typeId="xaf1.7904365484846574988" id="6669225085930604621">
                 <link role="memory" roleId="xaf1.7904365484846574989" targetNodeId="6669225085930603523" resolveInfo="GlobalScopedMemory" />
               </node>
@@ -6337,7 +6337,7 @@
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6669225085930604626">
               <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~Integer" resolveInfo="Integer" />
             </node>
-            <node role="initializer" roleId="tpee.1068431790190" type="xaf1.AllocateVariableExpression" typeId="xaf1.3801488968793744055" id="6669225085930604627">
+            <node role="initializer" roleId="tpee.1068431790190" type="xaf1.AllocateVariable" typeId="xaf1.3801488968793744055" id="6669225085930604627">
               <node role="memory" roleId="xaf1.3801488968793744056" type="xaf1.MemoryAreaReference" typeId="xaf1.7904365484846574988" id="6669225085930604637">
                 <link role="memory" roleId="xaf1.7904365484846574989" targetNodeId="6669225085930604604" resolveInfo="GlobalMemoryLate" />
               </node>
@@ -6353,7 +6353,7 @@
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6669225085930604633">
               <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~Integer" resolveInfo="Integer" />
             </node>
-            <node role="initializer" roleId="tpee.1068431790190" type="xaf1.AllocateVariableExpression" typeId="xaf1.3801488968793744055" id="6669225085930604634">
+            <node role="initializer" roleId="tpee.1068431790190" type="xaf1.AllocateVariable" typeId="xaf1.3801488968793744055" id="6669225085930604634">
               <node role="memory" roleId="xaf1.3801488968793744056" type="xaf1.MemoryAreaReference" typeId="xaf1.7904365484846574988" id="6669225085930604638">
                 <link role="memory" roleId="xaf1.7904365484846574989" targetNodeId="2993823323997410412" resolveInfo="immortalMemory" />
               </node>
@@ -6369,7 +6369,7 @@
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6669225085930605728">
               <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~Integer" resolveInfo="Integer" />
             </node>
-            <node role="initializer" roleId="tpee.1068431790190" type="xaf1.AllocateVariableExpression" typeId="xaf1.3801488968793744055" id="6669225085930605729">
+            <node role="initializer" roleId="tpee.1068431790190" type="xaf1.AllocateVariable" typeId="xaf1.3801488968793744055" id="6669225085930605729">
               <node role="memory" roleId="xaf1.3801488968793744056" type="xaf1.MemoryAreaReference" typeId="xaf1.7904365484846574988" id="6669225085930605732">
                 <link role="memory" roleId="xaf1.7904365484846574989" targetNodeId="6669225085930605719" resolveInfo="LocalMemory" />
               </node>
@@ -6409,7 +6409,7 @@
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8480848386194457171">
               <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~Integer" resolveInfo="Integer" />
             </node>
-            <node role="initializer" roleId="tpee.1068431790190" type="xaf1.AllocateVariableExpression" typeId="xaf1.3801488968793744055" id="8480848386194457173">
+            <node role="initializer" roleId="tpee.1068431790190" type="xaf1.AllocateVariable" typeId="xaf1.3801488968793744055" id="8480848386194457173">
               <node role="memory" roleId="xaf1.3801488968793744056" type="xaf1.MemoryAreaReference" typeId="xaf1.7904365484846574988" id="8480848386194457176">
                 <link role="memory" roleId="xaf1.7904365484846574989" targetNodeId="2993823323997410412" resolveInfo="immortalMemory" />
               </node>

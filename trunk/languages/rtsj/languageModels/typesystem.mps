@@ -10,7 +10,7 @@
   <language namespace="97a52717-898f-4598-8150-573d9fd03868(jetbrains.mps.analyzers)" />
   <language namespace="d4615e3b-d671-4ba9-af01-2b78369b0ba7(jetbrains.mps.lang.pattern)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="22" />
+  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="27" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" />
   <import index="mu20" modelUID="r:fc94574f-a075-45e6-9927-48e7e87153e6(jetbrains.mps.analyzers.runtime.framework)" version="-1" />
   <import index="k7g3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" version="-1" />
@@ -1444,7 +1444,7 @@
     </node>
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="3801488968793800387">
       <property name="name" nameId="tpck.1169194664001" value="allocateVariableExpression" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xaf1.3801488968793744055" resolveInfo="AllocateVariableExpression" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xaf1.3801488968793744055" resolveInfo="AllocateVariable" />
     </node>
   </root>
   <root id="5991677292904425026">
@@ -1506,7 +1506,7 @@
     </node>
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="5991677292904425028">
       <property name="name" nameId="tpck.1169194664001" value="expression" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xaf1.5991677292904424979" resolveInfo="AllocateArrayExpression" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xaf1.5991677292904424979" resolveInfo="AllocateArray" />
     </node>
   </root>
   <root id="2993823323997402719">
@@ -1643,7 +1643,7 @@
     </node>
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="9160275732584474551">
       <property name="name" nameId="tpck.1169194664001" value="statement" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xaf1.9184680382602267965" resolveInfo="EnterMemoryStatement" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xaf1.9184680382602267965" resolveInfo="EnterMemory" />
     </node>
   </root>
   <root id="6669225085930097527">

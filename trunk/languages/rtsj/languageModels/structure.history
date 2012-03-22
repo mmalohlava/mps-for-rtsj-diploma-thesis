@@ -54,5 +54,35 @@
     </dependencies>
     <rename id="xaf1.6669225085929993771" type="PROPERTY" from="s" to="implType" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="22" />
+    </dependencies>
+    <rename id="xaf1.5991677292904424979" type="CONCEPT" from="AllocateArrayExpression" to="AllocateArray" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="23" />
+    </dependencies>
+    <rename id="xaf1.5373531043074068606" type="CONCEPT" from="AllocateMemoryStatement" to="AllocateMemory" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="24" />
+    </dependencies>
+    <rename id="xaf1.3801488968793744055" type="CONCEPT" from="AllocateVariableExpression" to="AllocateVariable" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="25" />
+    </dependencies>
+    <rename id="xaf1.9184680382602267965" type="CONCEPT" from="EnterMemoryStatement" to="EnterMemory" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="26" />
+    </dependencies>
+    <rename id="xaf1.9184680382602267967" type="CONCEPT" from="RunThreadStatement" to="RunThread" />
+  </StructureModification>
 </history>
 

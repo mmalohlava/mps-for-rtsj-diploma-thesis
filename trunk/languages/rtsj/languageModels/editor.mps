@@ -6,7 +6,7 @@
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
   <language namespace="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="22" />
+  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="27" />
   <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="32" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpen" modelUID="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" version="-1" implicit="yes" />
@@ -39,11 +39,11 @@
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="9184680382602310942">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.9184680382602267965" resolveInfo="EnterMemoryStatement" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.9184680382602267965" resolveInfo="EnterMemory" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="9184680382602325442">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.9184680382602267967" resolveInfo="RunThreadStatement" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.9184680382602267967" resolveInfo="RunThread" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="63574088154539768">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
@@ -71,7 +71,7 @@
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5373531043074068624">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.5373531043074068606" resolveInfo="AllocateMemoryStatement" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.5373531043074068606" resolveInfo="AllocateMemory" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7296282902787822446">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
@@ -159,11 +159,11 @@
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3801488968793744061">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.3801488968793744055" resolveInfo="AllocateVariableExpression" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.3801488968793744055" resolveInfo="AllocateVariable" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5991677292904424984">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.5991677292904424979" resolveInfo="AllocateArrayExpression" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.5991677292904424979" resolveInfo="AllocateArray" />
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5991677292904813389">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
@@ -610,10 +610,10 @@
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="9184680382602325455">
         <property name="text" nameId="tpc2.1073389577007" value=")" />
       </node>
-      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="9184680382602325449" />
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="9184680382602337719">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1559433006267418917">
         <property name="text" nameId="tpc2.1073389577007" value=";" />
       </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="9184680382602325449" />
     </node>
   </root>
   <root id="63574088154539768">
@@ -1309,7 +1309,7 @@
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4452387463242264198">
         <property name="text" nameId="tpc2.1073389577007" value=")" />
       </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4452387463242264200">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1559433006267418919">
         <property name="text" nameId="tpc2.1073389577007" value=";" />
       </node>
     </node>

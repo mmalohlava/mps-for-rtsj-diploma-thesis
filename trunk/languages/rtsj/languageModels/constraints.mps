@@ -8,7 +8,7 @@
   <import index="k7g3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
-  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="22" implicit="yes" />
+  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="27" implicit="yes" />
   <import index="tp1t" modelUID="r:00000000-0000-4000-0000-011c8959030d(jetbrains.mps.lang.constraints.structure)" version="8" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="-1" implicit="yes" />
   <import index="tpcw" modelUID="r:00000000-0000-4000-0000-011c895902bc(jetbrains.mps.lang.sharedConcepts.structure)" version="0" implicit="yes" />
@@ -56,11 +56,11 @@
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="8939011322791906829">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
-      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="xaf1.3801488968793744055" resolveInfo="AllocateVariableExpression" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="xaf1.3801488968793744055" resolveInfo="AllocateVariable" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="5991677292904425001">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
-      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="xaf1.5991677292904424979" resolveInfo="AllocateArrayExpression" />
+      <link role="concept" roleId="tp1t.1213093996982" targetNodeId="xaf1.5991677292904424979" resolveInfo="AllocateArray" />
     </node>
     <node type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="9160275732584513588">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
@@ -99,7 +99,7 @@
             <node role="operand" roleId="tpee.1197027771414" type="tp1t.ConstraintFunctionParameter_parentNode" typeId="tp1t.1202989658459" id="4880813901684075832" />
             <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="4880813901684075837">
               <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="4880813901684075839">
-                <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="xaf1.5373531043074068606" resolveInfo="AllocateMemoryStatement" />
+                <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="xaf1.5373531043074068606" resolveInfo="AllocateMemory" />
               </node>
             </node>
           </node>
