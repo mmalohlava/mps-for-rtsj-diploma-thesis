@@ -90,6 +90,7 @@
     <path path="${mps_home}/languages/languageDesign/jetbrains.mps.make.script.jar" />
     <path path="${base_dir}/languages/rtsj/classes_gen" />
     <path path="${mps_home}/languages/util/editor/jetbrains.mps.lang.editor.table.runtime.jar" />
+    <path path="${mps_home}/languages/util/jetbrains.mps.analyzers.jar" />
     <path path="${mps_home}/languages/util/jetbrains.mps.baseLanguage.collections.trove.jar" />
     <path path="${mps_home}/languages/util/jetbrains.mps.baseLanguage.dates.runtime/jetbrains.mps.baseLanguage.dates.runtime.jar" />
     <path path="${mps_home}/languages/util/jetbrains.mps.baseLanguage.dates.runtime/joda-time-1.6.jar" />

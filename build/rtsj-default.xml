@@ -12,15 +12,10 @@
   </target>
   <target name="folders.create" depends="clean.before">
     <mkdir dir="${deploy.dir}" />
-    <mkdir dir="${deploy.dir}/rtsj.jar.tmp" />
     <mkdir dir="${deploy.dir}/rtsj.zip.tmp/rtsj" />
     <mkdir dir="${deploy.dir}/rtsj.zip.tmp" />
   </target>
   <target name="do.the.job" depends="folders.create">
-    <jar destfile="${deploy.dir}/rtsj.jar" duplicate="preserve" filesonly="true">
-      <fileset dir="${deploy.dir}/rtsj.jar.tmp" />
-    </jar>
-    <delete dir="${deploy.dir}/rtsj.jar.tmp" />
     <antcall target="rtsj-languages.pack.rtsj" />
     <mkdir dir="${deploy.dir}/rtsj.zip.tmp/rtsj" />
     <zip destfile="${deploy.dir}/rtsj.zip" duplicate="preserve" filesonly="true">
@@ -30,6 +25,5 @@
   </target>
   <target name="clean.after" depends="do.the.job">
     <delete dir="${deploy.dir}/rtsj.zip.tmp" />
-    <delete dir="${deploy.dir}/rtsj.jar.tmp" />
   </target>
 </project>
