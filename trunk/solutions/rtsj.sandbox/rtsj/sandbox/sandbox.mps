@@ -6316,7 +6316,7 @@
         <node role="statement" roleId="tpee.1068581517665" type="xaf1.AllocateMemoryStatement" typeId="xaf1.5373531043074068606" id="4020617927601889575">
           <node role="memory" roleId="xaf1.5373531043074068623" type="xaf1.ScopedMemory" typeId="xaf1.3005132233865429302" id="4020617927601889576">
             <property name="global" nameId="xaf1.2993823323997118774" value="false" />
-            <property name="name" nameId="tpck.1169194664001" value="LocalMemoryImmediate" />
+            <property name="name" nameId="tpck.1169194664001" value="memoryArea" />
             <property name="immediateAlloc" nameId="xaf1.4020617927601808611" value="true" />
             <node role="initial" roleId="xaf1.3005132233865429303" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="4020617927601889579">
               <property name="value" nameId="tpee.1068580320021" value="8" />
