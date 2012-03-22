@@ -1291,7 +1291,6 @@
                   <link role="classifier" roleId="tpee.1144433057691" targetNodeId="3327954350460087737" resolveInfo="PrioritySpecifications" />
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3327954350460087743" resolveInfo="POLLING_THREAD_PRIORITY" />
                 </node>
-                <node role="startMain" roleId="xaf1.3005132233865474754" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="6669225085930221386" />
                 <node role="logic" roleId="xaf1.7296282902787960730" type="tpee.ArrayAccessExpression" typeId="tpee.1173175405605" id="6669225085930221390">
                   <node role="index" roleId="tpee.1173175577737" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6669225085930221393">
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6669225085930195478" resolveInfo="i" />
@@ -1299,9 +1298,6 @@
                   <node role="array" roleId="tpee.1173175590490" type="tpee.LocalInstanceFieldReference" typeId="tpee.7785501532031639928" id="6669225085930221389">
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6669225085930195109" resolveInfo="productionLinePollers" />
                   </node>
-                </node>
-                <node role="noHeapThread" roleId="xaf1.7427614721109093811" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="6669225085930221394">
-                  <property name="value" nameId="tpee.1068580123138" value="true" />
                 </node>
               </node>
             </node>
@@ -4894,12 +4890,8 @@
                   <link role="classifier" roleId="tpee.1144433057691" targetNodeId="3327954350460087737" resolveInfo="PrioritySpecifications" />
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3327954350460087749" resolveInfo="TRIAGE_THREAD_PRIORITY" />
                 </node>
-                <node role="startMain" roleId="xaf1.3005132233865474754" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="6669225085930223050" />
                 <node role="logic" roleId="xaf1.7296282902787960730" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6669225085930223053">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5991677292904601932" resolveInfo="r" />
-                </node>
-                <node role="noHeapThread" roleId="xaf1.7427614721109093811" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="6669225085930223054">
-                  <property name="value" nameId="tpee.1068580123138" value="true" />
                 </node>
               </node>
             </node>
@@ -5183,12 +5175,8 @@
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3327954350460087749" resolveInfo="TRIAGE_THREAD_PRIORITY" />
               <link role="classifier" roleId="tpee.1144433057691" targetNodeId="3327954350460087737" resolveInfo="PrioritySpecifications" />
             </node>
-            <node role="startMain" roleId="xaf1.3005132233865474754" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="6669225085930223061" />
             <node role="logic" roleId="xaf1.7296282902787960730" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="6669225085930223062">
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5991677292905188806" resolveInfo="r" />
-            </node>
-            <node role="noHeapThread" roleId="xaf1.7427614721109093811" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="6669225085930329231">
-              <property name="value" nameId="tpee.1068580123138" value="true" />
             </node>
           </node>
         </node>
