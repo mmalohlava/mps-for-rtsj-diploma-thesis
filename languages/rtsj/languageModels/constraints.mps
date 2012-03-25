@@ -449,7 +449,7 @@
           </node>
           <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="6669225085930614788">
             <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="6669225085930614795">
-              <property name="text" nameId="tpee.6329021646629104958" value="only global memory areas and local memory allocated in this class are shown" />
+              <property name="text" nameId="tpee.6329021646629104958" value="show only global areas and local memories allocated in this class" />
             </node>
           </node>
           <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="6669225085930614787" />
@@ -642,7 +642,7 @@
                     <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="9160275732584513693">
                       <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="4020617927602024383">
                         <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4020617927602024417">
-                          <property name="text" nameId="tpee.6329021646629104958" value="field declaration can reference only immediately allocted" />
+                          <property name="text" nameId="tpee.6329021646629104958" value="field declaration can reference only immediately alloceted" />
                         </node>
                       </node>
                       <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="4020617927602024385">

@@ -223,7 +223,7 @@
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="6669225085930618102">
           <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="6669225085930618106">
-            <property name="text" nameId="tpee.6329021646629104958" value="focus editor to memory attirbute of new statement " />
+            <property name="text" nameId="tpee.6329021646629104958" value="focus editor to memory attribute of new statement " />
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8750188059154310879">

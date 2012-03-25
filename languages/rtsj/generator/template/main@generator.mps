@@ -39,12 +39,12 @@
       <property name="name" nameId="tpck.1169194664001" value="MainDefinition" />
     </node>
     <node type="tpf8.TemplateDeclaration" typeId="tpf8.1092059087312" id="9184680382602361347">
-      <property name="name" nameId="tpck.1169194664001" value="reduce_EnterMemoryStatement" />
+      <property name="name" nameId="tpck.1169194664001" value="reduce_EnterMemory" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
       <link role="applicableConcept" roleId="tpf8.1168285871518" targetNodeId="xaf1.9184680382602267965" resolveInfo="EnterMemory" />
     </node>
     <node type="tpf8.TemplateDeclaration" typeId="tpf8.1092059087312" id="266041992902656194">
-      <property name="name" nameId="tpck.1169194664001" value="reduce_RunThreadStatement" />
+      <property name="name" nameId="tpck.1169194664001" value="reduce_RunThread" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="thread" />
       <link role="applicableConcept" roleId="tpf8.1168285871518" targetNodeId="xaf1.9184680382602267967" resolveInfo="RunThread" />
     </node>
@@ -205,12 +205,12 @@
       <link role="applicableConcept" roleId="tpf8.1168285871518" targetNodeId="xaf1.7960034524145781069" resolveInfo="CommunicationChannelPush" />
     </node>
     <node type="tpf8.TemplateDeclaration" typeId="tpf8.1092059087312" id="3801488968793909414">
-      <property name="name" nameId="tpck.1169194664001" value="reduce_AllocateVariableExpression" />
+      <property name="name" nameId="tpck.1169194664001" value="reduce_AllocateVariable" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
       <link role="applicableConcept" roleId="tpf8.1168285871518" targetNodeId="xaf1.3801488968793744055" resolveInfo="AllocateVariable" />
     </node>
     <node type="tpf8.TemplateDeclaration" typeId="tpf8.1092059087312" id="5991677292904457204">
-      <property name="name" nameId="tpck.1169194664001" value="reduce_AllocateArrayExpression" />
+      <property name="name" nameId="tpck.1169194664001" value="reduce_AllocateArray" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
       <link role="applicableConcept" roleId="tpf8.1168285871518" targetNodeId="xaf1.5991677292904424979" resolveInfo="AllocateArray" />
     </node>
@@ -225,7 +225,7 @@
       <link role="applicableConcept" roleId="tpf8.1168285871518" targetNodeId="xaf1.3005132233865386782" resolveInfo="RealtimeThread" />
     </node>
     <node type="tpf8.TemplateDeclaration" typeId="tpf8.1092059087312" id="2993823323997153482">
-      <property name="name" nameId="tpck.1169194664001" value="weave_AllocateMemoryStatement" />
+      <property name="name" nameId="tpck.1169194664001" value="weave_AllocateMemory" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
       <link role="applicableConcept" roleId="tpf8.1168285871518" targetNodeId="xaf1.5373531043074068606" resolveInfo="AllocateMemory" />
     </node>
@@ -262,7 +262,7 @@
     <node role="weavingMappingRule" roleId="tpf8.1167172143858" type="tpf8.Weaving_MappingRule" typeId="tpf8.1167171569011" id="2993823323997153478">
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="xaf1.5373531043074068606" resolveInfo="AllocateMemory" />
       <node role="ruleConsequence" roleId="tpf8.1169570368028" type="tpf8.TemplateDeclarationReference" typeId="tpf8.1168559333462" id="2993823323997153484">
-        <link role="template" roleId="tpf8.1722980698497626483" targetNodeId="2993823323997153482" resolveInfo="weave_AllocateMemoryStatement" />
+        <link role="template" roleId="tpf8.1722980698497626483" targetNodeId="2993823323997153482" resolveInfo="weave_AllocateMemory" />
       </node>
       <node role="conditionFunction" roleId="tpf8.1167169362365" type="tpf8.BaseMappingRule_Condition" typeId="tpf8.1167168920554" id="2993823323997153496">
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2993823323997153497">
@@ -339,14 +339,14 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memories" />
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="xaf1.9184680382602267965" resolveInfo="EnterMemory" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.TemplateDeclarationReference" typeId="tpf8.1168559333462" id="9184680382602361349">
-        <link role="template" roleId="tpf8.1722980698497626483" targetNodeId="9184680382602361347" resolveInfo="reduce_EnterMemoryStatement" />
+        <link role="template" roleId="tpf8.1722980698497626483" targetNodeId="9184680382602361347" resolveInfo="reduce_EnterMemory" />
       </node>
     </node>
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="266041992902656192">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="threads" />
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="xaf1.9184680382602267967" resolveInfo="RunThread" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.TemplateDeclarationReference" typeId="tpf8.1168559333462" id="266041992902656196">
-        <link role="template" roleId="tpf8.1722980698497626483" targetNodeId="266041992902656194" resolveInfo="reduce_RunThreadStatement" />
+        <link role="template" roleId="tpf8.1722980698497626483" targetNodeId="266041992902656194" resolveInfo="reduce_RunThread" />
       </node>
     </node>
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="5373531043073942008">
@@ -429,13 +429,13 @@
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="3801488968793909412">
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="xaf1.3801488968793744055" resolveInfo="AllocateVariable" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.TemplateDeclarationReference" typeId="tpf8.1168559333462" id="3801488968793909416">
-        <link role="template" roleId="tpf8.1722980698497626483" targetNodeId="3801488968793909414" resolveInfo="reduce_AllocateVariableExpression" />
+        <link role="template" roleId="tpf8.1722980698497626483" targetNodeId="3801488968793909414" resolveInfo="reduce_AllocateVariable" />
       </node>
     </node>
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="5991677292904457202">
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="xaf1.5991677292904424979" resolveInfo="AllocateArray" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.TemplateDeclarationReference" typeId="tpf8.1168559333462" id="5991677292904457206">
-        <link role="template" roleId="tpf8.1722980698497626483" targetNodeId="5991677292904457204" resolveInfo="reduce_AllocateArrayExpression" />
+        <link role="template" roleId="tpf8.1722980698497626483" targetNodeId="5991677292904457204" resolveInfo="reduce_AllocateArray" />
       </node>
     </node>
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="7427614721109166178">
