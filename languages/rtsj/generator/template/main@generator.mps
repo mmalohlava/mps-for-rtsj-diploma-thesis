@@ -255,6 +255,9 @@
     </node>
   </roots>
   <root id="3005132233865499108">
+    <node role="createRootRule" roleId="tpf8.1167088157977" type="tpf8.CreateRootRule" typeId="tpf8.1167087469898" id="7063069233937422209">
+      <link role="templateNode" roleId="tpf8.1167087469901" targetNodeId="7904365484846607531" resolveInfo="MainDefinition" />
+    </node>
     <node role="mappingLabel" roleId="tpf8.1200911492601" type="tpf8.MappingLabelDeclaration" typeId="tpf8.1200911316486" id="2993823323997296637">
       <property name="name" nameId="tpck.1169194664001" value="ScopedMemoryAllocateLabel" />
       <link role="sourceConcept" roleId="tpf8.1200911342686" targetNodeId="xaf1.5373531043074068606" resolveInfo="AllocateMemory" />
@@ -350,9 +353,6 @@
     </node>
     <node role="preMappingScript" roleId="tpf8.1195502100749" type="tpf8.MappingScriptReference" typeId="tpf8.1195502151594" id="8317077103298539995">
       <link role="mappingScript" roleId="tpf8.1195502167610" targetNodeId="8317077103298539996" resolveInfo="script" />
-    </node>
-    <node role="createRootRule" roleId="tpf8.1167088157977" type="tpf8.CreateRootRule" typeId="tpf8.1167087469898" id="7063069233937422209">
-      <link role="templateNode" roleId="tpf8.1167087469901" targetNodeId="7904365484846607531" resolveInfo="MainDefinition" />
     </node>
     <node role="createRootRule" roleId="tpf8.1167088157977" type="tpf8.CreateRootRule" typeId="tpf8.1167087469898" id="3711103311464541531">
       <link role="templateNode" roleId="tpf8.1167087469901" targetNodeId="3711103311464487858" resolveInfo="CycleWrapperForPerThread" />
@@ -1575,7 +1575,13 @@
                       <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1248562751630065247">
                         <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1248562751630065248">
                           <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1248562751630065249">
-                            <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="1248562751630065250" />
+                            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4491748819300811690">
+                              <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="1248562751630065250" />
+                              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4491748819300811694">
+                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="scjp.4491748819300779504" resolveInfo="getMainDef" />
+                                <node role="actualArgument" roleId="tpee.1068499141038" type="tpf3.TemplateFunctionParameter_generationContext" typeId="tpf3.1216860049635" id="4491748819300811695" />
+                              </node>
+                            </node>
                             <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="1248562751630065264">
                               <link role="link" roleId="tp25.1138056516764" targetNodeId="xaf1.7296282902787935709" />
                             </node>
@@ -1600,7 +1606,13 @@
                 <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1248562751630065257">
                   <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1248562751630065258">
                     <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1248562751630065259">
-                      <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="1248562751630065260" />
+                      <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4491748819300811678">
+                        <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="1248562751630065260" />
+                        <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4491748819300811684">
+                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="scjp.4491748819300779504" resolveInfo="getMainDef" />
+                          <node role="actualArgument" roleId="tpee.1068499141038" type="tpf3.TemplateFunctionParameter_generationContext" typeId="tpf3.1216860049635" id="4491748819300811685" />
+                        </node>
+                      </node>
                       <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="1248562751630065263">
                         <link role="link" roleId="tp25.1138056516764" targetNodeId="xaf1.7296282902787935709" />
                       </node>
@@ -1694,7 +1706,13 @@
                       </node>
                       <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9175908796922371576">
                         <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9175908796922371571">
-                          <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="9175908796922371570" />
+                          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4491748819300811706">
+                            <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="9175908796922371570" />
+                            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4491748819300811710">
+                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="scjp.4491748819300779504" resolveInfo="getMainDef" />
+                              <node role="actualArgument" roleId="tpee.1068499141038" type="tpf3.TemplateFunctionParameter_generationContext" typeId="tpf3.1216860049635" id="4491748819300811711" />
+                            </node>
+                          </node>
                           <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="9175908796922371575">
                             <link role="link" roleId="tp25.1138056516764" targetNodeId="xaf1.9175908796922228524" />
                           </node>
@@ -1715,7 +1733,13 @@
                 <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="9175908796922371554">
                   <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9175908796922371561">
                     <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9175908796922371556">
-                      <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="9175908796922371555" />
+                      <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4491748819300811698">
+                        <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="9175908796922371555" />
+                        <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4491748819300811702">
+                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="scjp.4491748819300779504" resolveInfo="getMainDef" />
+                          <node role="actualArgument" roleId="tpee.1068499141038" type="tpf3.TemplateFunctionParameter_generationContext" typeId="tpf3.1216860049635" id="4491748819300811703" />
+                        </node>
+                      </node>
                       <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="9175908796922371560">
                         <link role="link" roleId="tp25.1138056516764" targetNodeId="xaf1.9175908796922228524" />
                       </node>
@@ -1807,7 +1831,13 @@
                       <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1248562751630065226">
                         <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1248562751630065233">
                           <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1248562751630065228">
-                            <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="1248562751630065227" />
+                            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4491748819300811722">
+                              <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="1248562751630065227" />
+                              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4491748819300811726">
+                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="scjp.4491748819300779504" resolveInfo="getMainDef" />
+                                <node role="actualArgument" roleId="tpee.1068499141038" type="tpf3.TemplateFunctionParameter_generationContext" typeId="tpf3.1216860049635" id="4491748819300811727" />
+                              </node>
+                            </node>
                             <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="1248562751630065232">
                               <link role="link" roleId="tp25.1138056516764" targetNodeId="xaf1.7296282902787935710" />
                             </node>
@@ -1832,7 +1862,13 @@
                 <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1248562751630065211">
                   <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1248562751630065218">
                     <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1248562751630065213">
-                      <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="1248562751630065212" />
+                      <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4491748819300811714">
+                        <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="1248562751630065212" />
+                        <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="4491748819300811718">
+                          <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="scjp.4491748819300779504" resolveInfo="getMainDef" />
+                          <node role="actualArgument" roleId="tpee.1068499141038" type="tpf3.TemplateFunctionParameter_generationContext" typeId="tpf3.1216860049635" id="4491748819300811719" />
+                        </node>
+                      </node>
                       <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="1248562751630065217">
                         <link role="link" roleId="tp25.1138056516764" targetNodeId="xaf1.7296282902787935710" />
                       </node>
