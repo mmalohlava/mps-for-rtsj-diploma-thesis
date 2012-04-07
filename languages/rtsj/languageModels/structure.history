@@ -84,5 +84,23 @@
     </dependencies>
     <rename id="xaf1.9184680382602267967" type="CONCEPT" from="RunThreadStatement" to="RunThread" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="27" />
+    </dependencies>
+    <rename id="xaf1.8911989545513281543" type="CONCEPT" from="annotation" to="annotationBla" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="28" />
+    </dependencies>
+    <rename id="xaf1.8911989545513281543" type="CONCEPT" from="annotationBla" to="ClassMemory" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="29" />
+    </dependencies>
+    <rename id="xaf1.8911989545513378509" type="PROPERTY" from="typ" to="type" />
+  </StructureModification>
 </history>
 
