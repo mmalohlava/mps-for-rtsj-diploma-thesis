@@ -6,7 +6,7 @@
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
   <language namespace="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="30" />
+  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="31" />
   <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="32" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpen" modelUID="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" version="-1" implicit="yes" />
@@ -175,7 +175,7 @@
     </node>
     <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8911989545513391615">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
-      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.8911989545513281543" resolveInfo="ClassMemory" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="xaf1.8911989545513281543" resolveInfo="ClassMemoryArea" />
     </node>
   </roots>
   <root id="3005132233865386787">
@@ -586,6 +586,12 @@
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="xaf1.9184680382602310940" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="9160275732584344180">
+        <property name="text" nameId="tpc2.1073389577007" value="," />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="955067194857499740">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="xaf1.955067194857499737" resolveInfo="associateObject" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="955067194857499743">
         <property name="text" nameId="tpc2.1073389577007" value="," />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="9160275732584344182">
@@ -2217,7 +2223,7 @@
           <property name="flag" nameId="tpc2.1186414551515" value="false" />
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8911989545513391626">
-          <property name="text" nameId="tpc2.1073389577007" value="@MemoryOfClass: " />
+          <property name="text" nameId="tpc2.1073389577007" value="@DefaultMemoryArea: " />
         </node>
         <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="8911989545513391623" />
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="8911989545513391628">
