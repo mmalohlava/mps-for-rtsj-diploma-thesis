@@ -8,7 +8,7 @@
   <language namespace="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" />
   <language namespace="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="30" />
+  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="31" />
   <import index="qxeo" modelUID="f:java_stub#37a3367b-1fb2-44d8-aa6b-18075e74e003#jetbrains.mps.nodeEditor(MPS.Classpath/jetbrains.mps.nodeEditor@java_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp3j" modelUID="r:00000000-0000-4000-0000-011c89590353(jetbrains.mps.lang.intentions.structure)" version="8" implicit="yes" />
@@ -589,7 +589,7 @@
                   <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="8911989545513386409" />
                   <node role="operation" roleId="tpee.1197027833540" type="tp25.AttributeAccess" typeId="tp25.6407023681583031218" id="8911989545513386418">
                     <node role="qualifier" roleId="tp25.6407023681583036852" type="tp25.NodeAttributeQualifier" typeId="tp25.6407023681583036853" id="8911989545513386421">
-                      <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="xaf1.8911989545513281543" resolveInfo="ClassMemory" />
+                      <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="xaf1.8911989545513281543" resolveInfo="ClassMemoryArea" />
                     </node>
                   </node>
                 </node>
@@ -602,7 +602,7 @@
               <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="8911989545513378526" />
               <node role="operation" roleId="tpee.1197027833540" type="tp25.AttributeAccess" typeId="tp25.6407023681583031218" id="8911989545513378535">
                 <node role="qualifier" roleId="tp25.6407023681583036852" type="tp25.NodeAttributeQualifier" typeId="tp25.6407023681583036853" id="8911989545513386397">
-                  <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="xaf1.8911989545513281543" resolveInfo="ClassMemory" />
+                  <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="xaf1.8911989545513281543" resolveInfo="ClassMemoryArea" />
                 </node>
               </node>
             </node>
@@ -616,7 +616,7 @@
                     <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="8911989545513386435" />
                     <node role="operation" roleId="tpee.1197027833540" type="tp25.AttributeAccess" typeId="tp25.6407023681583031218" id="8911989545513386443">
                       <node role="qualifier" roleId="tp25.6407023681583036852" type="tp25.NodeAttributeQualifier" typeId="tp25.6407023681583036853" id="8911989545513386447">
-                        <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="xaf1.8911989545513281543" resolveInfo="ClassMemory" />
+                        <link role="attributeConcept" roleId="tp25.6407023681583036854" targetNodeId="xaf1.8911989545513281543" resolveInfo="ClassMemoryArea" />
                       </node>
                     </node>
                   </node>

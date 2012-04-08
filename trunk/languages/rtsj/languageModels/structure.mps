@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="30">
+<model modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="31">
   <persistence version="7" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <language namespace="95220e4e-a271-48e4-8488-c48145fd3f16(rtsj)" />
@@ -7,7 +7,7 @@
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
-  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="30" implicit="yes" />
+  <import index="xaf1" modelUID="r:65b89b2c-0949-4518-b5f6-e2f811693a31(rtsj.structure)" version="31" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3005132233865386782">
       <property name="name" nameId="tpck.1169194664001" value="RealtimeThread" />
@@ -247,13 +247,13 @@
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8911989545513281543">
-      <property name="name" nameId="tpck.1169194664001" value="ClassMemory" />
+      <property name="name" nameId="tpck.1169194664001" value="ClassMemoryArea" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
     </node>
     <node type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="8911989545513424048">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="memory" />
-      <property name="name" nameId="tpck.1169194664001" value="ClassMemoryType" />
+      <property name="name" nameId="tpck.1169194664001" value="ClassMemoryAreaType" />
       <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
       <link role="defaultMember" roleId="tpce.1083241965437" targetNodeId="8911989545513424049" />
     </node>
@@ -408,6 +408,10 @@
     </node>
   </root>
   <root id="9184680382602267965">
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="955067194857499737">
+      <property name="name" nameId="tpck.1169194664001" value="associateObject" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="9184680382602310940">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="memory" />
@@ -1118,6 +1122,10 @@
     </node>
   </root>
   <root id="8911989545513281543">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="955067194857146878">
+      <property name="value" nameId="tpce.1105725733873" value="rtej: defalut memory area for class" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="8911989545513378513">
       <property name="value" nameId="tpce.1105725733873" value="memoryScope" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.5169995583184591164" resolveInfo="role" />
@@ -1128,7 +1136,7 @@
     </node>
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="8911989545513378509">
       <property name="name" nameId="tpck.1169194664001" value="type" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="8911989545513424048" resolveInfo="ClassMemoryType" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="8911989545513424048" resolveInfo="ClassMemoryAreaType" />
     </node>
   </root>
   <root id="8911989545513424048">

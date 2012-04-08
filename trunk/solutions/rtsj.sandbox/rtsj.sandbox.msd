@@ -9,8 +9,9 @@
     <dependency reexport="false">bfbdbf14-2038-46b2-9221-b72d54df5e04(rtsj#3005132233865499107)</dependency>
   </dependencies>
   <usedLanguages>
-    <usedLanguage>95220e4e-a271-48e4-8488-c48145fd3f16(rtsj)</usedLanguage>
+    <usedLanguage>f2801650-65d5-424e-bb1b-463a8781b786(jetbrains.mps.baseLanguage.javadoc)</usedLanguage>
     <usedLanguage>c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</usedLanguage>
+    <usedLanguage>95220e4e-a271-48e4-8488-c48145fd3f16(rtsj)</usedLanguage>
   </usedLanguages>
 </solution>
 
