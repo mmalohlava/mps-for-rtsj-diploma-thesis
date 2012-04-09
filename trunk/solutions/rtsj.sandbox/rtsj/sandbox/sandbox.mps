@@ -1092,7 +1092,7 @@
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="955067194857498830">
           <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="955067194857498831">
-            <property name="text" nameId="tpee.6329021646629104958" value="execute run in immortal memory, wchich consists of allocating and starting appropriate threads" />
+            <property name="text" nameId="tpee.6329021646629104958" value="execute run in immortal memory, which consists of allocating and starting appropriate threads" />
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="xaf1.EnterMemory" typeId="xaf1.9184680382602267965" id="3686664951246342993">
