@@ -93,6 +93,13 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="sweetfactory" />
       <property name="name" nameId="tpck.1169194664001" value="MeasurementManager" />
     </node>
+    <node type="tpee.ClassConcept" typeId="tpee.1068390468198" id="7590754571307308237">
+      <property name="name" nameId="tpck.1169194664001" value="Sandbox" />
+    </node>
+    <node type="xaf1.ScopedMemory" typeId="xaf1.3005132233865429302" id="7590754571307308258">
+      <property name="global" nameId="xaf1.2993823323997118774" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="MyScopedMemory" />
+    </node>
   </roots>
   <root id="7022356706857381763" />
   <root id="5991677292904361823">
@@ -388,10 +395,10 @@
         </node>
       </node>
       <node role="initializer" roleId="tpee.1068431790190" type="xaf1.AllocateArray" typeId="xaf1.5991677292904424979" id="5991677292904472508">
-        <node role="memory" roleId="xaf1.5991677292904424980" type="xaf1.MemoryAreaReference" typeId="xaf1.7904365484846574988" id="5991677292904549712">
+        <node role="memory" roleId="xaf1.3801488968793744056" type="xaf1.MemoryAreaReference" typeId="xaf1.7904365484846574988" id="5991677292904549712">
           <link role="memory" roleId="xaf1.7904365484846574989" targetNodeId="2993823323997410412" resolveInfo="immortalMemory" />
         </node>
-        <node role="allocater" roleId="xaf1.5991677292904424981" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3686664951246309819">
+        <node role="allocater" roleId="xaf1.3801488968793744057" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3686664951246309819">
           <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5991677292904378197" resolveInfo="DummyProductionLine" />
         </node>
         <node role="count" roleId="xaf1.5991677292904424994" type="tpee.LocalStaticFieldReference" typeId="tpee.1172008963197" id="5991677292904561501">
@@ -7130,6 +7137,155 @@
       <property name="value" nameId="tpee.1068580320021" value="400" />
     </node>
     <node role="expandable" roleId="xaf1.6254049394131213108" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="6669225085930159793" />
+  </root>
+  <root id="7590754571307308237">
+    <node role="field" roleId="tpee.1068390468199" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="7590754571307346367">
+      <property name="name" nameId="tpck.1169194664001" value="b" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="7590754571307346368" />
+      <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7590754571307346370">
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~Object" resolveInfo="Object" />
+      </node>
+      <node role="initializer" roleId="tpee.1068431790190" type="xaf1.AllocateVariable" typeId="xaf1.3801488968793744055" id="7590754571307346372">
+        <node role="memory" roleId="xaf1.3801488968793744056" type="xaf1.MemoryAreaReference" typeId="xaf1.7904365484846574988" id="7590754571307346375">
+          <link role="memory" roleId="xaf1.7904365484846574989" targetNodeId="7590754571307308258" resolveInfo="MyScopedMemory" />
+        </node>
+        <node role="allocater" roleId="xaf1.3801488968793744057" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7590754571307346376">
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~Object" resolveInfo="Object" />
+        </node>
+      </node>
+    </node>
+    <node role="field" roleId="tpee.1068390468199" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="7590754571307498478">
+      <property name="name" nameId="tpck.1169194664001" value="c" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="7590754571307498479" />
+      <node role="type" roleId="tpee.5680397130376446158" type="tpee.ArrayType" typeId="tpee.1070534760951" id="7590754571307498484">
+        <node role="componentType" roleId="tpee.1070534760952" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7590754571307498482">
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~Object" resolveInfo="Object" />
+        </node>
+      </node>
+      <node role="initializer" roleId="tpee.1068431790190" type="xaf1.AllocateArray" typeId="xaf1.5991677292904424979" id="7590754571307498498">
+        <node role="count" roleId="xaf1.5991677292904424994" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7590754571307498507">
+          <property name="value" nameId="tpee.1068580320021" value="5" />
+        </node>
+        <node role="memory" roleId="xaf1.3801488968793744056" type="xaf1.MemoryAreaReference" typeId="xaf1.7904365484846574988" id="7590754571307511767">
+          <link role="memory" roleId="xaf1.7904365484846574989" targetNodeId="7590754571307308258" resolveInfo="MyScopedMemory" />
+        </node>
+        <node role="allocater" roleId="xaf1.3801488968793744057" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7590754571307498505">
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~Object" resolveInfo="Object" />
+        </node>
+      </node>
+    </node>
+    <node role="method" roleId="tpee.1107880067339" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="7590754571307308244">
+      <property name="name" nameId="tpck.1169194664001" value="dummy" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="7590754571307308245" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7590754571307308246" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="7590754571307308247">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="7590754571307308257" />
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="7590754571307308250">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="7590754571307308251">
+            <property name="name" nameId="tpck.1169194664001" value="a" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7590754571307308252">
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~Object" resolveInfo="Object" />
+            </node>
+            <node role="initializer" roleId="tpee.1068431790190" type="xaf1.AllocateVariable" typeId="xaf1.3801488968793744055" id="7590754571307308254">
+              <node role="memory" roleId="xaf1.3801488968793744056" type="xaf1.MemoryAreaReference" typeId="xaf1.7904365484846574988" id="7590754571307308263">
+                <link role="memory" roleId="xaf1.7904365484846574989" targetNodeId="7590754571307308258" resolveInfo="MyScopedMemory" />
+              </node>
+              <node role="allocater" roleId="xaf1.3801488968793744057" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7590754571307308264">
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~Object" resolveInfo="Object" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="7590754571307498512">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="7590754571307498513">
+            <property name="name" nameId="tpck.1169194664001" value="d" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7590754571307498514">
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~Object" resolveInfo="Object" />
+            </node>
+            <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7590754571307498516">
+              <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="7590754571307508619">
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~Object%d&lt;init&gt;()" resolveInfo="Object" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7590754571307308266">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7590754571307309253">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="7590754571307308267">
+              <link role="classifier" roleId="tpee.1144433057691" targetNodeId="e2lb.~System" resolveInfo="System" />
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="e2lb.~System%dout" resolveInfo="out" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7590754571307309259">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxg7.~PrintStream%dprint(java%dlang%dObject)%cvoid" resolveInfo="print" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="7590754571307309261">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7590754571307308251" resolveInfo="a" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7590754571307346378">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7590754571307346382">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="7590754571307346379">
+              <link role="classifier" roleId="tpee.1144433057691" targetNodeId="e2lb.~System" resolveInfo="System" />
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="e2lb.~System%dout" resolveInfo="out" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7590754571307346387">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxg7.~PrintStream%dprint(java%dlang%dObject)%cvoid" resolveInfo="print" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalInstanceFieldReference" typeId="tpee.7785501532031639928" id="7590754571307346389">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7590754571307346367" resolveInfo="b" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7590754571307508621">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7590754571307508622">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="7590754571307508623">
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="e2lb.~System%dout" resolveInfo="out" />
+              <link role="classifier" roleId="tpee.1144433057691" targetNodeId="e2lb.~System" resolveInfo="System" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7590754571307508624">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxg7.~PrintStream%dprint(java%dlang%dObject)%cvoid" resolveInfo="print" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalInstanceFieldReference" typeId="tpee.7785501532031639928" id="7590754571307508637">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7590754571307498478" resolveInfo="c" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7590754571307508629">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7590754571307508630">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="7590754571307508631">
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="e2lb.~System%dout" resolveInfo="out" />
+              <link role="classifier" roleId="tpee.1144433057691" targetNodeId="e2lb.~System" resolveInfo="System" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7590754571307508632">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxg7.~PrintStream%dprint(java%dlang%dObject)%cvoid" resolveInfo="print" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="7590754571307508642">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7590754571307498513" resolveInfo="d" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="7590754571307508628" />
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="7590754571307508620" />
+      </node>
+    </node>
+    <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7590754571307308238" />
+    <node role="constructor" roleId="tpee.1068390468201" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="7590754571307308239">
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="7590754571307308240" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7590754571307308241" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="7590754571307308242" />
+    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="xaf1.ClassMemoryArea" typeId="xaf1.8911989545513281543" id="7590754571307308243">
+      <property name="type" nameId="xaf1.8911989545513378509" value="2" />
+    </node>
+  </root>
+  <root id="7590754571307308258">
+    <node role="initial" roleId="xaf1.3005132233865429303" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7590754571307308261">
+      <property name="value" nameId="tpee.1068580320021" value="64" />
+    </node>
+    <node role="maximal" roleId="xaf1.3005132233865429304" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7590754571307308262">
+      <property name="value" nameId="tpee.1068580320021" value="128" />
+    </node>
   </root>
 </model>
 
